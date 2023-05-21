@@ -1,0 +1,71 @@
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  position: relative;
+
+  h1 {
+    font-size: clamp(35px, 4vw, 55px);
+    color: white;
+  }
+
+  .hamburgerContainer {
+    margin-top: 5px;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    transition: transform 0.255s ease-in-out;
+
+    &.open {
+      transform: rotate(720deg);
+    }
+
+    .hamburger {
+      position: absolute;
+      color: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    
+  }
+  #sideBar {
+    background-color: rgba(120, 118, 118, 0.447);
+    position: absolute;
+    right: -300px;
+    width: 250px;
+    height: 100vh;
+    transition: .4s;
+    ul{
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      hr{
+        border-bottom: 1px solid gray;
+        margin: 0 5px 0 5px;
+      }
+      li{  
+        list-style: none;
+        width: 100%;
+        
+        padding: 15px;
+        color: white;
+        font-size: 1.4rem;
+        text-align: left;
+        z-index: 2px;
+        }
+      li:hover{
+        background-color: rgba(157, 156, 156);
+        opacity: 70%;
+        
+      }
+    }
+  }
+  #sideBar.sideBarOpen{
+    right: 0;
+  }
+}
