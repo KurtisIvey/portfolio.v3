@@ -14,24 +14,34 @@ const Navbar = (props: Props) => {
 
   return (
     <nav>
-      <h1>Kurtis Ivey</h1>
+      <h1>
+        Kurtis <span>Ivey</span>
+      </h1>
       <div
         className={`hamburgerContainer ${sideBarOpen ? "open" : ""}`}
         onClick={toggleSideBar}
       >
         {sideBarOpen ? (
-          <AiOutlineClose size={40} className="hamburger" />
+          <AiOutlineClose size={45} className="hamburger" />
         ) : (
-          <BiMenuAltRight size={40} className="hamburger" />
+          <BiMenuAltRight size={45} className="hamburger" />
         )}
       </div>
       <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
         <ul>
           <hr />
-          <li>01. About</li>
-          <li>02. Experience</li>
-          <li>03. Work</li>
-          <li>04. Contact</li>
+          <li>
+            <span>01.</span> About
+          </li>
+          <li>
+            <span>02.</span> Skills
+          </li>
+          <li>
+            <span>03.</span> Work
+          </li>
+          <li>
+            <span>04.</span> Contact
+          </li>
         </ul>
       </div>
     </nav>
