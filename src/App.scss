@@ -2,8 +2,9 @@
 *, *::before,*::after {
     box-sizing: border-box;
   }
-  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Permanent+Marker&display=swap');  
   * {
     margin: 0;
     padding: 0;
@@ -28,6 +29,7 @@
     line-height: 1;
     text-rendering: optimizeSpeed;
     overflow: hidden;
+    position: relative;
   }
   
   // all media elements set to block and full width
@@ -157,4 +159,48 @@
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+
+
+// intro logo that fades and disappears
+
+  @keyframes spinAndDisappear {
+    0% {
+      height: 40px;
+      width: auto;
+      opacity: 1;
+      transform: rotateY(0);
+    }
+    50% {
+      width: auto;
+      height: 40%;
+      opacity: 1;
+      transform: rotateY(720deg); /* Half spin (180 degrees) */
+    }
+    100% {
+      width: auto;
+      height: 40%;
+      opacity: 0;
+      
+      transform: rotateY(0); /* Full spin (360 degrees) */
+    }
+  }
+  .load-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .hide-load-container{
+    display: none;
+  }
+  
+  .hide-on-load {
+    opacity: 1;
+    animation: spinAndDisappear 5s forwards;
   }

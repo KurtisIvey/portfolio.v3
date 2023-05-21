@@ -1,10 +1,9 @@
 @import '../variables.scss';
 
 nav {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
   position: relative;
   font-family: 'Permanent Marker', cursive;
   span{
@@ -12,10 +11,9 @@ nav {
   } 
 
   h1 {
-    font-family: 'Permanent Marker', cursive;
     font-size: clamp(35px, 4vw, 55px);
     color: white;
-    margin: 0 0 0 10px;
+    margin: 5px 0 0 10px;
   }
 
   .hamburgerContainer {
@@ -40,20 +38,28 @@ nav {
 
     
   }
+  #largerResNavLinks {
+    display: none;
+    
+  }
   #sideBar {
-    background-color: rgba(120, 118, 118, 0.447);
     position: absolute;
-    right: -300px;
-    width: 250px;
+    right: -1300px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100vw;
     height: 100vh;
-    transition: .4s;
+    transition: .3s;
     ul{
+      background-color: rgba(120, 118, 118, 0.447);
+      grid-column: 2/3;
+      width: 198px;
       display: flex;
       flex-direction: column;
       padding-top: 50px;
       hr{
         border-bottom: 1px solid gray;
-        margin: 0 15px 10px 15px;
+        margin: 0 0 10px 15px;
       }
       li{  
         list-style: none;
@@ -61,7 +67,7 @@ nav {
         
         padding: 15px;
         color: white;
-        font-size: 1.4rem;
+        font-size: clamp(20px, 2vw, 1.4rem);
         text-align: left;
         z-index: 2px;
          
@@ -74,5 +80,37 @@ nav {
   }
   #sideBar.sideBarOpen{
     right: 0;
+    backdrop-filter: blur(5px);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  nav{
+    .hamburgerContainer{
+      display: none;
+    }
+    #sideBar {
+      display: none;  
+    }
+    ul#largerResNavLinks {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: fit-content;
+      color: white;
+      font-size: clamp(20px, 2vw, 1.3rem);
+      margin-right: 12px;
+      
+      li {
+        margin: 0 15px;
+      }
+      li:hover{
+        color: $accentColor;
+      }
+      
+    }
+
+    
   }
 }
