@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import { motion } from "framer-motion";
+
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -11,7 +13,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <motion.nav
+      initial={{ opacity: 0 }}
+      transition={{ delay: 3.8, duration: 2 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       <h1>
         Kurtis <span>Ivey</span>
       </h1>
@@ -72,7 +79,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
