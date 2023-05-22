@@ -81,7 +81,7 @@ nav #sideBar.sideBarOpen {
           backdrop-filter: blur(8px);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 770px) {
   nav .hamburgerContainer {
     display: none;
   }
@@ -100,7 +100,7 @@ nav #sideBar.sideBarOpen {
     margin-right: 12px;
   }
   nav ul#largerResNavLinks li {
-    margin: 0 15px;
+    margin: 0 13px;
   }
   nav ul#largerResNavLinks li:hover {
     color: rgb(126, 234, 130);

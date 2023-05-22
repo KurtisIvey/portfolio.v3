@@ -46,7 +46,7 @@ const Navbar = () => {
         </li>
         <li>
           <a href="">
-            <span>03.</span> Work
+            <span>03.</span> Projects
           </a>
         </li>
         <li>
@@ -70,7 +70,7 @@ const Navbar = () => {
           </li>
           <li>
             <a href="">
-              <span>03.</span> Work
+              <span>03.</span> Projects
             </a>
           </li>
           <li>

@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import '../../variables.scss';
 
 @keyframes showNavbar {
   from { opacity: 0; } /* Start with opacity 0 */
@@ -92,7 +92,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 770px) {
   nav{
     .hamburgerContainer{
       display: none;
@@ -111,7 +111,7 @@ nav {
       margin-right: 12px;
       
       li {
-        margin: 0 15px;
+        margin: 0 13px;
       }
       li:hover{
         color: $accentColor;
