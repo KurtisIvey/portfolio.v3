@@ -12,10 +12,6 @@ nav {
   justify-content: space-between;
   position: relative;
   font-family: "Permanent Marker", cursive;
-  animation-name: showNavbar;
-  animation-duration: 0.1s; /* Set a very short duration */
-  animation-delay: 6s; /* Delay the start of the animation by 6 seconds */
-  animation-fill-mode: forwards; /* Maintain the final state of the animation */
 }
 nav span {
   color: rgb(126, 234, 130);
@@ -81,8 +77,8 @@ nav #sideBar ul li:hover {
 }
 nav #sideBar.sideBarOpen {
   right: 0;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 @media screen and (min-width: 750px) {

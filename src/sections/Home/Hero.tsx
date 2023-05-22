@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 
 type Props = {};
 
-const Home = (props: Props) => {
+const Hero = (props: Props) => {
   return <div></div>;
 };
 
-export default Home;
+export default Hero;

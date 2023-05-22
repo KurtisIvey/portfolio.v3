@@ -12,10 +12,6 @@ nav {
   position: relative;
   font-family: 'Permanent Marker', cursive;
   
-  animation-name: showNavbar;
-  animation-duration: 0.1s; /* Set a very short duration */
-  animation-delay: 6s; /* Delay the start of the animation by 6 seconds */
-  animation-fill-mode: forwards; /* Maintain the final state of the animation */
   span{
     color: $accentColor;
   } 
@@ -90,7 +86,7 @@ nav {
   }
   #sideBar.sideBarOpen{
     right: 0;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
   }
 }
 
