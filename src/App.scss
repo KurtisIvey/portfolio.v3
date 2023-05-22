@@ -4,8 +4,7 @@
   }
 
   
-  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Permanent+Marker&display=swap');  
-  * {
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Permanent+Marker&family=Work+Sans:wght@100;200;300;400;500&display=swap');  * {
     margin: 0;
     padding: 0;
     border: 0 solid transparent;
@@ -28,7 +27,7 @@
     width: 100vw;   
     line-height: 1;
     text-rendering: optimizeSpeed;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
   }
   

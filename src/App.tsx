@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import LogoSvg from "./components/Logo/LogoSvg";
+import Hero from "./sections/Home/Hero";
 
 function App() {
   const [loaded, SetLoaded] = useState<boolean>(false);
@@ -16,6 +17,8 @@ function App() {
         <LogoSvg />
       </div>
       <Navbar />
+      <Hero />
+      <Hero />
     </main>
   );
 }
