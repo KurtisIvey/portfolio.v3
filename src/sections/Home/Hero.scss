@@ -1,32 +1,69 @@
 @import '../../variables';
 
 section.heroSection{
-    font-family: 'Inconsolata', monospace;
-    border: 1px solid red;
+    font-family: 'Work Sans', sans-serif;
     height: 97vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 10vh;
-    padding-left: 2px;
+    padding: 10vh 20px 20px 20px;
     gap: 3vh;
-    align-items: center;
-
+    justify-items: center;
+    
     h1.hiMyNameIs{
-        color: white;
-        font-size: 1.5rem;
+        color:$accentColor;
+        font-size: 1.1rem;
+        text-align: left;
+        margin-left: 2.3px;
     }
-    h1.guyWhoLoves{
-        color: $accentColor;
+    h1.kurtisIvey{
+        color: whitesmoke;
+        font-size: 2.6rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    h1.typeWriterText{
         font-size: 1.8rem;
+        font-weight: 400;
+        color: rgb(199, 199, 199);
     }
-    h1.butReallyLoves{
-        color: rgb(192, 192, 192);
-        font-size: 1.5rem;
-    }
+   
     p{
-        color: white;
-        text-align: center;
+        color: rgb(255, 255, 255);
+        margin-top: 3vh;
+        text-align: left;
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+        line-height: 24px;
+        margin-left: 1px;
     }
+}
+
+@media screen and (min-width: 750px) {
+    section.heroSection {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25vh 0  25vh 0;
+        
+        h1.hiMyNameIs{
+            font-size: 1.5rem;
+            margin-left: 3.5px;
+        }
+        h1.kurtisIvey{
+            font-size: 4.2rem;
+        }
+        h1.typeWriterText{
+            font-size: 2.3rem;
+            margin-left: 1.9px;
+        }
+        p{
+            font-size: 1.5rem;
+            letter-spacing: 1.4px;
+            line-height: 40px;
+            margin-left: 3px;
+        }
+    }
+    
 }
