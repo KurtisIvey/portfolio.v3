@@ -16,7 +16,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ opacity: 0 }}
       // manually set delay to appear after logo that shows on initial page load
-      transition={{ delay: 3.8, duration: 2 }}
+      transition={{ delay: 3, duration: 2 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
