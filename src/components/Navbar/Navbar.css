@@ -25,8 +25,9 @@ nav .hamburgerContainer {
   position: relative;
   height: 45px;
   width: 45px;
-  z-index: 3;
+  z-index: 4;
   transition: transform 0.255s ease-in-out;
+  cursor: pointer;
 }
 nav .hamburgerContainer.open {
   transform: rotate(720deg);
