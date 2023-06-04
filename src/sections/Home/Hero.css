@@ -36,7 +36,7 @@ section.heroSection p {
   margin-left: 1px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 770px) {
   section.heroSection {
     max-width: 700px;
     margin-left: auto;

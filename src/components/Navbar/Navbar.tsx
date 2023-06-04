@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -13,15 +13,15 @@ const Navbar = () => {
   const windowWidth = useWindowWidth();
 
   // handle open close side bar at mobile res
-  const toggleSideBar = () => {
-    setSideBarOpen(!sideBarOpen);
-  };
+  const toggleSideBar = useCallback(() => {
+    setSideBarOpen((prevOpen) => !prevOpen);
+  }, []);
 
   useEffect(() => {
     // detects window width via useWindowWidth hook and then handles closing sideBar
     // when res is larger than mobile, so on resizing from mobile - desk - mobile,
     // it isn't open
-    if (windowWidth >= 770 && sideBarOpen === true) {
+    if (windowWidth >= 769 && sideBarOpen === true) {
       setSideBarOpen(false);
     }
   }, [windowWidth, sideBarOpen]);
