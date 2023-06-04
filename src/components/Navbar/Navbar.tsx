@@ -55,6 +55,8 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      {sideBarOpen && <div className="blurFilter" />}
+
       <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
         <ul>
           <hr />

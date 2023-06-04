@@ -30,7 +30,8 @@ const Hero = (props: Props) => {
         <motion.p>
           I'm a developer specializing in building highly interactive, robust,
           scalable, and maintainable web applications on both the front and back
-          end using JavaScript frameworks.
+          end using JavaScript frameworks. I'm currently looking for work and
+          freelancing opportunities.
         </motion.p>
       </div>
     </motion.section>

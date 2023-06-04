@@ -25,7 +25,7 @@ nav .hamburgerContainer {
   position: relative;
   height: 45px;
   width: 45px;
-  z-index: 1;
+  z-index: 3;
   transition: transform 0.255s ease-in-out;
 }
 nav .hamburgerContainer.open {
@@ -50,6 +50,7 @@ nav #sideBar {
   width: 100vw;
   height: 100vh;
   transition: 0.3s;
+  z-index: 2;
 }
 nav #sideBar ul {
   background-color: rgba(120, 118, 118, 0.447);
@@ -70,13 +71,19 @@ nav #sideBar ul li {
   color: white;
   font-size: clamp(20px, 2vw, 1.4rem);
   text-align: left;
-  z-index: 2px;
+  z-index: 3;
 }
 nav #sideBar ul li:hover {
   background-color: rgba(157, 156, 156, 0.252);
 }
 nav #sideBar.sideBarOpen {
   right: 0;
+}
+nav .blurFilter {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
@@ -104,5 +111,8 @@ nav #sideBar.sideBarOpen {
   }
   nav ul#largerResNavLinks li:hover {
     color: rgb(126, 234, 130);
+  }
+  nav .blurFilter {
+    display: none;
   }
 }/*# sourceMappingURL=Navbar.css.map */
