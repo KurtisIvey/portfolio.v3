@@ -1,13 +1,12 @@
 section.heroSection {
   font-family: "Work Sans", sans-serif;
   height: 97vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 10vh 20px 20px 20px;
   gap: 3vh;
   justify-items: center;
+  letter-spacing: 1.2px;
 }
 section.heroSection h1.hiMyNameIs {
   color: rgb(126, 234, 130);
@@ -24,7 +23,7 @@ section.heroSection h1.kurtisIvey {
 }
 section.heroSection h1.typeWriterText {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 600;
   color: rgb(199, 199, 199);
 }
 section.heroSection p {
@@ -33,18 +32,11 @@ section.heroSection p {
   text-align: left;
   font-size: 1.1rem;
   font-weight: 500;
-  letter-spacing: 1.2px;
-  line-height: 24px;
+  line-height: 30px;
   margin-left: 1px;
 }
 
 @media screen and (min-width: 770px) {
-  section.heroSection {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25vh 0 25vh 0;
-  }
   section.heroSection h1.hiMyNameIs {
     font-size: 1.5rem;
     margin-left: 3.5px;
@@ -61,10 +53,5 @@ section.heroSection p {
     letter-spacing: 1.4px;
     line-height: 40px;
     margin-left: 3px;
-  }
-}
-@media screen and (min-width: 950px) {
-  section.heroSection {
-    max-width: 920px;
   }
 }/*# sourceMappingURL=Hero.css.map */
