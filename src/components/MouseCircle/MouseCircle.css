@@ -2,15 +2,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 75px;
-  height: 75px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
   border: 1.5px solid #ffffff;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
   transition: transform 0.2s;
-  background-color: rgba(255, 255, 255, 0.768627451);
+  background-color: rgba(255, 255, 255, 0.7843137255);
   mix-blend-mode: difference;
 }
 
@@ -33,7 +33,7 @@
 .mouse-circle::after {
   content: "";
   position: absolute;
-  background-color: #000000;
+  background-color: #919090;
 }
 
 .mouse-circle::before {
