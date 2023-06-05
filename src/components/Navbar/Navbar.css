@@ -6,6 +6,17 @@
     opacity: 1;
   } /* Transition to opacity 1 */
 }
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
 nav {
   width: 100%;
   display: flex;
@@ -74,9 +85,6 @@ nav #sideBar ul li {
   text-align: left;
   z-index: 3;
 }
-nav #sideBar ul li .active {
-  z-index: 5;
-}
 nav #sideBar ul li:hover {
   background-color: rgba(173, 173, 173, 0.898);
   color: rgb(126, 234, 130);
@@ -116,6 +124,7 @@ nav .blurFilter {
   }
   nav ul#largerResNavLinks li:hover {
     color: rgb(126, 234, 130);
+    animation: wiggle 0.3s infinite;
   }
   nav .blurFilter {
     display: none;

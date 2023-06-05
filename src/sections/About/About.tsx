@@ -56,7 +56,9 @@ const About: React.FC = () => {
           variety of users.
         </p>
         <p>
-          When I'm not coding, I'm spending my time as a loving husband and
+          When I'm not coding, I'm spending my time as a{" "}
+          <span style={{ color: "rgba(210, 124, 124)" }}>loving husband</span>{" "}
+          and
           <span> Brazilian Jiu Jitsu student/instructor 🥋</span>
         </p>
         <p>

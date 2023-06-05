@@ -22,6 +22,8 @@ const Navbar: React.FC = () => {
 
   const handleScrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
+    // closes sidebar on click if it's open
+    if (sideBarOpen) setSideBarOpen(false);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
