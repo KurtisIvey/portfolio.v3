@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import LogoSvg from "./components/Logo/LogoSvg";
 import Hero from "./sections/Home/Hero";
 import MouseCircle from "./components/MouseCircle/MouseCircle";
+import About from "./sections/About/About";
 
 function App() {
   const [loaded, SetLoaded] = useState<boolean>(false);
@@ -20,7 +21,7 @@ function App() {
       </div>
       <Navbar />
       <Hero />
-      <Hero />
+      <About />
     </main>
   );
 }
