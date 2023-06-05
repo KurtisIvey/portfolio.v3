@@ -80,7 +80,9 @@ nav {
         font-size: clamp(20px, 2vw, 1.4rem);
         text-align: left;
         z-index: 3;
-         
+         .active{
+          z-index: 5;
+         }
       }
       li:hover{
         background-color: rgba(173, 173, 173, 0.898);

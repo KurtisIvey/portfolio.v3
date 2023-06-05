@@ -4,32 +4,32 @@ import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import "./Navbar.css";
-// custom hook to detect window width
-import useWindowWidth from "../../hooks/useWindowWidth";
 
-const Navbar = () => {
-  const [sideBarOpen, setSideBarOpen] = useState<boolean>(false);
-  // custom hook to detect window width
-  const windowWidth = useWindowWidth();
+const Navbar: React.FC = () => {
+  const [sideBarOpen, setSideBarOpen] = useState(false);
 
-  // handle open close side bar at mobile res
   const toggleSideBar = useCallback(() => {
     setSideBarOpen((prevOpen) => !prevOpen);
   }, []);
 
   useEffect(() => {
-    // detects window width via useWindowWidth hook and then handles closing sideBar
-    // when res is larger than mobile, so on resizing from mobile - desk - mobile,
-    // it isn't open
-    if (windowWidth >= 769 && sideBarOpen === true) {
-      setSideBarOpen(false);
+    if (sideBarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
     }
-  }, [windowWidth, sideBarOpen]);
+  }, [sideBarOpen]);
+
+  const handleScrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <motion.nav
       initial={{ opacity: 0 }}
-      // manually set delay to appear after logo that shows on initial page load
       transition={{ delay: 3, duration: 2 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -48,25 +48,17 @@ const Navbar = () => {
         )}
       </div>
       <ul id="largerResNavLinks">
-        <li>
-          <a href="">
-            <span>01.</span> About
-          </a>
+        <li onClick={() => handleScrollToSection("about")}>
+          <span>01.</span> About
         </li>
-        <li>
-          <a href="">
-            <span>02.</span> Skills
-          </a>
+        <li onClick={() => handleScrollToSection("skills")}>
+          <span>02.</span> Skills
         </li>
-        <li>
-          <a href="">
-            <span>03.</span> Projects
-          </a>
+        <li onClick={() => handleScrollToSection("projects")}>
+          <span>03.</span> Projects
         </li>
-        <li>
-          <a href="">
-            <span>04.</span> Contact
-          </a>
+        <li onClick={() => handleScrollToSection("contact")}>
+          <span>04.</span> Contact
         </li>
       </ul>
       {sideBarOpen && <div className="blurFilter" />}
@@ -74,25 +66,17 @@ const Navbar = () => {
       <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
         <ul>
           <hr />
-          <li>
-            <a href="">
-              <span>01.</span> About
-            </a>
+          <li onClick={() => handleScrollToSection("about")}>
+            <span>01.</span> About
           </li>
-          <li>
-            <a href="">
-              <span>02.</span> Skills
-            </a>
+          <li onClick={() => handleScrollToSection("skills")}>
+            <span>02.</span> Skills
           </li>
-          <li>
-            <a href="">
-              <span>03.</span> Projects
-            </a>
+          <li onClick={() => handleScrollToSection("projects")}>
+            <span>03.</span> Projects
           </li>
-          <li>
-            <a href="">
-              <span>04.</span> Contact
-            </a>
+          <li onClick={() => handleScrollToSection("contact")}>
+            <span>04.</span> Contact
           </li>
         </ul>
       </div>

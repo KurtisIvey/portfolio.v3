@@ -15,11 +15,10 @@ function App() {
   });
   return (
     <main>
-      <MouseCircle />
+      <MouseCircle /> <Navbar />
       <div className={loaded ? "hide-load-container" : "load-container"}>
         <LogoSvg />
       </div>
-      <Navbar />
       <Hero />
       <About />
     </main>

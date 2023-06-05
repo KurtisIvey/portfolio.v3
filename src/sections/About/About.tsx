@@ -32,7 +32,7 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <section className="aboutSection">
+    <section className="aboutSection" id="about">
       <h1>
         <span>01.</span> About Me
       </h1>
