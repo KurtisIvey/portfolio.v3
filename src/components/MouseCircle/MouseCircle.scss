@@ -6,11 +6,12 @@
     height: 75px;
     border-radius: 50%;
     border: 1.5px solid #ffffff;
-    background-color: rgba(113, 235, 88, 0.116);
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s;
+    background-color: #ffffffc4;
+    mix-blend-mode: difference;
   }
   
   .mouse-circle.pulse {
@@ -33,11 +34,11 @@
   .mouse-circle::after {
     content: "";
     position: absolute;
-    background-color: #ffffff;
+    background-color: #000000;
   }
   
   .mouse-circle::before {
-    width: 1.5px;
+    width: .5px;
     height: 80%;
     top: 50%;
     left: 50%;
@@ -46,7 +47,7 @@
   
   .mouse-circle::after {
     width: 80%;
-    height: 1.5px;
+    height: .5px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
