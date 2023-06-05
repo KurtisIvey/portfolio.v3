@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import LogoSvg from "./components/Logo/LogoSvg";
 import Hero from "./sections/Home/Hero";
+import MouseCircle from "./components/MouseCircle/MouseCircle";
 
 function App() {
   const [loaded, SetLoaded] = useState<boolean>(false);
@@ -13,6 +14,7 @@ function App() {
   });
   return (
     <main>
+      <MouseCircle />
       <div className={loaded ? "hide-load-container" : "load-container"}>
         <LogoSvg />
       </div>

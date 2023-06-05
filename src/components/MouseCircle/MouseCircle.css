@@ -1,0 +1,52 @@
+.mouse-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  background-color: rgba(113, 235, 88, 0.116);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mouse-circle.pulse {
+  animation: pulse-animation 1s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.mouse-circle::before,
+.mouse-circle::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.mouse-circle::before {
+  width: 1.5px;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mouse-circle::after {
+  width: 80%;
+  height: 1.5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=MouseCircle.css.map */
