@@ -39,6 +39,7 @@ const About: React.FC = () => {
       <div ref={aboutImgContainerRef} className="aboutImgContainer">
         <div className="imgWrapper">
           <img src={headshot} alt="Profile" />
+          <div className="color-overlay"></div>
         </div>
         <div className={`behindBox ${hoveringOnHeadshot && "hovered"}`}></div>
       </div>
