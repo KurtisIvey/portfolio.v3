@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import "./About.css";
 import headshot from "../../assets/headshot.jpeg";
 
@@ -6,17 +6,16 @@ const About: React.FC = () => {
   const aboutImgContainerRef = useRef<HTMLDivElement>(null);
   const [hoveringOnHeadshot, setHoveringOnHeadshot] = useState<boolean>(false);
 
+  const handleMouseEnter = useCallback(() => {
+    // animation dependent on state enabled via className when entering
+    setHoveringOnHeadshot(true);
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    // animation dependent on state false disabled when exiting
+    setHoveringOnHeadshot(false);
+  }, []);
   useEffect(() => {
-    const handleMouseEnter = () => {
-      setHoveringOnHeadshot(true);
-      // Perform any desired actions when the mouse enters the element
-    };
-
-    const handleMouseLeave = () => {
-      setHoveringOnHeadshot(false);
-      // Perform any desired actions when the mouse leaves the element
-    };
-
     const aboutImgContainer = aboutImgContainerRef.current;
     if (aboutImgContainer) {
       aboutImgContainer.addEventListener("mouseenter", handleMouseEnter);
@@ -29,7 +28,7 @@ const About: React.FC = () => {
         aboutImgContainer.removeEventListener("mouseleave", handleMouseLeave);
       }
     };
-  }, []);
+  }, [handleMouseEnter, handleMouseLeave]);
 
   return (
     <section className="aboutSection" id="about">
