@@ -43,7 +43,7 @@ const About: React.FC = () => {
         </div>
         <div className={`behindBox ${hoveringOnHeadshot && "hovered"}`}></div>
       </div>
-      <div className="aboutTextContainer">
+      <article className="aboutTextContainer">
         <p>
           Hey there! My name is Kurtis and I'm a former over the road truck
           driver/instructor turned <span>Developer 🚚</span> My interest in
@@ -67,7 +67,7 @@ const About: React.FC = () => {
           circling the Earth 28 times while trucking, so I'm pretty much a
           professional at sitting on my butt.
         </p>
-      </div>
+      </article>
     </section>
   );
 };
