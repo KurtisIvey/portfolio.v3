@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./Hero.css";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 type Props = {};
+import { Editor } from "@tinymce/tinymce-react";
+import { ModalBody } from "reactstrap";
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
@@ -13,6 +15,8 @@ const Hero = (props: Props) => {
     loop: true,
     delaySpeed: 2000,
   });
+
+  const editorRef = useRef(null);
 
   return (
     <motion.section
@@ -30,12 +34,12 @@ const Hero = (props: Props) => {
         <Cursor cursorColor="#ffffff" />
       </h1>
       <div className="bg">
-        <motion.p>
+        <p>
           I'm a developer specializing in building highly interactive, robust,
           scalable, and maintainable web applications on both the front and back
           end using JavaScript frameworks. I'm currently looking for work and
           freelancing opportunities.
-        </motion.p>
+        </p>
       </div>
     </motion.section>
   );

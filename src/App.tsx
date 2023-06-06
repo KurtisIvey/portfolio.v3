@@ -14,8 +14,9 @@ function App() {
     }, 4000);
   });
   return (
-    <main>
-      <MouseCircle /> <Navbar />
+    <main className="">
+      <MouseCircle />
+      <Navbar />
       <div className={loaded ? "hide-load-container" : "load-container"}>
         <LogoSvg />
       </div>
