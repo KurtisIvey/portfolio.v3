@@ -7,12 +7,12 @@ const About: React.FC = () => {
   const [hoveringOnHeadshot, setHoveringOnHeadshot] = useState<boolean>(false);
 
   const handleMouseEnter = useCallback(() => {
-    // animation dependent on state enabled via className when entering
+    // animation dependent on state enabled via className ternary when entering
     setHoveringOnHeadshot(true);
   }, []);
 
   const handleMouseLeave = useCallback(() => {
-    // animation dependent on state false disabled when exiting
+    // animation dependent on state false disabled via className ternary when exiting
     setHoveringOnHeadshot(false);
   }, []);
   useEffect(() => {
@@ -40,7 +40,9 @@ const About: React.FC = () => {
           <img src={headshot} alt="Kurtis Ivey's profile photo" />
           <div className="color-overlay"></div>
         </div>
-        <div className={`behindBox ${hoveringOnHeadshot && "hovered"}`}></div>
+        <div
+          className={`behindBox ${hoveringOnHeadshot ? "hovered" : ""}`}
+        ></div>
       </div>
       <article className="aboutTextContainer">
         <p>
