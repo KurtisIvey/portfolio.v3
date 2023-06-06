@@ -6,7 +6,10 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
-    words: ["Loves Brazillian Jiu Jitsu", "But Really Loves to Code"],
+    words: [
+      "<Really Loves to Code/> ",
+      "<But Also Loves Brazillian Jiu Jitsu/>",
+    ],
     loop: true,
     delaySpeed: 2000,
   });
