@@ -59,9 +59,12 @@ section.aboutSection {
             left: 14px;
             height: 230px;
             width: 230px;
-            border: 2px solid $accentColor;
+            border: none;
+            border-right: 2px solid $accentColor;
+            border-bottom: 2px solid $accentColor;
             border-radius: 5px;
             transition: .1s ease-in-out;
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
 
             
         }
@@ -90,17 +93,17 @@ section.aboutSection {
 
 @media screen and (min-width: 770px) {
     section.aboutSection {     
-        grid-template-columns: 1fr .7fr;
+        grid-template-columns: .8fr 1fr;
         grid-template-rows: auto 1fr;
         gap: 0;
         h1{
-            font-size: 1.4rem;
+            font-size: 2rem;
             font-weight: 600;
             letter-spacing: 1.2px;
             grid-row: 1/2;
             grid-column: 1/3;
             text-align: start;
-            margin-bottom: 2vh;
+            margin-bottom: 60px;
             
             span{
                 color: $accentColor;
@@ -112,9 +115,9 @@ section.aboutSection {
             grid-row: 2/3;
             grid-column: 1/2;
             width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10vh;
+            margin-left: 0;
+            margin-right: 0;
+            
             
             .imgWrapper{
                 position: relative;
@@ -124,23 +127,20 @@ section.aboutSection {
                 z-index: 3;
                 img {
                     border-radius: 5px;
-                    height: 330px;
-                    width: auto;  
+                    height: 250px;
+                    width: auto; 
+                     
                 }
                 
             }
             
 
             .behindBox{
-                position: absolute;
-                top: 14px;
-                left: 14px;
-                height: 300px;
-                width: 300px;
-                border: 2px solid $accentColor;
-                border-radius: 5px;
+                
+                height: 250px;
+                width: 250px;
                 transition: .1s ease-in-out;
-
+                box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
                 
             }
             .hovered{
@@ -154,11 +154,8 @@ section.aboutSection {
             grid-column: 2/3;
             grid-row: 2/3;
             line-height: 25px;
-            display: grid;
-            grid-template-rows: auto;
-            gap: 20px;
-            font-weight: 600;
-
+            letter-spacing: 1px;
+            font-size: 1rem;
             span{
                 color: $accentColor;
             }
