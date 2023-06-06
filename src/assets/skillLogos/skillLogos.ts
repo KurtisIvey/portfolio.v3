@@ -1,7 +1,7 @@
-import cssLogo from "./cssLogo.svg";
+//import cssLogo from "./cssLogo.svg";
 import firebaseLogo from "./firebaseLogo.svg";
 import gitLogo from "./gitLogo.svg";
-import htmlLogo from "./htmlLogo.svg";
+//import htmlLogo from "./htmlLogo.svg";
 import jsLogo from "./javascriptLogo.svg";
 import mongoLogo from "./mongodb.svg";
 import nodejsLogo from "./nodejs.svg";
@@ -11,31 +11,14 @@ import tailwindLogo from "./tailwind.svg";
 import expressLogo from "./expressjs.svg";
 import postgresLogo from "./postgres.svg";
 import sassLogo from "./sass.svg";
+import typescriptLogo from "./typescript.svg";
 
 const logos = [
-  {
-    url: cssLogo,
-    name: "CSS3",
-    id: "1",
-    duration: 1,
-  },
-  {
-    url: firebaseLogo,
-    name: "Firebase",
-    id: "2",
-    duration: 1.1,
-  },
   {
     url: gitLogo,
     name: "Git",
     id: "3",
     duration: 1.2,
-  },
-  {
-    url: htmlLogo,
-    name: "Html5",
-    id: "4",
-    duration: 1.3,
   },
   {
     url: jsLogo,
@@ -44,10 +27,10 @@ const logos = [
     duration: 1.4,
   },
   {
-    url: mongoLogo,
-    name: "MongoDB",
-    id: "6",
-    duration: 1.5,
+    url: typescriptLogo,
+    name: "TypeScript",
+    id: "14",
+    duration: 2.0,
   },
   {
     url: nodejsLogo,
@@ -84,6 +67,18 @@ const logos = [
     name: "PostgreSQL",
     id: "12",
     duration: 2.0,
+  },
+  {
+    url: mongoLogo,
+    name: "MongoDB",
+    id: "6",
+    duration: 1.5,
+  },
+  {
+    url: firebaseLogo,
+    name: "Firebase",
+    id: "2",
+    duration: 1.1,
   },
   {
     url: sassLogo,
