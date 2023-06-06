@@ -75,7 +75,7 @@ section.aboutSection .aboutTextContainer {
   display: grid;
   grid-template-rows: auto;
   gap: 20px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9rem;
 }
 section.aboutSection .aboutTextContainer span {
@@ -91,7 +91,6 @@ section.aboutSection .aboutTextContainer span {
   section.aboutSection h1 {
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 1.2px;
     grid-row: 1/2;
     grid-column: 1/3;
     text-align: start;
@@ -109,6 +108,7 @@ section.aboutSection .aboutTextContainer span {
     width: fit-content;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 10px;
   }
   section.aboutSection .aboutImgContainer .imgWrapper {
     position: relative;
@@ -139,6 +139,41 @@ section.aboutSection .aboutTextContainer span {
     line-height: 25px;
     letter-spacing: 1px;
     font-size: 1rem;
+  }
+  section.aboutSection .aboutTextContainer span {
+    color: rgb(126, 234, 130);
+  }
+}
+@media screen and (min-width: 950px) {
+  section.aboutSection h1 {
+    font-size: 2.2rem;
+    margin-bottom: 70px;
+  }
+  section.aboutSection h1 span {
+    color: rgb(126, 234, 130);
+  }
+  section.aboutSection .aboutImgContainer {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  section.aboutSection .aboutImgContainer .imgWrapper img {
+    border-radius: 5px;
+    height: 300px;
+    width: auto;
+  }
+  section.aboutSection .aboutImgContainer .behindBox {
+    height: 300px;
+    width: 300px;
+  }
+  section.aboutSection .aboutTextContainer {
+    color: rgb(203, 203, 203);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    font-size: 1.3rem;
   }
   section.aboutSection .aboutTextContainer span {
     color: rgb(126, 234, 130);
