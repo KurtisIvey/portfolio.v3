@@ -14,7 +14,7 @@ function App() {
     }, 4000);
   });
   return (
-    <main className="">
+    <main>
       <MouseCircle />
       <Navbar />
       <div className={loaded ? "hide-load-container" : "load-container"}>
