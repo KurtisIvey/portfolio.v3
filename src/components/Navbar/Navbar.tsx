@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 import "./Navbar.css";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [sideBarOpen, setSideBarOpen] = useState(false);
 
   const toggleSideBar = useCallback(() => {
@@ -42,6 +42,7 @@ const Navbar: React.FC = () => {
       <div
         className={`hamburgerContainer ${sideBarOpen ? "open" : ""}`}
         onClick={toggleSideBar}
+        aria-label={sideBarOpen ? "Close Menu" : "Open Menu"}
       >
         {sideBarOpen ? (
           <AiOutlineClose size={45} className="hamburger" />
