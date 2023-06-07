@@ -24,6 +24,7 @@ const About: React.FC = () => {
 
   useEffect(() => {
     if (inView) {
+      // motion features definied here to be used on the section element
       controls.start({ opacity: 1, transition: { duration: 1.3 } });
     }
   }, [controls, inView]);
