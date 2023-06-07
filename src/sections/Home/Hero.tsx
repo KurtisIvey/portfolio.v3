@@ -3,8 +3,6 @@ import "./Hero.css";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 type Props = {};
-import { Editor } from "@tinymce/tinymce-react";
-import { ModalBody } from "reactstrap";
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
