@@ -1,8 +1,14 @@
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import "./About.css";
 import headshot from "../../assets/headshot.jpeg";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const About: React.FC = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Trigger the animation only once when the div enters the viewport
+  });
   const aboutImgContainerRef = useRef<HTMLDivElement>(null);
   const [hoveringOnHeadshot, setHoveringOnHeadshot] = useState<boolean>(false);
 
@@ -15,6 +21,13 @@ const About: React.FC = () => {
     // animation dependent on state false disabled via className ternary when exiting
     setHoveringOnHeadshot(false);
   }, []);
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, transition: { duration: 1.3 } });
+    }
+  }, [controls, inView]);
+
   useEffect(() => {
     const aboutImgContainer = aboutImgContainerRef.current;
     if (aboutImgContainer) {
@@ -31,7 +44,13 @@ const About: React.FC = () => {
   }, [handleMouseEnter, handleMouseLeave]);
 
   return (
-    <section className="aboutSection" id="about">
+    <motion.section
+      className="aboutSection"
+      id="about"
+      ref={ref}
+      initial={{ opacity: 0 }}
+      animate={controls}
+    >
       <h1>
         <span>01.</span> About Me
       </h1>
@@ -69,7 +88,7 @@ const About: React.FC = () => {
           professional at sitting on my butt.
         </p>
       </article>
-    </section>
+    </motion.section>
   );
 };
 
