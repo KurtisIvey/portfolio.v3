@@ -66,21 +66,22 @@ const About: React.FC = () => {
       </div>
       <article className="aboutTextContainer">
         <p>
-          Hey there! My name is Kurtis and I'm a former over the road truck
-          driver/instructor turned <span>Developer 🚚</span> My interest in
-          coding began while I was driving all throughout the country delivering
-          freight & needed a game plan once I decided to exit that industry.
+          Hey there! My name is Kurtis & I'm an{" "}
+          <span>experienced software developer </span>
+          proficient in building front & back end apps. Through colloborative
+          efforts with local and remote teams, I've contributed to the
+          development of{" "}
+          <span>cutting-edge, industry-standard applications.</span>
         </p>
         <p>
-          Here I am today, still pursuing my dream of becoming a developer, with
-          a main focus on <span>specializing in the use of React 💻</span> I
-          leverage this framework to build accessible digital experiences for a
-          variety of users.
+          Witnessing the transformative impact of technology in our
+          interconnected world fueled my passion for coding & creating{" "}
+          <span>visually appealing</span>, <span>responsive</span>, &{" "}
+          <span>user-friendly</span> websites.
         </p>
         <p>
           When I'm not coding, I'm spending my time as a{" "}
-          <span style={{ color: "rgba(210, 124, 124)" }}>loving husband</span>{" "}
-          and
+          <span style={{ color: "rgba(210, 124, 124)" }}>loving husband</span> &
           <span> Brazilian Jiu Jitsu student/instructor 🥋</span>
         </p>
         <p>
