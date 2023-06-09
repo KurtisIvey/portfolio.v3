@@ -69,15 +69,16 @@ const About: React.FC = () => {
           Hey there! My name is Kurtis & I'm an{" "}
           <span>experienced software developer </span>
           proficient in building front & back end apps. Through colloborative
-          efforts with local and remote teams, I've contributed to the
-          development of{" "}
-          <span>cutting-edge, industry-standard applications.</span>
+          efforts with local & remote teams, I've contributed to the development
+          of <span>cutting-edge, industry-standard applications.</span>{" "}
+          Witnessing the impact of technology in our interconnected world fueled
+          my passion for coding & creating <span>visually appealing</span>,{" "}
+          <span>responsive</span>, & <span>user-friendly</span> websites.
         </p>
         <p>
-          Witnessing the transformative impact of technology in our
-          interconnected world fueled my passion for coding & creating{" "}
-          <span>visually appealing</span>, <span>responsive</span>, &{" "}
-          <span>user-friendly</span> websites.
+          Currently, I'm working with{" "}
+          <a href="https://www.onecommunityglobal.org/">One Community Global</a>{" "}
+          as a Developer using JavaScript, React, Node.js, Express, & MongoDB.
         </p>
         <p>
           When I'm not coding, I'm spending my time as a{" "}

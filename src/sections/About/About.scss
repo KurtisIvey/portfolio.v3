@@ -84,6 +84,12 @@ section.aboutSection {
         font-weight: 500;
         font-size: .9rem;
 
+        a{
+            color: $accentColor;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
         span{
             color: $accentColor;
         }

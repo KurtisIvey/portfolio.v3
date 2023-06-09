@@ -78,6 +78,11 @@ section.aboutSection .aboutTextContainer {
   font-weight: 500;
   font-size: 0.9rem;
 }
+section.aboutSection .aboutTextContainer a {
+  color: rgb(126, 234, 130);
+  text-decoration: underline;
+  cursor: pointer;
+}
 section.aboutSection .aboutTextContainer span {
   color: rgb(126, 234, 130);
 }
