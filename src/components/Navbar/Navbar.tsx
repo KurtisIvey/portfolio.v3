@@ -4,10 +4,11 @@ import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import "./Navbar.css";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 const Navbar = () => {
   const [sideBarOpen, setSideBarOpen] = useState(false);
-
+  const windowWidth = useWindowWidth();
   const toggleSideBar = useCallback(() => {
     setSideBarOpen((prevOpen) => !prevOpen);
   }, []);
@@ -50,25 +51,31 @@ const Navbar = () => {
           <BiMenuAltRight size={45} className="hamburger" />
         )}
       </div>
-      <ul id="largerResNavLinks">
-        <li onClick={() => handleScrollToSection("about")}>
-          <span>01.</span> About
-        </li>
-        <li onClick={() => handleScrollToSection("skills")}>
-          <span>02.</span> Skills
-        </li>
-        <li onClick={() => handleScrollToSection("projects")}>
-          <span>03.</span> Projects
-        </li>
-        <li onClick={() => handleScrollToSection("contact")}>
-          <span>04.</span> Contact
-        </li>
-      </ul>
-      {sideBarOpen && <div className="blurFilter" />}
 
-      <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
-        <ul>
-          <hr />
+      {windowWidth < 770 ? (
+        <>
+          {sideBarOpen && <div className="blurFilter" />}
+
+          <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
+            <ul>
+              <hr />
+              <li onClick={() => handleScrollToSection("about")}>
+                <span>01.</span> About
+              </li>
+              <li onClick={() => handleScrollToSection("skills")}>
+                <span>02.</span> Skills
+              </li>
+              <li onClick={() => handleScrollToSection("projects")}>
+                <span>03.</span> Projects
+              </li>
+              <li onClick={() => handleScrollToSection("contact")}>
+                <span>04.</span> Contact
+              </li>
+            </ul>
+          </div>
+        </>
+      ) : (
+        <ul id="largerResNavLinks">
           <li onClick={() => handleScrollToSection("about")}>
             <span>01.</span> About
           </li>
@@ -82,7 +89,7 @@ const Navbar = () => {
             <span>04.</span> Contact
           </li>
         </ul>
-      </div>
+      )}
     </motion.nav>
   );
 };

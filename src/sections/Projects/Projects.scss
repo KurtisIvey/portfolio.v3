@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+section.projectsSection {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    h1{
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        grid-row: 1/2;
+        text-align: start;
+        
+        span{
+            color: $accentColor;
+        }
+    }
+}

@@ -5,6 +5,7 @@ import LogoSvg from "./components/Logo/LogoSvg";
 import Hero from "./sections/Home/Hero";
 import MouseCircle from "./components/MouseCircle/MouseCircle";
 import About from "./sections/About/About";
+import Projects from "./sections/Projects/Projects";
 
 function App() {
   const [loaded, SetLoaded] = useState<boolean>(false);
@@ -22,6 +23,7 @@ function App() {
       </div>
       <Hero />
       <About />
+      <Projects />
     </main>
   );
 }
