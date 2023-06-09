@@ -8,6 +8,8 @@ import useWindowWidth from "../../hooks/useWindowWidth";
 
 const Navbar = () => {
   const [sideBarOpen, setSideBarOpen] = useState(false);
+  // prevents unnecessary rendering of both sidebars at once by detecting window width
+  // windowWidth becomes the measurement for the ternary operator
   const windowWidth = useWindowWidth();
   const toggleSideBar = useCallback(() => {
     setSideBarOpen((prevOpen) => !prevOpen);
