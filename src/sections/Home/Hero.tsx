@@ -2,10 +2,9 @@ import { useEffect, useState, useRef } from "react";
 import "./Hero.css";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-type Props = {};
 
-const Hero = (props: Props) => {
-  const [text, count] = useTypewriter({
+const Hero = () => {
+  const [text] = useTypewriter({
     words: [
       "<Really Loves to Code/> ",
       "<But Also Loves Brazillian Jiu Jitsu/>",
@@ -14,7 +13,7 @@ const Hero = (props: Props) => {
     delaySpeed: 2000,
   });
 
-  const editorRef = useRef(null);
+  //const editorRef = useRef(null);
 
   return (
     <motion.section
