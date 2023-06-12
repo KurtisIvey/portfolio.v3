@@ -19,6 +19,15 @@ const Projects: React.FC = () => {
       description:
         "Space Tourism is an interactive website that allows one to explore the different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, and the associated technologies that will be used in their space journey.",
     },
+    {
+      name: "Space Tourism",
+      img: testImg,
+      repo: "https://github.com/KurtisIvey/space-tourism-nextjs",
+      website: "https://space-tourism-nextjs-uu85.vercel.app/",
+      techStack: "TypeScript, Next.js, React, Sass",
+      description:
+        "Space Tourism is an interactive website that allows one to explore the different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, and the associated technologies that will be used in their space journey.",
+    },
   ];
   return (
     <section className="projectsSection">
@@ -26,7 +35,7 @@ const Projects: React.FC = () => {
         <span>02.</span> Projects
       </h1>
       {tester.map((test) => (
-        <section key={test.name} className="mobileProjectCard">
+        <div key={test.name} className="mobileProjectCard">
           <div className="top">
             <h2>{test.name}</h2>
             <div className="links">
@@ -39,11 +48,9 @@ const Projects: React.FC = () => {
             </div>
           </div>
           <img src={test.img} />
-          <div></div>
-
           <p>{test.techStack}</p>
           <p>{test.description}</p>
-        </section>
+        </div>
       ))}
     </section>
   );
