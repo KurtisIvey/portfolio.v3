@@ -16,6 +16,8 @@ const Projects: React.FC = () => {
       repo: "https://github.com/KurtisIvey/space-tourism-nextjs",
       website: "https://space-tourism-nextjs-uu85.vercel.app/",
       techStack: "TypeScript, Next.js, React, Sass",
+      description:
+        "Space Tourism is an interactive website that allows one to explore the different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, and the associated technologies that will be used in their space journey.",
     },
   ];
   return (
@@ -24,19 +26,24 @@ const Projects: React.FC = () => {
         <span>02.</span> Projects
       </h1>
       {tester.map((test) => (
-        <div key={test.name} className="mobileProjectCard">
-          <h2>{test.name}</h2>
-          <img src={test.img} />
-          <div className="links">
-            <a href={test.repo}>
-              <BsGithub />
-            </a>{" "}
-            <a href={test.website}>
-              <BsGlobe />
-            </a>
+        <section key={test.name} className="mobileProjectCard">
+          <div className="top">
+            <h2>{test.name}</h2>
+            <div className="links">
+              <a href={test.repo} aria-label="github repo link">
+                <BsGithub size={25} />
+              </a>{" "}
+              <a href={test.website} aria-label="website link">
+                <BsGlobe size={25} />
+              </a>
+            </div>
           </div>
+          <img src={test.img} />
+          <div></div>
+
           <p>{test.techStack}</p>
-        </div>
+          <p>{test.description}</p>
+        </section>
       ))}
     </section>
   );

@@ -8,7 +8,32 @@ section.projectsSection h1 {
   letter-spacing: 1.2px;
   grid-row: 1/2;
   text-align: start;
+  margin-bottom: 50px;
 }
 section.projectsSection h1 span {
   color: rgb(126, 234, 130);
+}
+section.projectsSection section.mobileProjectCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+section.projectsSection section.mobileProjectCard div.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+section.projectsSection section.mobileProjectCard div.top h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+section.projectsSection section.mobileProjectCard div.top div.links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+section.projectsSection section.mobileProjectCard div.top div.links a:hover {
+  color: red;
 }/*# sourceMappingURL=Projects.css.map */

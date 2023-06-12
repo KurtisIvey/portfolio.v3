@@ -9,9 +9,41 @@ section.projectsSection {
         letter-spacing: 1.2px;
         grid-row: 1/2;
         text-align: start;
-        
+        margin-bottom: 50px;
         span{
             color: $accentColor;
         }
+    }
+
+    section.mobileProjectCard {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+        
+        div.top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            h2{
+                font-size: 1.7rem;
+                font-weight: 600;
+                
+            } 
+            div.links {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                a {
+                    
+                }
+                a:hover {
+                    color: red;
+                }
+            }
+        }
+        
+        
     }
 }
