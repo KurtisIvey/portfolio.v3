@@ -25,7 +25,7 @@ div.mobileProjectCard div.top div.links a {
   flex: 1; /* Added this to make the links span the available space */
 }
 div.mobileProjectCard div.top div.links a:hover {
-  color: red;
+  color: rgb(179, 0, 255);
 }
 div.mobileProjectCard img {
   width: 100%;

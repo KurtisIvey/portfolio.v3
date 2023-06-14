@@ -36,16 +36,17 @@ const Projects: React.FC = () => {
       <h1>
         <span>02.</span> Projects
       </h1>
-      {tester.map((test) => (
-        <SmallResProjectCard
-          name={test.name}
-          repo={test.repo}
-          website={test.website}
-          img={test.img}
-          techStack={test.techStack}
-          description={test.description}
-        />
-      ))}
+      {windowWidth < 770 &&
+        tester.map((test) => (
+          <SmallResProjectCard
+            name={test.name}
+            repo={test.repo}
+            website={test.website}
+            img={test.img}
+            techStack={test.techStack}
+            description={test.description}
+          />
+        ))}
     </section>
   );
 };
