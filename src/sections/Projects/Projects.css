@@ -14,7 +14,7 @@ section.projectsSection h1 {
 section.projectsSection h1 span {
   color: rgb(126, 234, 130);
 }
-section.projectsSection .tabletPlusProjectCard {
+section.projectsSection .largeResProjectCard {
   margin: 50px 0;
   position: relative;
   display: grid;
@@ -22,17 +22,17 @@ section.projectsSection .tabletPlusProjectCard {
   grid-template-rows: 1fr auto;
   padding-top: 50px;
 }
-section.projectsSection .tabletPlusProjectCard .imgWrapper {
+section.projectsSection .largeResProjectCard .imgWrapper {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
 }
-section.projectsSection .tabletPlusProjectCard .imgWrapper img {
+section.projectsSection .largeResProjectCard .imgWrapper img {
   border-radius: 5px;
   height: auto;
   width: 100%;
 }
-section.projectsSection .tabletPlusProjectCard .imgWrapper .color-overlay {
+section.projectsSection .largeResProjectCard .imgWrapper .color-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,10 +41,10 @@ section.projectsSection .tabletPlusProjectCard .imgWrapper .color-overlay {
   background-color: rgba(159, 159, 159, 0.189);
   transition: all 0.2s;
 }
-section.projectsSection .tabletPlusProjectCard .imgWrapper .color-overlay:hover {
+section.projectsSection .largeResProjectCard .imgWrapper .color-overlay:hover {
   background-color: transparent;
 }
-section.projectsSection .tabletPlusProjectCard .techStack {
+section.projectsSection .largeResProjectCard .techStack {
   margin-top: 5px;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -53,10 +53,10 @@ section.projectsSection .tabletPlusProjectCard .techStack {
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   font-weight: 500;
 }
-section.projectsSection .tabletPlusProjectCard .techStack span {
+section.projectsSection .largeResProjectCard .techStack span {
   color: rgb(126, 234, 130);
 }
-section.projectsSection .tabletPlusProjectCard h2 {
+section.projectsSection .largeResProjectCard h2 {
   font-family: "Permanent Marker", cursive;
   position: absolute;
   z-index: 3;
@@ -67,7 +67,7 @@ section.projectsSection .tabletPlusProjectCard h2 {
   top: 20px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-section.projectsSection .tabletPlusProjectCard .floatingBox {
+section.projectsSection .largeResProjectCard .floatingBox {
   position: absolute;
   z-index: 2;
   width: 420px;
@@ -77,7 +77,7 @@ section.projectsSection .tabletPlusProjectCard .floatingBox {
   display: flex;
   flex-direction: column;
 }
-section.projectsSection .tabletPlusProjectCard .floatingBox p {
+section.projectsSection .largeResProjectCard .floatingBox p {
   background-color: rgba(128, 128, 128, 0.293);
   padding: 15px;
   line-height: 22px;
@@ -87,7 +87,7 @@ section.projectsSection .tabletPlusProjectCard .floatingBox p {
   font-size: 1.1rem;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-section.projectsSection .tabletPlusProjectCard .floatingBox div.links {
+section.projectsSection .largeResProjectCard .floatingBox div.links {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
@@ -95,7 +95,7 @@ section.projectsSection .tabletPlusProjectCard .floatingBox div.links {
   margin-right: 5px;
   font-weight: 500;
 }
-section.projectsSection .tabletPlusProjectCard .floatingBox div.links a {
+section.projectsSection .largeResProjectCard .floatingBox div.links a {
   display: flex;
   font-size: 1.1rem;
   justify-content: center;
@@ -104,7 +104,7 @@ section.projectsSection .tabletPlusProjectCard .floatingBox div.links a {
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-section.projectsSection .tabletPlusProjectCard .floatingBox div.links a:hover {
+section.projectsSection .largeResProjectCard .floatingBox div.links a:hover {
   text-decoration: underline;
   color: rgb(126, 234, 130);
 }/*# sourceMappingURL=Projects.css.map */

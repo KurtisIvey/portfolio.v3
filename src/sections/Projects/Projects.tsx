@@ -20,18 +20,15 @@ const Projects: React.FC = () => {
         imgContainer.style.zIndex = "3";
       }
     };
-
     const handleMouseLeave = () => {
       if (imgContainer) {
         imgContainer.style.zIndex = "initial";
       }
     };
-
     if (imgContainer) {
       imgContainer.addEventListener("mouseenter", handleMouseEnter);
       imgContainer.addEventListener("mouseleave", handleMouseLeave);
     }
-
     return () => {
       if (imgContainer) {
         imgContainer.removeEventListener("mouseenter", handleMouseEnter);
@@ -57,7 +54,7 @@ const Projects: React.FC = () => {
         <span>02.</span> Projects
       </h1>
       {tester.map((test) => (
-        <div className="tabletPlusProjectCard">
+        <div className="largeResProjectCard">
           <div className="imgWrapper" ref={imgRef}>
             <img src={test.img} alt="Kurtis Ivey's profile photo" />
             <div className="color-overlay"></div>
