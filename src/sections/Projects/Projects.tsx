@@ -36,17 +36,32 @@ const Projects: React.FC = () => {
       <h1>
         <span>02.</span> Projects
       </h1>
-      {windowWidth < 770 &&
-        tester.map((test) => (
-          <SmallResProjectCard
-            name={test.name}
-            repo={test.repo}
-            website={test.website}
-            img={test.img}
-            techStack={test.techStack}
-            description={test.description}
-          />
-        ))}
+      {tester.map((test) => (
+        <div className="tabletPlusProjectCard">
+          <div className="imgWrapper">
+            <img src={test.img} alt="Kurtis Ivey's profile photo" />
+            <div className="color-overlay"></div>
+          </div>
+          <div className="techStack">{test.techStack}</div>
+          {/* positioned absolutely */}
+          <h2>
+            <em>{test.name}</em>
+          </h2>
+          {/* floating description and links */}
+          <div className="floatingBox">
+            <p>{test.description}</p>
+            <div className="links">
+              <a href={test.repo} aria-label="github repo link">
+                <span>Github Repository</span>
+                <BsGithub size={25} />
+              </a>{" "}
+              <a href={test.website} aria-label="website link">
+                Website <BsGlobe size={25} />
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
     </section>
   );
 };

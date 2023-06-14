@@ -14,4 +14,69 @@ section.projectsSection h1 {
 }
 section.projectsSection h1 span {
   color: rgb(126, 234, 130);
+}
+section.projectsSection .tabletPlusProjectCard {
+  margin: 50px 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 1fr auto;
+  border: 1px solid red;
+  padding-top: 50px;
+}
+section.projectsSection .tabletPlusProjectCard .imgWrapper {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  position: relative;
+  z-index: 1;
+}
+section.projectsSection .tabletPlusProjectCard .imgWrapper img {
+  border-radius: 5px;
+  height: auto;
+  width: 100%;
+}
+section.projectsSection .tabletPlusProjectCard .imgWrapper .color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(157, 249, 165, 0.258);
+  transition: all 0.2s;
+}
+section.projectsSection .tabletPlusProjectCard .imgWrapper .color-overlay:hover {
+  background-color: transparent;
+}
+section.projectsSection .tabletPlusProjectCard .techStack {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  font-size: 1.3rem;
+}
+section.projectsSection .tabletPlusProjectCard h2 {
+  position: absolute;
+  z-index: 3;
+  font-size: 2.5rem;
+  font-weight: 500;
+  right: 80px;
+  top: 25px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+section.projectsSection .tabletPlusProjectCard .floatingBox {
+  position: absolute;
+  z-index: 2;
+  width: 380px;
+  height: 280px;
+  right: 0;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+section.projectsSection .tabletPlusProjectCard .floatingBox p {
+  background-color: rgba(128, 128, 128, 0.293);
+  padding: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  height: 250px;
 }/*# sourceMappingURL=Projects.css.map */
