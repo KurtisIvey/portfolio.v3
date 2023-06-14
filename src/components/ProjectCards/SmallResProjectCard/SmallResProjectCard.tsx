@@ -1,15 +1,7 @@
 import React from "react";
 import "./SmallResProjectCard.css";
 import { BsGithub, BsGlobe } from "react-icons/bs";
-
-type ProjectInterface = {
-  name: string;
-  repo: string;
-  website: string;
-  img: string;
-  techStack: string;
-  description: string;
-};
+import { ProjectInterface } from "../project.types";
 
 const SmallResProjectCard = (props: ProjectInterface) => {
   return (

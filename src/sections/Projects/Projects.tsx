@@ -1,43 +1,17 @@
-import React, { useRef, useState, useCallback, useEffect } from "react";
+import React from "react";
 import "./Projects.css";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import testImg from "../../assets/previews/space-Tourism.gif";
 
-import { BsGithub, BsGlobe } from "react-icons/bs";
-import SmallResProjectCard from "../../components/SmallResProjectCard/SmallResProjectCard";
+import SmallResProjectCard from "../../components/ProjectCards/SmallResProjectCard/SmallResProjectCard";
+import LargeResProjectCard from "../../components/ProjectCards/LargeResProjectCard/LargeResProjectCard";
 
 const Projects: React.FC = () => {
   // custom hook to detect window size so I can conditionally render specific project card
   const windowWidth = useWindowWidth();
   // lim set to 770px wide to switch view
-  const imgRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const imgContainer = imgRef.current;
-
-    const handleMouseEnter = () => {
-      if (imgContainer) {
-        imgContainer.style.zIndex = "3";
-      }
-    };
-    const handleMouseLeave = () => {
-      if (imgContainer) {
-        imgContainer.style.zIndex = "initial";
-      }
-    };
-    if (imgContainer) {
-      imgContainer.addEventListener("mouseenter", handleMouseEnter);
-      imgContainer.addEventListener("mouseleave", handleMouseLeave);
-    }
-    return () => {
-      if (imgContainer) {
-        imgContainer.removeEventListener("mouseenter", handleMouseEnter);
-        imgContainer.removeEventListener("mouseleave", handleMouseLeave);
-      }
-    };
-  }, []);
-
-  const tester = [
+  const projects = [
     {
       name: "Space Tourism",
       img: testImg,
@@ -53,35 +27,27 @@ const Projects: React.FC = () => {
       <h1>
         <span>02.</span> Projects
       </h1>
-      {tester.map((test) => (
-        <div className="largeResProjectCard">
-          <div className="imgWrapper" ref={imgRef}>
-            <img src={test.img} alt="Kurtis Ivey's profile photo" />
-            <div className="color-overlay"></div>
-          </div>
-          <div className="techStack">
-            <span>Tech Used: </span>
-            {test.techStack}
-          </div>
-          {/* positioned absolutely */}
-          <h2>
-            <em>{test.name}</em>
-          </h2>
-          {/* floating description and links */}
-          <div className="floatingBox">
-            <p>{test.description}</p>
-            <div className="links">
-              <a href={test.repo} aria-label="github repo link">
-                <div>Github Repository</div>
-                <BsGithub size={20} />
-              </a>
-              <a href={test.website} aria-label="website link">
-                Website <BsGlobe size={20} />
-              </a>
-            </div>
-          </div>
-        </div>
-      ))}
+      {projects.map((project) =>
+        windowWidth < 770 ? (
+          <SmallResProjectCard
+            name={project.name}
+            img={project.img}
+            repo={project.repo}
+            website={project.website}
+            techStack={project.techStack}
+            description={project.description}
+          />
+        ) : (
+          <LargeResProjectCard
+            name={project.name}
+            img={project.img}
+            repo={project.repo}
+            website={project.website}
+            techStack={project.techStack}
+            description={project.description}
+          />
+        )
+      )}
     </section>
   );
 };

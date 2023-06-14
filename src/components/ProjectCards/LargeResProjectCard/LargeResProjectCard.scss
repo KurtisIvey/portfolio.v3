@@ -1,0 +1,200 @@
+@import '../../../variables.scss';
+
+.largeResProjectCard{
+    margin: 50px 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr .4fr;
+    grid-template-rows: 1fr auto;
+    padding-top: 50px;
+    .imgWrapper{
+      grid-row: 1/2;
+      grid-column: 1/2;
+      position: relative;
+      img {
+          border-radius: 5px;
+          height: auto;
+          width: 100%;  
+      }
+      .color-overlay{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(159, 159, 159, 0.189);
+          transition: all .2s;
+          &:hover{
+              background-color: transparent;
+          }
+      }
+    }
+    .techStack{
+      margin-top: 5px;
+      grid-row: 2/3;
+      grid-column: 1/2;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
+      font-weight: 500;
+      span{
+        color: $accentColor;
+      }
+    }
+    h2{
+      font-family: 'Permanent Marker', cursive;
+      position: absolute;
+      z-index: 3;
+      font-size: 3rem;
+      font-weight: 500;
+      letter-spacing: 4px;
+      right: 20px;
+      top: 20px;
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    }
+    .floatingBox{
+      position: absolute;
+      z-index: 2;
+      width: 300px;
+      height: 280px;
+      right: 30px;
+      top: 70px;
+      display: flex;
+      flex-direction: column;
+      p{
+        background-color: rgba(128, 128, 128, 0.293);
+        padding: 15px;
+        line-height: 20px;
+        letter-spacing: 1.2px;
+        text-align: center;
+        height: auto;
+        font-size: .8rem;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+      }
+      div.links{
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 10px;
+        margin-right: 5px;
+        font-weight: 500;
+        a{
+          display: flex;
+          font-size: .9rem;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          letter-spacing: 1.5px;
+          text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+          &:hover{
+            text-decoration: underline;
+            color: $accentColor;
+          }
+        }
+      }
+    
+    }
+  }
+
+@media screen and (min-width: 972px) {
+    .largeResProjectCard{
+        margin: 50px 0;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr .4fr;
+        grid-template-rows: 1fr auto;
+        padding-top: 50px;
+        .imgWrapper{
+          grid-row: 1/2;
+          grid-column: 1/2;
+          position: relative;
+          img {
+              border-radius: 5px;
+              height: auto;
+              width: 100%;  
+          }
+          .color-overlay{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(159, 159, 159, 0.189);
+              transition: all .2s;
+              &:hover{
+                  background-color: transparent;
+              }
+          }
+        }
+        .techStack{
+          margin-top: 5px;
+          grid-row: 2/3;
+          grid-column: 1/2;
+          font-size: 1.2rem;
+          letter-spacing: 2px;
+          text-shadow: 1px 1px 2px rgb(0, 0, 0);
+          font-weight: 500;
+          span{
+            color: $accentColor;
+          }
+        }
+        h2{
+          font-family: 'Permanent Marker', cursive;
+          position: absolute;
+          z-index: 3;
+          font-size: 3rem;
+          font-weight: 500;
+          letter-spacing: 4px;
+          right: 20px;
+          top: 20px;
+          text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        }
+        .floatingBox{
+          position: absolute;
+          z-index: 2;
+          width: 400px;
+          height: 280px;
+          right: -10px;
+          top: 70px;
+          display: flex;
+          flex-direction: column;
+          p{
+            background-color: rgba(128, 128, 128, 0.293);
+            padding: 15px;
+            line-height: 22px;
+            letter-spacing: 1.2px;
+            text-align: center;
+            height: auto;
+            font-size: .9rem;
+            text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    
+          }
+          div.links{
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            margin-top: 10px;
+            margin-right: 5px;
+            font-weight: 500;
+            a{
+              display: flex;
+              font-size: 1.1rem;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+              letter-spacing: 2px;
+              text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    
+              &:hover{
+                text-decoration: underline;
+                color: $accentColor;
+              }
+            }
+          }
+        
+        }
+      }
+    
+}
