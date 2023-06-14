@@ -1,0 +1,46 @@
+div.mobileProjectCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 60px 0px;
+}
+div.mobileProjectCard div.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+div.mobileProjectCard div.top h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  margin-left: 5px;
+}
+div.mobileProjectCard div.top div.links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+div.mobileProjectCard div.top div.links a {
+  flex: 1; /* Added this to make the links span the available space */
+}
+div.mobileProjectCard div.top div.links a:hover {
+  color: red;
+}
+div.mobileProjectCard img {
+  width: 100%;
+  height: auto;
+}
+div.mobileProjectCard p {
+  text-align: center;
+  margin-top: 10px;
+}
+div.mobileProjectCard p span {
+  color: rgb(126, 234, 130);
+}
+div.mobileProjectCard p.techStack {
+  font-size: 0.7rem;
+}
+div.mobileProjectCard p.description {
+  font-size: 1rem;
+}/*# sourceMappingURL=SmallResProjectCard.css.map */

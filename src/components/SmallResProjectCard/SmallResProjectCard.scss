@@ -1,0 +1,54 @@
+@import '../../variables.scss';
+
+div.mobileProjectCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 60px 0px;
+  
+    div.top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      h2 {
+        font-size: 1.7rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        margin-left: 5px;
+      }
+  
+      div.links {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+  
+        a {
+          flex: 1; /* Added this to make the links span the available space */
+        }
+  
+        a:hover {
+          color: red;
+        }
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+    p{
+        text-align: center;
+        margin-top: 10px;
+        span{
+          color: $accentColor;
+        }
+    }
+    p.techStack {
+      font-size: .7rem;
+    }
+    p.description{
+      font-size: 1rem;
+    }
+  }

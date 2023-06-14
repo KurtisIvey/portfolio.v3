@@ -1,6 +1,8 @@
 section.projectsSection {
   font-family: "Work Sans", sans-serif;
   color: white;
+  border: 1px solid blue;
+  padding: none;
 }
 section.projectsSection h1 {
   font-size: 1.4rem;
@@ -17,8 +19,7 @@ section.projectsSection div.mobileProjectCard {
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
-  padding: 20px 10px;
+  padding: 0px 10px 60px 0px;
 }
 section.projectsSection div.mobileProjectCard div.top {
   display: flex;
@@ -30,7 +31,7 @@ section.projectsSection div.mobileProjectCard div.top h2 {
   font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: 2.5px;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 section.projectsSection div.mobileProjectCard div.top div.links {
   display: flex;
@@ -50,4 +51,13 @@ section.projectsSection div.mobileProjectCard img {
 section.projectsSection div.mobileProjectCard p {
   text-align: center;
   margin-top: 10px;
+}
+section.projectsSection div.mobileProjectCard p span {
+  color: rgb(126, 234, 130);
+}
+section.projectsSection div.mobileProjectCard p.techStack {
+  font-size: 0.7rem;
+}
+section.projectsSection div.mobileProjectCard p.description {
+  font-size: 1rem;
 }/*# sourceMappingURL=Projects.css.map */
