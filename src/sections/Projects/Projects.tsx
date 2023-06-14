@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
   return (
     <section className="projectsSection">
       <h1>
-        <span>02.</span> Projects
+        <span>03.</span> Projects
       </h1>
       {projects.map((project) =>
         windowWidth < 770 ? (
