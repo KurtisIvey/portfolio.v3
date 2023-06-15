@@ -2,7 +2,6 @@ import "./LargeResProjectCard.css";
 import { useRef, useEffect } from "react";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 import { ProjectInterface } from "../project.types";
-import { v4 as uuidv4 } from "uuid";
 
 const LargeResProjectCard = (props: ProjectInterface) => {
   const imgRef = useRef<HTMLDivElement>(null);
@@ -33,7 +32,7 @@ const LargeResProjectCard = (props: ProjectInterface) => {
   }, []);
 
   return (
-    <div className="largeResProjectCard">
+    <article className="largeResProjectCard">
       <div className="imgWrapper" ref={imgRef}>
         <img src={props.img} alt={props.name} />
         <div className="color-overlay"></div>
@@ -59,7 +58,7 @@ const LargeResProjectCard = (props: ProjectInterface) => {
           </a>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
