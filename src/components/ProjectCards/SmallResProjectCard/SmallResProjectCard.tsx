@@ -2,10 +2,11 @@ import React from "react";
 import "./SmallResProjectCard.css";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 import { ProjectInterface } from "../project.types";
+import { v4 as uuidv4 } from "uuid";
 
 const SmallResProjectCard = (props: ProjectInterface) => {
   return (
-    <div key={props.name} className="mobileProjectCard">
+    <div key={uuidv4()} className="mobileProjectCard">
       <div className="top">
         <h2>{props.name}</h2>
         <div className="links">

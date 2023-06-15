@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./Projects.css";
 import useWindowWidth from "../../hooks/useWindowWidth";
-import testImg from "../../assets/previews/space-Tourism.gif";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { projects } from "../../assets/previews/previews";
 import SmallResProjectCard from "../../components/ProjectCards/SmallResProjectCard/SmallResProjectCard";
 import LargeResProjectCard from "../../components/ProjectCards/LargeResProjectCard/LargeResProjectCard";
+import { v4 as uuidv4 } from "uuid";
 
 const Projects: React.FC = () => {
   // custom hook to detect window size so I can conditionally render specific project card
@@ -48,23 +48,27 @@ const Projects: React.FC = () => {
       </h1>
       {projects.map((project) =>
         windowWidth < 770 ? (
-          <SmallResProjectCard
-            name={project.name}
-            img={project.img}
-            repo={project.repo}
-            website={project.website}
-            techStack={project.techStack}
-            description={project.description}
-          />
+          <div key={uuidv4()}>
+            <SmallResProjectCard
+              name={project.name}
+              img={project.img}
+              repo={project.repo}
+              website={project.website}
+              techStack={project.techStack}
+              description={project.description}
+            />
+          </div>
         ) : (
-          <LargeResProjectCard
-            name={project.name}
-            img={project.img}
-            repo={project.repo}
-            website={project.website}
-            techStack={project.techStack}
-            description={project.description}
-          />
+          <div key={uuidv4()}>
+            <LargeResProjectCard
+              name={project.name}
+              img={project.img}
+              repo={project.repo}
+              website={project.website}
+              techStack={project.techStack}
+              description={project.description}
+            />{" "}
+          </div>
         )
       )}
     </motion.section>

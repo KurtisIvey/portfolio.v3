@@ -1,6 +1,7 @@
 import jiuJitsuConnectGif from "./jiuJitsuConnect.gif";
 import bobaDepotGif from "./bobaDepot.gif";
 import spaceTourismGif from "./spaceTourism.gif";
+import { v4 as uuidv4 } from "uuid";
 
 export const projects = [
   {
@@ -12,6 +13,7 @@ export const projects = [
       "React, Redux, TypeScript, JavaScript, Tailwind CSS, Node.js, Express, MongoDB, PostgreSQL, AWS S3, Heroku",
     description:
       "Social Media platform that allows practicioners to communicate and connect with each other. Members are able to register, login, upload profile photos, post, like, make friends, and more!",
+    id: uuidv4(),
   },
   {
     name: "Space Tourism!",
@@ -21,6 +23,7 @@ export const projects = [
     techStack: "TypeScript, Next.js, React, CSS, Sass",
     description:
       "Space Tourism is an interactive website that allows one to explore the different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, and the associated technologies that will be used in their space journey.",
+    id: uuidv4(),
   },
   {
     name: "Boba Depot",
@@ -30,5 +33,6 @@ export const projects = [
     techStack: "Node.js, Express, EJS, MongoDB, CSS, AWS S3",
     description:
       "A server sided boba drink aggregation platform that allows one to store different kinds of boba drinks. Drinks are categorized via temperature. New boba drinks and images of said drinks can be added to the platform via AWS S3 and MongoDB.",
+    id: uuidv4(),
   },
 ];

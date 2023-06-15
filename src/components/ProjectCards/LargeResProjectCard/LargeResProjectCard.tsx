@@ -2,6 +2,7 @@ import "./LargeResProjectCard.css";
 import { useRef, useEffect } from "react";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 import { ProjectInterface } from "../project.types";
+import { v4 as uuidv4 } from "uuid";
 
 const LargeResProjectCard = (props: ProjectInterface) => {
   const imgRef = useRef<HTMLDivElement>(null);
