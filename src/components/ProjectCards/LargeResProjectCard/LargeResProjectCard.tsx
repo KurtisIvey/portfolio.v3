@@ -3,7 +3,14 @@ import { useRef, useEffect } from "react";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 import { ProjectInterface } from "../project.types";
 
-const LargeResProjectCard = (props: ProjectInterface) => {
+const LargeResProjectCard = ({
+  img,
+  name,
+  techStack,
+  description,
+  repo,
+  website,
+}: ProjectInterface) => {
   const imgRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -34,26 +41,26 @@ const LargeResProjectCard = (props: ProjectInterface) => {
   return (
     <article className="largeResProjectCard">
       <div className="imgWrapper" ref={imgRef}>
-        <img src={props.img} alt={props.name} />
+        <img src={img} alt={name} />
         <div className="color-overlay"></div>
       </div>
       <div className="techStack">
         <span>Tech Used: </span>
-        {props.techStack}
+        {techStack}
       </div>
       {/* positioned absolutely */}
       <h2>
-        <em>{props.name}</em>
+        <em>{name}</em>
       </h2>
       {/* floating description and links */}
       <div className="floatingBox">
-        <p>{props.description}</p>
+        <p>{description}</p>
         <div className="links">
-          <a href={props.repo} aria-label="github repo link">
+          <a href={repo} aria-label="github repo link">
             <div>Github Repository</div>
             <BsGithub size={20} />
           </a>
-          <a href={props.website} aria-label="website link">
+          <a href={website} aria-label="website link">
             Website <BsGlobe size={20} />
           </a>
         </div>
