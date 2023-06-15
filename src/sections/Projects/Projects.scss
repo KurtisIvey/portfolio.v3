@@ -1,9 +1,10 @@
 @import "../../variables.scss";
 
 section.projectsSection {
-  font-family: "Work Sans", sans-serif;
   color: white;
   padding: none;
+  font-family: "Work Sans", sans-serif;
+
   h1 {
     font-size: 1.4rem;
     font-weight: 600;
@@ -14,6 +15,8 @@ section.projectsSection {
     span {
       color: $accentColor;
     }
+    h2 {
+    }
   }
   a:hover {
     animation: miniWiggle 0.3s infinite;
@@ -22,7 +25,6 @@ section.projectsSection {
 
 @media screen and (min-width: 770px) {
   section.projectsSection {
-    font-family: "Work Sans", sans-serif;
     color: white;
     padding: none;
     h1 {

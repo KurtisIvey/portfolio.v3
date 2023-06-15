@@ -21,9 +21,9 @@
   }
 }
 section.projectsSection {
-  font-family: "Work Sans", sans-serif;
   color: white;
   padding: none;
+  font-family: "Work Sans", sans-serif;
 }
 section.projectsSection h1 {
   font-size: 1.4rem;
@@ -42,7 +42,6 @@ section.projectsSection a:hover {
 
 @media screen and (min-width: 770px) {
   section.projectsSection {
-    font-family: "Work Sans", sans-serif;
     color: white;
     padding: none;
   }

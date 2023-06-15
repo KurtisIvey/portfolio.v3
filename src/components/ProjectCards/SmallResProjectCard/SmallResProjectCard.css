@@ -1,3 +1,25 @@
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes miniWiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
 div.mobileProjectCard {
   position: relative;
   display: flex;
@@ -11,6 +33,8 @@ div.mobileProjectCard div.top {
   margin-bottom: 10px;
 }
 div.mobileProjectCard div.top h2 {
+  font-family: "Permanent Marker", cursive;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   font-size: 1.7rem;
   font-weight: 500;
   letter-spacing: 2.5px;
@@ -34,6 +58,7 @@ div.mobileProjectCard img {
 div.mobileProjectCard p {
   text-align: center;
   margin-top: 10px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 div.mobileProjectCard p span {
   color: rgb(126, 234, 130);
