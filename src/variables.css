@@ -1,1 +1,11 @@
-/*# sourceMappingURL=variables.css.map */
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}/*# sourceMappingURL=variables.css.map */

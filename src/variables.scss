@@ -1,2 +1,14 @@
 $accentColor: rgb(126, 234, 130);
 $hoverColor: rgb(179, 0, 255);
+
+@keyframes wiggle {
+    0% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
