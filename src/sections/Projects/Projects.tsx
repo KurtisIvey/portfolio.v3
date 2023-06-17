@@ -24,17 +24,6 @@ const Projects: React.FC = () => {
     }
   }, [controls, inView]);
 
-  /* const projects = [
-    {
-      name: "Space Tourism",
-      img: testImg,
-      repo: "https://github.com/KurtisIvey/space-tourism-nextjs",
-      website: "https://space-tourism-nextjs-uu85.vercel.app/",
-      techStack: "TypeScript, Next.js, React, Sass",
-      description:
-        "Space Tourism is an interactive website that allows one to explore the different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, and the associated technologies that will be used in their space journey.",
-    },
-  ]; */
   return (
     <motion.section
       ref={ref}
@@ -46,31 +35,15 @@ const Projects: React.FC = () => {
       <h1>
         <span>03.</span> Projects
       </h1>
-      {projects.map((project) =>
-        windowWidth < 770 ? (
-          <div key={uuidv4()}>
-            <SmallResProjectCard
-              name={project.name}
-              img={project.img}
-              repo={project.repo}
-              website={project.website}
-              techStack={project.techStack}
-              description={project.description}
-            />
-          </div>
-        ) : (
-          <div key={uuidv4()}>
-            <LargeResProjectCard
-              name={project.name}
-              img={project.img}
-              repo={project.repo}
-              website={project.website}
-              techStack={project.techStack}
-              description={project.description}
-            />{" "}
-          </div>
-        )
-      )}
+      {projects.map((project) => (
+        <div key={uuidv4()}>
+          {windowWidth < 770 ? (
+            <SmallResProjectCard {...project} />
+          ) : (
+            <LargeResProjectCard {...project} />
+          )}
+        </div>
+      ))}
     </motion.section>
   );
 };
