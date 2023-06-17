@@ -20,19 +20,19 @@
     transform: rotate(-1deg);
   }
 }
-article.mobileProjectCard {
+.mobileProjectCard {
   position: relative;
   display: flex;
   flex-direction: column;
   padding: 0px 10px 60px 0px;
 }
-article.mobileProjectCard div.top {
+.mobileProjectCard div.top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-article.mobileProjectCard div.top h2 {
+.mobileProjectCard div.top h2 {
   font-family: "Permanent Marker", cursive;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   width: 100%;
@@ -41,32 +41,32 @@ article.mobileProjectCard div.top h2 {
   letter-spacing: 2.5px;
   margin-left: 5px;
 }
-article.mobileProjectCard div.top div.links {
+.mobileProjectCard div.top div.links {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-article.mobileProjectCard div.top div.links a {
+.mobileProjectCard div.top div.links a {
   flex: 1; /* Added this to make the links span the available space */
 }
-article.mobileProjectCard div.top div.links a:hover {
+.mobileProjectCard div.top div.links a:hover {
   color: rgb(179, 0, 255);
 }
-article.mobileProjectCard img {
+.mobileProjectCard img {
   width: 100%;
   height: auto;
 }
-article.mobileProjectCard p {
+.mobileProjectCard p {
   text-align: center;
   margin-top: 10px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-article.mobileProjectCard p span {
+.mobileProjectCard p span {
   color: rgb(126, 234, 130);
 }
-article.mobileProjectCard p.techStack {
+.mobileProjectCard p.techStack {
   font-size: 0.7rem;
 }
-article.mobileProjectCard p.description {
+.mobileProjectCard p.description {
   font-size: 1rem;
 }/*# sourceMappingURL=SmallResProjectCard.css.map */
