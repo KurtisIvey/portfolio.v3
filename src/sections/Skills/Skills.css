@@ -25,17 +25,6 @@
   padding: none;
   font-family: "Work Sans", sans-serif;
 }
-.skillsSection h1 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  grid-row: 1/2;
-  text-align: start;
-  margin-bottom: 50px;
-}
-.skillsSection h1 span {
-  color: rgb(126, 234, 130);
-}
 .skillsSection .logosContainer {
   display: grid;
   width: 100%;
@@ -45,17 +34,6 @@
 }
 
 @media screen and (min-width: 770px) {
-  .skillsSection h1 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    grid-row: 1/2;
-    text-align: start;
-    margin-bottom: 150px;
-  }
-  .skillsSection h1 span {
-    color: rgb(126, 234, 130);
-  }
   .skillsSection .logosContainer {
     display: grid;
     width: 100%;

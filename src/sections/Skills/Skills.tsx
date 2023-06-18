@@ -7,7 +7,7 @@ import SkillLogo from "../../components/SkillLogo/SkillLogo";
 const Skills = (props: Props) => {
   return (
     <section className="skillsSection subSection">
-      <h1>
+      <h1 className="sectionH1">
         <span>02. </span>Skills
       </h1>
       <div className="logosContainer">

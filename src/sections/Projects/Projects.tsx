@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={controls}
     >
-      <h1>
+      <h1 className="sectionH1">
         <span>03.</span> Projects
       </h1>
       {projects.map((project) => (

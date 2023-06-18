@@ -5,17 +5,6 @@ section.projectsSection {
   padding: none;
   font-family: "Work Sans", sans-serif;
 
-  h1 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    grid-row: 1/2;
-    text-align: start;
-    margin-bottom: 50px;
-    span {
-      color: $accentColor;
-    }
-  }
   a:hover {
     animation: miniWiggle 0.3s infinite;
   }
@@ -25,17 +14,6 @@ section.projectsSection {
   section.projectsSection {
     color: white;
     padding: none;
-    h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      letter-spacing: 1.2px;
-      grid-row: 1/2;
-      text-align: start;
-      margin-bottom: 50px;
-      span {
-        color: $accentColor;
-      }
-    }
   }
 }
 
@@ -44,16 +22,5 @@ section.projectsSection {
     font-family: "Work Sans", sans-serif;
     color: white;
     padding: none;
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 600;
-      letter-spacing: 1.2px;
-      grid-row: 1/2;
-      text-align: start;
-      margin-bottom: 50px;
-      span {
-        color: $accentColor;
-      }
-    }
   }
 }
