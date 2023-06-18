@@ -21,6 +21,7 @@
   }
 }
 section.heroSection {
+  padding: 10vh 20px 20px 20px;
   font-family: "Work Sans", sans-serif;
   height: 97vh;
   display: flex;

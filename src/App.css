@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Permanent+Marker&family=Work+Sans:wght@100;200;300;400;500&display=swap");
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -53,12 +55,14 @@ table {
   border-spacing: 0;
 }
 
-button, [role=button] {
+button,
+[role=button] {
   cursor: pointer;
   background-color: transparent;
   -webkit-tap-highlight-color: transparent;
 }
-button:focus, [role=button]:focus {
+button:focus,
+[role=button]:focus {
   outline: 0;
 }
 
@@ -79,7 +83,8 @@ h6 {
   font-weight: inherit;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -156,7 +161,7 @@ textarea {
 }
 section {
   width: 100%;
-  padding: 10vh 20px 20px 20px;
+  font-family: "Work Sans", sans-serif;
 }
 
 @media screen and (min-width: 770px) {
@@ -164,7 +169,6 @@ section {
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20vh 0 20vh 0;
   }
 }
 @media screen and (min-width: 950px) {
