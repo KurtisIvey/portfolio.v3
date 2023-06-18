@@ -22,7 +22,6 @@
 @media screen and (min-width: 770px) {
   .logo {
     gap: 30px;
-
     img {
       height: 80px;
       width: auto;
@@ -35,4 +34,15 @@
 }
 
 @media screen and (min-width: 950px) {
+  .logo {
+    gap: 50px;
+    img {
+      height: 90px;
+      width: auto;
+    }
+    p {
+      margin-top: 5px;
+      font-size: 1.5rem;
+    }
+  }
 }
