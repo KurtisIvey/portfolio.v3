@@ -31,6 +31,10 @@ const logos = [
     name: "Node.js",
   },
   {
+    url: expressLogo,
+    name: "ExpressJs",
+  },
+  {
     url: reactLogo,
     name: "React",
   },
@@ -42,10 +46,7 @@ const logos = [
     url: tailwindLogo,
     name: "Tailwind",
   },
-  {
-    url: expressLogo,
-    name: "ExpressJs",
-  },
+
   {
     url: postgresLogo,
     name: "PostgreSQL",
