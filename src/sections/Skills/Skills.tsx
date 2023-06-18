@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Skills.css";
 import skills from "../../assets/skillLogos/skillLogos";
 import { v4 as uuidv4 } from "uuid";
 import SkillLogo from "../../components/SkillLogo/SkillLogo";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-const Skills = () => {
+const Skills: React.FC = () => {
+  const controls = useAnimation();
+
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Trigger the animation only once when the div enters the viewport
+  });
+
+  useEffect(() => {
+    if (inView) {
+      // motion features definied here to be used on the section element
+      controls.start({ opacity: 1, transition: { duration: 1.3 } });
+    }
+  }, [controls, inView]);
   return (
-    <section className="skillsSection subSection">
+    <motion.section
+      ref={ref}
+      className="skillsSection subSection"
+      id="skills"
+      initial={{ opacity: 0 }}
+      animate={controls}
+    >
       <h1 className="sectionH1">
         <span>02. </span>Skills
       </h1>
@@ -17,7 +37,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
