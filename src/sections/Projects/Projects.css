@@ -25,6 +25,9 @@ section.projectsSection {
   padding: none;
   font-family: "Work Sans", sans-serif;
 }
+section.projectsSection h1 {
+  margin-bottom: 50px;
+}
 section.projectsSection a:hover {
   animation: miniWiggle 0.3s infinite;
 }

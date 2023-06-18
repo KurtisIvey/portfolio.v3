@@ -4,7 +4,9 @@ section.projectsSection {
   color: white;
   padding: none;
   font-family: "Work Sans", sans-serif;
-
+  h1 {
+    margin-bottom: 50px;
+  }
   a:hover {
     animation: miniWiggle 0.3s infinite;
   }
