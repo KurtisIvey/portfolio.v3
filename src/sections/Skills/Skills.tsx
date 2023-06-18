@@ -4,7 +4,7 @@ import skills from "../../assets/skillLogos/skillLogos";
 import { v4 as uuidv4 } from "uuid";
 import SkillLogo from "../../components/SkillLogo/SkillLogo";
 
-const Skills = (props: Props) => {
+const Skills = () => {
   return (
     <section className="skillsSection subSection">
       <h1 className="sectionH1">
