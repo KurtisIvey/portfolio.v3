@@ -1,9 +1,12 @@
 import React from "react";
-
-type Props = {};
+import "./Skills.css";
 
 const Skills = (props: Props) => {
-  return <div>Skills</div>;
+  return (
+    <section className="skillsSection">
+      <h1>Skills</h1>
+    </section>
+  );
 };
 
 export default Skills;

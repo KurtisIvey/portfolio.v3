@@ -1,1 +1,38 @@
-/*# sourceMappingURL=Skills.css.map */
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes miniWiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+.skillsSection {
+  color: white;
+  padding: none;
+  font-family: "Work Sans", sans-serif;
+}
+.skillsSection h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  grid-row: 1/2;
+  text-align: start;
+  margin-bottom: 50px;
+}
+.skillsSection h1 span {
+  color: rgb(126, 234, 130);
+}/*# sourceMappingURL=Skills.css.map */
