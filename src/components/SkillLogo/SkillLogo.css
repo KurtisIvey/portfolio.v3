@@ -34,7 +34,6 @@
   width: auto;
 }
 .logo p {
-  margin-top: 2px;
   font-weight: 500;
   letter-spacing: 2.3px;
   font-size: 1rem;
@@ -43,27 +42,25 @@
 
 @media screen and (min-width: 770px) {
   .logo {
-    gap: 30px;
+    gap: 20px;
   }
   .logo img {
-    height: 80px;
+    height: 70px;
     width: auto;
   }
   .logo p {
-    margin-top: 4px;
     font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 950px) {
   .logo {
-    gap: 50px;
+    gap: 30px;
   }
   .logo img {
-    height: 90px;
+    height: 70px;
     width: auto;
   }
   .logo p {
-    margin-top: 5px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }/*# sourceMappingURL=SkillLogo.css.map */
