@@ -17,62 +17,50 @@ const logos = [
   {
     url: gitLogo,
     name: "Git",
-    id: "3",
   },
   {
     url: jsLogo,
     name: "Javascript",
-    id: "5",
   },
   {
     url: typescriptLogo,
     name: "TypeScript",
-    id: "14",
   },
   {
     url: nodejsLogo,
     name: "Node.js",
-    id: "7",
   },
   {
     url: reactLogo,
     name: "React",
-    id: "8",
   },
   {
     url: reduxLogo,
     name: "Redux",
-    id: "9",
   },
   {
     url: tailwindLogo,
     name: "Tailwind",
-    id: "10",
   },
   {
     url: expressLogo,
     name: "ExpressJs",
-    id: "11",
   },
   {
     url: postgresLogo,
     name: "PostgreSQL",
-    id: "12",
   },
   {
     url: mongoLogo,
     name: "MongoDB",
-    id: "6",
   },
   {
     url: firebaseLogo,
     name: "Firebase",
-    id: "2",
   },
   {
     url: sassLogo,
     name: "Sass",
-    id: "13",
   },
 ];
 
