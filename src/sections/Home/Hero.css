@@ -23,7 +23,7 @@
 section.heroSection {
   padding: 10vh 20px 20px 20px;
   font-family: "Work Sans", sans-serif;
-  height: 97vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -60,6 +60,9 @@ section.heroSection p {
 }
 
 @media screen and (min-width: 770px) {
+  section.heroSection {
+    padding: 20vh 0 15vh 0;
+  }
   section.heroSection h1.hiMyNameIs {
     font-size: 1.5rem;
     margin-left: 3.5px;
