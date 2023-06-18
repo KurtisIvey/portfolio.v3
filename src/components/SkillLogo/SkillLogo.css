@@ -1,1 +1,19 @@
-/*# sourceMappingURL=SkillLogo.css.map */
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  height: 60px;
+  width: auto;
+}
+.logo p {
+  margin-top: 2px;
+  font-weight: 500;
+  letter-spacing: 2.3px;
+  font-size: 1rem;
+}/*# sourceMappingURL=SkillLogo.css.map */
