@@ -1,3 +1,25 @@
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes miniWiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
 .logo {
   display: flex;
   flex-direction: column;
@@ -16,4 +38,5 @@
   font-weight: 500;
   letter-spacing: 2.3px;
   font-size: 1rem;
+  text-shadow: 1px 1px 2px rgb(59, 59, 59);
 }/*# sourceMappingURL=SkillLogo.css.map */
