@@ -2,6 +2,7 @@ import React from "react";
 import "./Skills.css";
 import skills from "../../assets/skillLogos/skillLogos";
 import { v4 as uuidv4 } from "uuid";
+import SkillLogo from "../../components/SkillLogo/SkillLogo";
 
 const Skills = (props: Props) => {
   return (
@@ -12,8 +13,7 @@ const Skills = (props: Props) => {
       <div className="logosContainer">
         {skills.map((skill) => (
           <div key={uuidv4()} className="logo">
-            <img src={skill.url} alt={skill.name} />
-            <p>{skill.name}</p>
+            <SkillLogo {...skill} />
           </div>
         ))}
       </div>
