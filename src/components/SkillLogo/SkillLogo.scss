@@ -20,6 +20,18 @@
   }
 }
 @media screen and (min-width: 770px) {
+  .logo {
+    gap: 30px;
+
+    img {
+      height: 80px;
+      width: auto;
+    }
+    p {
+      margin-top: 4px;
+      font-size: 1.4rem;
+    }
+  }
 }
 
 @media screen and (min-width: 950px) {
