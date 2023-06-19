@@ -64,17 +64,37 @@ const Navbar = () => {
             <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
               <ul>
                 <hr />
-                <li onClick={() => handleScrollToSection("about")}>
-                  <span>01.</span> About
+                <li>
+                  <button
+                    onClick={() => handleScrollToSection("about")}
+                    aria-label="About Section"
+                  >
+                    <span>01.</span> About
+                  </button>
                 </li>
-                <li onClick={() => handleScrollToSection("skills")}>
-                  <span>02.</span> Skills
+                <li>
+                  <button
+                    onClick={() => handleScrollToSection("skills")}
+                    aria-label="Skills Section"
+                  >
+                    <span>02.</span> Skills
+                  </button>
                 </li>
-                <li onClick={() => handleScrollToSection("projects")}>
-                  <span>03.</span> Projects
+                <li>
+                  <button
+                    onClick={() => handleScrollToSection("projects")}
+                    aria-label="Projects Section"
+                  >
+                    <span>03.</span> Projects
+                  </button>
                 </li>
-                <li onClick={() => handleScrollToSection("contact")}>
-                  <span>04.</span> Contact
+                <li>
+                  <button
+                    onClick={() => handleScrollToSection("contact")}
+                    aria-label="Contact Section"
+                  >
+                    <span>04.</span> Contact
+                  </button>
                 </li>
               </ul>
             </div>
@@ -83,17 +103,37 @@ const Navbar = () => {
       ) : (
         <nav className="navLargerResNavLinks">
           <ul id="largerResNavLinks">
-            <li onClick={() => handleScrollToSection("about")}>
-              <span>01.</span> About
+            <li>
+              <button
+                onClick={() => handleScrollToSection("about")}
+                aria-label="About Section"
+              >
+                <span>01.</span> About
+              </button>
             </li>
-            <li onClick={() => handleScrollToSection("skills")}>
-              <span>02.</span> Skills
+            <li>
+              <button
+                onClick={() => handleScrollToSection("skills")}
+                aria-label="Skills Section"
+              >
+                <span>02.</span> Skills
+              </button>
             </li>
-            <li onClick={() => handleScrollToSection("projects")}>
-              <span>03.</span> Projects
+            <li>
+              <button
+                onClick={() => handleScrollToSection("projects")}
+                aria-label="Projects Section"
+              >
+                <span>03.</span> Projects
+              </button>
             </li>
-            <li onClick={() => handleScrollToSection("contact")}>
-              <span>04.</span> Contact
+            <li>
+              <button
+                onClick={() => handleScrollToSection("contact")}
+                aria-label="Contact Section"
+              >
+                <span>04.</span> Contact
+              </button>
             </li>
           </ul>
         </nav>
