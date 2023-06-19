@@ -35,6 +35,7 @@
   font-size: 1rem;
   letter-spacing: 0.5px;
   line-height: 22px;
+  margin-bottom: 5px;
 }
 .mailerContainer .inputRow {
   display: flex;
