@@ -68,7 +68,7 @@ const Navbar = () => {
               role="menu"
               aria-label="Main Menu"
             >
-              <ul>
+              <ul role="menu">
                 <hr />
                 <li role="none">
                   <button
@@ -112,7 +112,7 @@ const Navbar = () => {
         </>
       ) : (
         <nav className="navLargerResNavLinks">
-          <ul id="largerResNavLinks">
+          <ul id="largerResNavLinks" role="menu">
             <li role="none">
               <button
                 onClick={() => handleScrollToSection("about")}
