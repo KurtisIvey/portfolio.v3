@@ -1,13 +1,14 @@
 import "./Mailer.css";
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import emailjs from "@emailjs/browser";
 
-const to_name = "Kurtis";
 const serviceId = "service_dh4g8gf";
 const templateId = "template_loa37xn";
 const userId = "IZvdiiarOHlVtgcBd";
 
 const Mailer = () => {
+  const to_name = useMemo(() => "Kurtis", []);
+
   const [params, setParams] = useState({
     to_name,
     user_email: "",
