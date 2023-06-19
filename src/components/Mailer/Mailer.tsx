@@ -37,8 +37,8 @@ const Mailer = () => {
     <div className="mailerContainer">
       <p className="">
         Got a technical issue you need solved? Looking for a new employee to add
-        to the team? Or if you just want to say hello. Feel free to reach out
-        and I'll try my best to get back to you as soon as possible.
+        to the team? Or if you just want to say hello. Feel free to reach out &
+        I'll try my best to get back to you as soon as possible.
       </p>
       <form action="#" className="space-y-8" onSubmit={(e) => sendEmail(e)}>
         <div className="inputRow">
