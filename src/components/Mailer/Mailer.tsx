@@ -1,5 +1,5 @@
 import "./Mailer.css";
-import React, { useState, useMemo } from "react";
+import React, { useState, useCallback, useMemo } from "react";
 import emailjs from "@emailjs/browser";
 
 const serviceId = "service_dh4g8gf";
@@ -16,33 +16,32 @@ const Mailer = () => {
     message: "",
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setParams((prevParams) => ({
-      ...prevParams,
-      [name]: value,
-    }));
-  };
+  const handleChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const { name, value } = e.target;
+      setParams((prevParams) => ({
+        ...prevParams,
+        [name]: value,
+      }));
+    },
+    []
+  );
 
-  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.send(serviceId, templateId, params, userId).then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-        alert("email sent!");
-        resetForm();
-      },
-      function (error) {
-        console.log("FAILED...", error);
-        alert(
-          "error in sending email. Please reach out directly through your email client."
-        );
-      }
-    );
-  }
+    try {
+      await emailjs.sendForm(serviceId, templateId, e.target, userId);
+      console.log("SUCCESS!");
+      alert("Email sent!");
+      resetForm();
+    } catch (error) {
+      console.log("FAILED...", error);
+      alert(
+        "Error in sending email. Please reach out directly through your email client."
+      );
+    }
+  };
 
   function resetForm() {
     setParams({
