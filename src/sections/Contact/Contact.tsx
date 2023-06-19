@@ -5,7 +5,7 @@ type Props = {};
 
 const Contact = (props: Props) => {
   return (
-    <section>
+    <section className="contactSection subSection">
       <h1 className="sectionH1">
         <span>04. </span>Contact
       </h1>

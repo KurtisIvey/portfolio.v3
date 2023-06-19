@@ -1,1 +1,70 @@
-/*# sourceMappingURL=Mailer.css.map */
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes miniWiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+.mailerContainer {
+  margin-top: 50px;
+  background-color: rgba(128, 128, 128, 0.501);
+  padding: 15px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+}
+.mailerContainer p {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+.mailerContainer .inputRow {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.mailerContainer .inputRow label {
+  margin-left: 5px;
+}
+.mailerContainer .inputRow input {
+  border-radius: 5px;
+  padding: 5px;
+}
+.mailerContainer .inputRow textarea {
+  border-radius: 5px;
+  padding: 5px;
+}
+.mailerContainer button {
+  background-color: rgb(126, 234, 130);
+  box-shadow: 2px 2px 2px 2px rgba(5, 5, 5, 0.2);
+  color: rgb(49, 49, 49);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.mailerContainer button:hover {
+  background-color: rgb(98, 189, 101);
+  color: white;
+}
+.mailerContainer button:active {
+  background-color: rgb(126, 234, 130);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.408);
+}/*# sourceMappingURL=Mailer.css.map */
