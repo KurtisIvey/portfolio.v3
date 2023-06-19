@@ -62,7 +62,12 @@ const Navbar = () => {
                 <BiMenuAltRight size={45} className="hamburger" />
               )}
             </button>
-            <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
+            <div
+              id="sideBar"
+              className={sideBarOpen ? "sideBarOpen" : ""}
+              role="menu"
+              aria-label="Main Menu"
+            >
               <ul>
                 <hr />
                 <li>
