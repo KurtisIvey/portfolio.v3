@@ -33,6 +33,11 @@
       padding: 5px;
     }
   }
+  .buttonRow {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
   button {
     font-family: "Permanent Marker", cursive;
     letter-spacing: 2px;

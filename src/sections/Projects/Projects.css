@@ -31,6 +31,9 @@ section.projectsSection h1 {
 section.projectsSection a:hover {
   animation: miniWiggle 0.3s infinite;
 }
+section.projectsSection .card {
+  margin-bottom: 20px;
+}
 
 @media screen and (min-width: 770px) {
   section.projectsSection {

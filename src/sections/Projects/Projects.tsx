@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
   useEffect(() => {
     if (inView) {
       // motion features definied here to be used on the section element
-      controls.start({ opacity: 1, transition: { duration: 1.3 } });
+      controls.start({ opacity: 1, transition: { duration: 1.8 } });
     }
   }, [controls, inView]);
 
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
         <span>03.</span> Projects
       </h1>
       {projects.map((project) => (
-        <div key={uuidv4()}>
+        <div key={uuidv4()} className="card">
           {windowWidth < 770 ? (
             <SmallResProjectCard {...project} />
           ) : (

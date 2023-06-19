@@ -11,7 +11,9 @@ const Mailer = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setParams((prevParams) => ({
       ...prevParams,
@@ -49,59 +51,56 @@ const Mailer = () => {
   }
   return (
     <div className="mailerContainer">
-      <p className="">
+      <div className="">
         Got a technical issue you need solved? Looking for a new employee to add
         to the team? Or if you just want to say hello. Feel free to reach out &
         I'll try my best to get back to you as soon as possible.
-      </p>
-      <form action="#" className="space-y-8" onSubmit={(e) => sendEmail(e)}>
+      </div>
+      <form action="#" className="" onSubmit={(e) => sendEmail(e)}>
         <div className="inputRow">
-          <label htmlFor="email" className="">
-            Your email
-          </label>
+          <label htmlFor="email">Your email</label>
           <input
             type="email"
             id="email"
             name="user_email"
             onChange={handleChange}
-            className=""
             placeholder="yourEmail@gmail.com"
             required
             value={params.user_email}
+            aria-label="Your email address"
           />
         </div>
         <div className="inputRow">
-          <label htmlFor="name" className="">
-            Your name
-          </label>
+          <label htmlFor="name">Your name</label>
           <input
             type="text"
             id="name"
             name="user_name"
             onChange={handleChange}
-            className=""
             placeholder="John Doe"
             required
             value={params.user_name}
+            aria-label="Your name"
           />
         </div>
         <div className="inputRow">
-          <label htmlFor="message" className="">
-            Your message
-          </label>
+          <label htmlFor="message">Your message</label>
           <textarea
             id="message"
             name="message"
             onChange={handleChange}
             rows={6}
-            className=""
             placeholder="Let me know how I can help you"
             value={params.message}
+            required
+            aria-label="Your message"
           />
         </div>
-        <button type="submit" className="">
-          Send message
-        </button>
+        <div className="buttonRow">
+          <button type="submit" title="Send message">
+            Send message
+          </button>
+        </div>
       </form>
     </div>
   );
