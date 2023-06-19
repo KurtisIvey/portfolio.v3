@@ -1,4 +1,3 @@
-import React from "react";
 import "./Mailer.css";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";

@@ -7,6 +7,7 @@ import MouseCircle from "./components/MouseCircle/MouseCircle";
 import About from "./sections/About/About";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
+import Contact from "./sections/Contact/Contact";
 
 function App() {
   const [loaded, SetLoaded] = useState<boolean>(false);
@@ -26,6 +27,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </main>
   );
 }
