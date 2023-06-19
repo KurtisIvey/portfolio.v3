@@ -2,10 +2,14 @@ import "./Mailer.css";
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
+const to_name = "Kurtis";
+const serviceId = "service_dh4g8gf";
+const templateId = "template_loa37xn";
+const userId = "IZvdiiarOHlVtgcBd";
+
 const Mailer = () => {
-  const to_name = "Kurtis";
   const [params, setParams] = useState({
-    to_name: to_name,
+    to_name,
     user_email: "",
     user_name: "",
     message: "",
@@ -24,21 +28,19 @@ const Mailer = () => {
   function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    emailjs
-      .send("service_dh4g8gf", "template_loa37xn", params, "IZvdiiarOHlVtgcBd")
-      .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-          alert("email sent!");
-          resetForm();
-        },
-        function (error) {
-          console.log("FAILED...", error);
-          alert(
-            "error in sending email. Please reach out directly through your email client."
-          );
-        }
-      );
+    emailjs.send(serviceId, templateId, params, userId).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("email sent!");
+        resetForm();
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        alert(
+          "error in sending email. Please reach out directly through your email client."
+        );
+      }
+    );
   }
 
   function resetForm() {
