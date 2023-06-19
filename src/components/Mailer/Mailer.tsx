@@ -19,7 +19,7 @@ const Mailer = () => {
     }));
   };
 
-  function sendEmail(e) {
+  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     emailjs
@@ -27,11 +27,25 @@ const Mailer = () => {
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
+          alert("email sent!");
+          resetForm();
         },
         function (error) {
           console.log("FAILED...", error);
+          alert(
+            "error in sending email. Please reach out directly through your email client."
+          );
         }
       );
+  }
+
+  function resetForm() {
+    setParams({
+      to_name: to_name,
+      user_email: "",
+      user_name: "",
+      message: "",
+    });
   }
   return (
     <div className="mailerContainer">
@@ -53,6 +67,7 @@ const Mailer = () => {
             className=""
             placeholder="yourEmail@gmail.com"
             required
+            value={params.user_email}
           />
         </div>
         <div className="inputRow">
@@ -67,6 +82,7 @@ const Mailer = () => {
             className=""
             placeholder="John Doe"
             required
+            value={params.user_name}
           />
         </div>
         <div className="inputRow">
@@ -80,6 +96,7 @@ const Mailer = () => {
             rows={6}
             className=""
             placeholder="Let me know how I can help you"
+            value={params.message}
           />
         </div>
         <button type="submit" className="">
