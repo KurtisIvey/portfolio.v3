@@ -50,17 +50,18 @@ const Navbar = () => {
         <>
           {sideBarOpen && <div className="blurFilter" />}{" "}
           <nav>
-            <div
+            <button
               className={`hamburgerContainer ${sideBarOpen ? "open" : ""}`}
               onClick={toggleSideBar}
               aria-label={sideBarOpen ? "Close Menu" : "Open Menu"}
+              aria-expanded={sideBarOpen}
             >
               {sideBarOpen ? (
                 <AiOutlineClose size={45} className="hamburger" />
               ) : (
                 <BiMenuAltRight size={45} className="hamburger" />
               )}
-            </div>
+            </button>
             <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
               <ul>
                 <hr />
