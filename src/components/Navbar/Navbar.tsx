@@ -32,8 +32,12 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    if (windowWidth >= 770) setSideBarOpen(false);
+  }, [windowWidth]);
+
   return (
-    <motion.nav
+    <motion.header
       initial={{ opacity: 0 }}
       transition={{ delay: 3, duration: 2 }}
       whileInView={{ opacity: 1 }}
@@ -42,57 +46,59 @@ const Navbar = () => {
       <h1>
         Kurtis <span>Ivey</span>
       </h1>
-      <div
-        className={`hamburgerContainer ${sideBarOpen ? "open" : ""}`}
-        onClick={toggleSideBar}
-        aria-label={sideBarOpen ? "Close Menu" : "Open Menu"}
-      >
-        {sideBarOpen ? (
-          <AiOutlineClose size={45} className="hamburger" />
-        ) : (
-          <BiMenuAltRight size={45} className="hamburger" />
-        )}
-      </div>
-
       {windowWidth < 770 ? (
         <>
-          {sideBarOpen && <div className="blurFilter" />}
-
-          <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
-            <ul>
-              <hr />
-              <li onClick={() => handleScrollToSection("about")}>
-                <span>01.</span> About
-              </li>
-              <li onClick={() => handleScrollToSection("skills")}>
-                <span>02.</span> Skills
-              </li>
-              <li onClick={() => handleScrollToSection("projects")}>
-                <span>03.</span> Projects
-              </li>
-              <li onClick={() => handleScrollToSection("contact")}>
-                <span>04.</span> Contact
-              </li>
-            </ul>
-          </div>
+          {sideBarOpen && <div className="blurFilter" />}{" "}
+          <nav>
+            <div
+              className={`hamburgerContainer ${sideBarOpen ? "open" : ""}`}
+              onClick={toggleSideBar}
+              aria-label={sideBarOpen ? "Close Menu" : "Open Menu"}
+            >
+              {sideBarOpen ? (
+                <AiOutlineClose size={45} className="hamburger" />
+              ) : (
+                <BiMenuAltRight size={45} className="hamburger" />
+              )}
+            </div>
+            <div id="sideBar" className={sideBarOpen ? "sideBarOpen" : ""}>
+              <ul>
+                <hr />
+                <li onClick={() => handleScrollToSection("about")}>
+                  <span>01.</span> About
+                </li>
+                <li onClick={() => handleScrollToSection("skills")}>
+                  <span>02.</span> Skills
+                </li>
+                <li onClick={() => handleScrollToSection("projects")}>
+                  <span>03.</span> Projects
+                </li>
+                <li onClick={() => handleScrollToSection("contact")}>
+                  <span>04.</span> Contact
+                </li>
+              </ul>
+            </div>
+          </nav>
         </>
       ) : (
-        <ul id="largerResNavLinks">
-          <li onClick={() => handleScrollToSection("about")}>
-            <span>01.</span> About
-          </li>
-          <li onClick={() => handleScrollToSection("skills")}>
-            <span>02.</span> Skills
-          </li>
-          <li onClick={() => handleScrollToSection("projects")}>
-            <span>03.</span> Projects
-          </li>
-          <li onClick={() => handleScrollToSection("contact")}>
-            <span>04.</span> Contact
-          </li>
-        </ul>
+        <nav className="navLargerResNavLinks">
+          <ul id="largerResNavLinks">
+            <li onClick={() => handleScrollToSection("about")}>
+              <span>01.</span> About
+            </li>
+            <li onClick={() => handleScrollToSection("skills")}>
+              <span>02.</span> Skills
+            </li>
+            <li onClick={() => handleScrollToSection("projects")}>
+              <span>03.</span> Projects
+            </li>
+            <li onClick={() => handleScrollToSection("contact")}>
+              <span>04.</span> Contact
+            </li>
+          </ul>
+        </nav>
       )}
-    </motion.nav>
+    </motion.header>
   );
 };
 

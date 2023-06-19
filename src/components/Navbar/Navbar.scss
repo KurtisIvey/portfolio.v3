@@ -1,23 +1,24 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 @keyframes showNavbar {
-  from { opacity: 0; } /* Start with opacity 0 */
-  to { opacity: 1; } /* Transition to opacity 1 */
+  from {
+    opacity: 0;
+  } /* Start with opacity 0 */
+  to {
+    opacity: 1;
+  } /* Transition to opacity 1 */
 }
 
-
-
-
-nav {
+header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: relative;
-  font-family: 'Permanent Marker', cursive;
-  
-  span{
+  font-family: "Permanent Marker", cursive;
+
+  span {
     color: $accentColor;
-  } 
+  }
 
   h1 {
     font-size: clamp(35px, 4vw, 55px);
@@ -45,12 +46,9 @@ nav {
       transform: translate(-50%, -50%);
       transition: opacity 0.3s ease-in-out;
     }
-
-    
   }
   #largerResNavLinks {
     display: none;
-    
   }
   #sideBar {
     position: absolute;
@@ -59,37 +57,37 @@ nav {
     grid-template-columns: 1fr auto;
     width: 100vw;
     height: 100vh;
-    transition: .3s;
+    transition: 0.3s;
     z-index: 2;
-    ul{
+    top: 0;
+    ul {
       background-color: rgba(120, 118, 118, 0.447);
       grid-column: 2/3;
       width: 198px;
       display: flex;
       flex-direction: column;
       padding-top: 50px;
-      hr{
+      hr {
         border-bottom: 1px solid gray;
         margin: 0 0 10px 15px;
       }
-      li{  
+      li {
         list-style: none;
         width: 100%;
-        
+
         padding: 15px;
         color: white;
         font-size: clamp(20px, 2vw, 1.4rem);
         text-align: left;
         z-index: 3;
-         
       }
-      li:hover{
+      li:hover {
         background-color: rgba(173, 173, 173, 0.898);
         color: $accentColor;
       }
     }
   }
-  #sideBar.sideBarOpen{
+  #sideBar.sideBarOpen {
     right: 0;
     //backdrop-filter: blur(8px);
   }
@@ -103,12 +101,16 @@ nav {
 }
 
 @media screen and (min-width: 770px) {
-  nav{
-    .hamburgerContainer{
+  header {
+    .hamburgerContainer {
       display: none;
     }
     #sideBar {
-      display: none;  
+      display: none;
+    }
+    .navLargerResNavLinks {
+      display: flex;
+      align-items: center;
     }
     ul#largerResNavLinks {
       display: flex;
@@ -119,21 +121,17 @@ nav {
       color: white;
       font-size: clamp(20px, 2vw, 1.3rem);
       margin-right: 12px;
-      
+
       li {
         margin: 0 13px;
       }
-      li:hover{
+      li:hover {
         color: $accentColor;
-        animation: wiggle .3s infinite;
+        animation: wiggle 0.3s infinite;
       }
-      
     }
     .blurFilter {
       display: none;
-      
     }
-
-    
   }
 }

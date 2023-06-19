@@ -28,22 +28,22 @@
     opacity: 1;
   } /* Transition to opacity 1 */
 }
-nav {
+header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: relative;
   font-family: "Permanent Marker", cursive;
 }
-nav span {
+header span {
   color: rgb(126, 234, 130);
 }
-nav h1 {
+header h1 {
   font-size: clamp(35px, 4vw, 55px);
   color: white;
   margin: 5px 0 0 10px;
 }
-nav .hamburgerContainer {
+header .hamburgerContainer {
   position: relative;
   height: 45px;
   width: 45px;
@@ -51,10 +51,10 @@ nav .hamburgerContainer {
   transition: transform 0.255s ease-in-out;
   cursor: pointer;
 }
-nav .hamburgerContainer.open {
+header .hamburgerContainer.open {
   transform: rotate(720deg);
 }
-nav .hamburgerContainer .hamburger {
+header .hamburgerContainer .hamburger {
   position: absolute;
   color: white;
   top: 50%;
@@ -62,10 +62,10 @@ nav .hamburgerContainer .hamburger {
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out;
 }
-nav #largerResNavLinks {
+header #largerResNavLinks {
   display: none;
 }
-nav #sideBar {
+header #sideBar {
   position: absolute;
   right: -1300px;
   display: grid;
@@ -74,8 +74,9 @@ nav #sideBar {
   height: 100vh;
   transition: 0.3s;
   z-index: 2;
+  top: 0;
 }
-nav #sideBar ul {
+header #sideBar ul {
   background-color: rgba(120, 118, 118, 0.447);
   grid-column: 2/3;
   width: 198px;
@@ -83,11 +84,11 @@ nav #sideBar ul {
   flex-direction: column;
   padding-top: 50px;
 }
-nav #sideBar ul hr {
+header #sideBar ul hr {
   border-bottom: 1px solid gray;
   margin: 0 0 10px 15px;
 }
-nav #sideBar ul li {
+header #sideBar ul li {
   list-style: none;
   width: 100%;
   padding: 15px;
@@ -96,14 +97,14 @@ nav #sideBar ul li {
   text-align: left;
   z-index: 3;
 }
-nav #sideBar ul li:hover {
+header #sideBar ul li:hover {
   background-color: rgba(173, 173, 173, 0.898);
   color: rgb(126, 234, 130);
 }
-nav #sideBar.sideBarOpen {
+header #sideBar.sideBarOpen {
   right: 0;
 }
-nav .blurFilter {
+header .blurFilter {
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -113,13 +114,17 @@ nav .blurFilter {
 }
 
 @media screen and (min-width: 770px) {
-  nav .hamburgerContainer {
+  header .hamburgerContainer {
     display: none;
   }
-  nav #sideBar {
+  header #sideBar {
     display: none;
   }
-  nav ul#largerResNavLinks {
+  header .navLargerResNavLinks {
+    display: flex;
+    align-items: center;
+  }
+  header ul#largerResNavLinks {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -130,14 +135,14 @@ nav .blurFilter {
     font-size: clamp(20px, 2vw, 1.3rem);
     margin-right: 12px;
   }
-  nav ul#largerResNavLinks li {
+  header ul#largerResNavLinks li {
     margin: 0 13px;
   }
-  nav ul#largerResNavLinks li:hover {
+  header ul#largerResNavLinks li:hover {
     color: rgb(126, 234, 130);
     animation: wiggle 0.3s infinite;
   }
-  nav .blurFilter {
+  header .blurFilter {
     display: none;
   }
 }/*# sourceMappingURL=Navbar.css.map */
