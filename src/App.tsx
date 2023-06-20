@@ -8,17 +8,19 @@ import About from "./sections/About/About";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import Contact from "./sections/Contact/Contact";
+import useWindowWidth from "./hooks/useWindowWidth";
 
 function App() {
-  const [loaded, SetLoaded] = useState<boolean>(false);
+  const windowWidth = useWindowWidth();
+  const [loaded, setLoaded] = useState<boolean>(false);
   useEffect(() => {
     setTimeout(() => {
-      SetLoaded(true);
+      setLoaded(true);
     }, 4000);
-  });
+  }, []);
   return (
     <main>
-      <MouseCircle />
+      {windowWidth > 1000 && <MouseCircle />}
       <Navbar />
       <div className={loaded ? "hide-load-container" : "load-container"}>
         <LogoSvg />
