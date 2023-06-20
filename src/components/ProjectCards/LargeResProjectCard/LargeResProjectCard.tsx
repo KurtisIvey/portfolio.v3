@@ -41,7 +41,9 @@ const LargeResProjectCard = ({
   return (
     <article className="largeResProjectCard">
       <div className="imgWrapper" ref={imgRef}>
-        <img src={img} alt={name} />
+        <video src={img} autoPlay muted loop>
+          Your browser does not support the video tag.
+        </video>
         <div className="color-overlay"></div>
       </div>
       <div className="techStack">

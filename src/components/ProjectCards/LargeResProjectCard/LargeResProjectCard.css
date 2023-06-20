@@ -33,7 +33,7 @@
   grid-column: 1/2;
   position: relative;
 }
-.largeResProjectCard .imgWrapper img {
+.largeResProjectCard .imgWrapper video {
   border-radius: 5px;
   height: auto;
   width: 100%;
