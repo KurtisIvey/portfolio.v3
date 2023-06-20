@@ -1,4 +1,5 @@
 ![I am a Full Stack Web Developer](https://github.com/KurtisIvey/KurtisIvey/blob/main/linkedinbanner.jpeg)
+
 <p align="center">
   <a href="https://kurtisivey.github.io/portfolio.v2/" target="_blank">
       <img src="https://img.shields.io/badge/Portfolio-678666?&style=for-the-badge&logoColor=white">
@@ -33,7 +34,7 @@
   <p align="center">
     Third iteration of my portfolio website!
     <br />
-    <a href="https://portfolio-v3-4c42d20c7bc3.herokuapp.com/"><strong>View it Live!</strong></a>
+    <a href="https://kurtisivey-portfolio-ec1b4b13d7d8.herokuapp.com/"><strong>View it Live!</strong></a>
     
   </p>
 </div>
@@ -95,9 +96,7 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## Optimizations to be made
 
@@ -147,8 +146,6 @@ Project Link: [https://github.com/KurtisIvey/portfolio.v3](https://github.com/Ku
 
 ## Acknowledgments
 
-special thanks to ezgif.com, https://www.pexels.com/@igrevsky/ 
-
+special thanks to ezgif.com, https://www.pexels.com/@igrevsky/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
