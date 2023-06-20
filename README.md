@@ -26,9 +26,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="">
     <img src="https://raw.githubusercontent.com/KurtisIvey/portfolio.v3/45ff6d8e37a0a263e5f0849dfa74fa33c2a7dbb7/src/assets/logo.svg" alt="Logo" width="350" height="350">
-  </a>
 
   <h3 align="center">Portfolio Website V3</h3>
 
