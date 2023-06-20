@@ -6,6 +6,7 @@ import useWindowWidth from "../../../hooks/useWindowWidth";
 
 const LargeResProjectCard = ({
   img,
+  mp4,
   name,
   techStack,
   description,
@@ -43,9 +44,14 @@ const LargeResProjectCard = ({
   return (
     <article className="largeResProjectCard">
       <div className="imgWrapper" ref={imgRef}>
-        <video src={img} autoPlay muted loop>
-          Your browser does not support the video tag.
-        </video>
+        {/* issues with videos autoplaying on small res devices, so gif is rendered instead */}
+        {windowWidth > 1000 ? (
+          <video src={mp4} autoPlay muted loop>
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img src={img} alt={name} />
+        )}
         <div className="color-overlay"></div>
       </div>
       <div className="techStack">
