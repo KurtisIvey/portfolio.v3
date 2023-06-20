@@ -52,9 +52,6 @@
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#license">License</a></li>
@@ -145,7 +142,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p><img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width="25">Connect with me on: <a href="https://www.linkedin.com/in/kurtisivey/" target="_blank">LinkedIn</a>,<a href="https://www.instagram.com/iv.coding.bjj/" target="_blank"> Instagram</a>, or <a href="mailto:kurtiveycodes@gmail.com">Email</a></p>
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/KurtisIvey/portfolio.v3](https://github.com/KurtisIvey/portfolio.v3)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
