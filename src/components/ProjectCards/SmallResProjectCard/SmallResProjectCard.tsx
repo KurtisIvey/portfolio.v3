@@ -23,8 +23,9 @@ const SmallResProjectCard = ({
           </a>
         </div>
       </div>
-      <video src={img} autoPlay muted loop>
-        Your browser does not support the video tag.
+      <video muted autoPlay>
+        <source src={img} type="video/mp4" /> Your browser does not support the
+        video tag.
       </video>
       <p className="techStack">
         <span>Tech Used:</span> {techStack}
