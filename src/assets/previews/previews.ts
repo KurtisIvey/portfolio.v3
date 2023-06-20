@@ -1,6 +1,6 @@
-import jiuJitsuConnectGif from "./jiuJitsuConnect.gif";
-import bobaDepotGif from "./bobaDepot.gif";
-import spaceTourismGif from "./spaceTourism.gif";
+import jiuJitsuConnectGif from "./jiujitsuConnect.mp4";
+import bobaDepotGif from "./bobaDepot.mp4";
+import spaceTourismGif from "./spaceTourism.mp4";
 
 export const projects = [
   {
