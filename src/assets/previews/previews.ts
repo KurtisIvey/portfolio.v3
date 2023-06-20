@@ -1,11 +1,16 @@
-import jiuJitsuConnectGif from "./jiujitsuConnect.mp4";
-import bobaDepotGif from "./bobaDepot.mp4";
-import spaceTourismGif from "./spaceTourism.mp4";
+import jiuJitsuConnectGif from "./jiujitsuConnect.gif";
+import bobaDepotGif from "./bobaDepot.gif";
+import spaceTourismGif from "./spaceTourism.gif";
+
+import jiuJitsuConnectMp4 from "./jiujitsuConnect.mp4";
+import bobaDepotMp4 from "./bobaDepot.mp4";
+import spaceTourismMp4 from "./spaceTourism.mp4";
 
 export const projects = [
   {
     name: "Jiu Jitsu Connect",
     img: jiuJitsuConnectGif,
+    mp4: jiuJitsuConnectMp4,
     repo: "https://github.com/KurtisIvey/space-tourism-nextjs",
     website: "https://jiujitsu-connect.herokuapp.com/",
     techStack:
@@ -16,6 +21,7 @@ export const projects = [
   {
     name: "Space Tourism!",
     img: spaceTourismGif,
+    mp4: spaceTourismMp4,
     repo: "https://github.com/KurtisIvey/space-tourism-nextjs",
     website: "https://space-tourism-nextjs-uu85.vercel.app/",
     techStack: "TypeScript, Next.js, React, CSS, Sass",
@@ -25,6 +31,7 @@ export const projects = [
   {
     name: "Boba Depot",
     img: bobaDepotGif,
+    mp4: bobaDepotMp4,
     repo: "https://github.com/KurtisIvey/boba_project",
     website: "https://boba-project-ki.herokuapp.com/",
     techStack: "Node.js, Express, EJS, MongoDB, CSS, AWS S3",
