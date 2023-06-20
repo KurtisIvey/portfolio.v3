@@ -21,7 +21,6 @@ const MouseCircle = () => {
     <div
       className={`mouse-circle`}
       style={{ left: position.x, top: position.y }}
-      //onClick={() => handleClick}
     ></div>
   );
 };
