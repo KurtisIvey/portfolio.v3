@@ -31,7 +31,8 @@ const Mailer = () => {
     e.preventDefault();
 
     try {
-      await emailjs.sendForm(serviceId, templateId, e.target, userId);
+      const form = e.currentTarget;
+      await emailjs.sendForm(serviceId, templateId, form, userId);
       console.log("SUCCESS!");
       alert("Email sent!");
       resetForm();
