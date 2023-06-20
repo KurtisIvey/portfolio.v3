@@ -17,22 +17,6 @@ const MouseCircle = () => {
     };
   }, []);
 
-  /*   const handleClick = () => {
-    console.log("pulse");
-    setIsPulsing(true);
-    setTimeout(() => {
-      setIsPulsing(false);
-    }, 1000); 
-  }; 
-  
-  <div
-      className={`mouse-circle ${isPulsing ? "pulse" : ""}`}
-      style={{ left: position.x, top: position.y }}
-      //onClick={() => handleClick}
-    ></div>
-  
-  */
-
   return (
     <div
       className={`mouse-circle`}
