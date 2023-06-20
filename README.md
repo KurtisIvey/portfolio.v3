@@ -50,10 +50,9 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#future-optimizations">Optimizations for the future</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -101,13 +100,13 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
 
-## Usage
+## Optimizations to be made
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+<ul>
+  <li>adding a footer</li>
+  <li>contact link sidebar</li>
+</ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
