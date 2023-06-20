@@ -2,6 +2,7 @@ import "./LargeResProjectCard.css";
 import { useRef, useEffect } from "react";
 import { BsGithub, BsGlobe } from "react-icons/bs";
 import { ProjectInterface } from "../project.types";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 
 const LargeResProjectCard = ({
   img,
@@ -11,6 +12,7 @@ const LargeResProjectCard = ({
   repo,
   website,
 }: ProjectInterface) => {
+  const windowWidth = useWindowWidth();
   const imgRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

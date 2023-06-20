@@ -15,18 +15,25 @@ const SmallResProjectCard = ({
       <div className="top">
         <h2>{name}</h2>
         <div className="links">
-          <a href={repo} aria-label="github repo link">
+          <a
+            href={repo}
+            aria-label={`${name} GitHub Repository`}
+            title="GitHub Repository"
+            tabIndex={0}
+          >
             <BsGithub size={25} />
           </a>
-          <a href={website} aria-label="website link">
+          <a
+            href={website}
+            aria-label={`${name} Website`}
+            title="Website"
+            tabIndex={0}
+          >
             <BsGlobe size={25} />
           </a>
         </div>
       </div>
-      <video muted autoPlay>
-        <source src={img} type="video/mp4" /> Your browser does not support the
-        video tag.
-      </video>
+      <img src={img} alt={name} />
       <p className="techStack">
         <span>Tech Used:</span> {techStack}
       </p>
