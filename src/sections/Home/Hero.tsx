@@ -1,4 +1,3 @@
-import { useEffect, useState, useRef } from "react";
 import "./Hero.css";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
