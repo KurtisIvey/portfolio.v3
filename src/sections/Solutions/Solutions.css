@@ -1,15 +1,77 @@
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes miniWiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
 .solutionsContainer {
-  height: 300px;
+  height: auto;
   width: 100%;
   background-color: rgba(128, 128, 128, 0.293);
   color: white;
-  height: 300px;
   margin-bottom: 10vh;
   padding: 15px;
 }
 .solutionsContainer h1 {
   text-align: center;
-  font-size: 1.4rem;
+  margin-bottom: 50px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.solutionsContainer .rotate {
+  animation: rotate 5s linear infinite;
+}
+.solutionsContainer .shieldBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid white;
+}
+.solutionsContainer .shieldBox .hexagon-shield {
+  width: 130px;
+  height: 150px; /* Adjust height based on the width to maintain proportions */
+  background-color: rgb(126, 234, 130);
+  position: relative;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.solutionsContainer .shieldBox h2 {
+  font-size: 1.3rem;
   font-weight: 600;
-  letter-spacing: 1.2px;
+}
+.solutionsContainer .shieldBox p {
+  font-weight: 400;
+  letter-spacing: 1px;
+  max-width: 300px;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 20px;
 }/*# sourceMappingURL=Solutions.css.map */
