@@ -1,8 +1,8 @@
-import jiuJitsuConnectGif from "./jiujitsuConnect.gif";
+import jiuJitsuConnectGif from "./jiuJitsuConnect.gif";
 import bobaDepotGif from "./bobaDepot.gif";
 import spaceTourismGif from "./spaceTourism.gif";
 
-import jiuJitsuConnectMp4 from "./jiujitsuConnect.mp4";
+import jiuJitsuConnectMp4 from "./jiuJitsuConnect.mp4";
 import bobaDepotMp4 from "./bobaDepot.mp4";
 import spaceTourismMp4 from "./spaceTourism.mp4";
 
