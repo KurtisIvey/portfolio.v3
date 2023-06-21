@@ -16,7 +16,7 @@ export const projects = [
     techStack:
       "React, Redux, TypeScript, JavaScript, Tailwind CSS, Node.js, Express, MongoDB, PostgreSQL, AWS S3, Heroku",
     description:
-      "Social Media platform that allows practicioners to communicate and connect with each other. Members are able to register, login, upload profile photos, post, like, make friends, and more!",
+      "Social Media platform that allows practicioners to communicate and connect with each other. Members are able to register, login, upload profile photos, post, like, make friends, & more!",
   },
   {
     name: "Space Tourism!",
@@ -26,7 +26,7 @@ export const projects = [
     website: "https://space-tourism-nextjs-uu85.vercel.app/",
     techStack: "TypeScript, Next.js, React, CSS, Sass",
     description:
-      "Space Tourism is an interactive website that allows one to explore the different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, and the associated technologies that will be used in their space journey.",
+      "Space Tourism is an interactive website that allows one to explore different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, & the technologies that will be used in their space journey.",
   },
   {
     name: "Boba Depot",
