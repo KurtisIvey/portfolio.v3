@@ -181,9 +181,12 @@ textarea {
     scroll-behavior: auto !important;
   }
 }
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
 section {
   width: 100%;
-  font-family: "Work Sans", sans-serif;
 }
 
 .subSection {

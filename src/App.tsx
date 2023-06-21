@@ -9,6 +9,7 @@ import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import Contact from "./sections/Contact/Contact";
 import useWindowWidth from "./hooks/useWindowWidth";
+import Solutions from "./sections/Solutions/Solutions";
 
 function App() {
   const windowWidth = useWindowWidth();
@@ -26,6 +27,7 @@ function App() {
         <LogoSvg />
       </div>
       <Hero />
+      <Solutions />
       <About />
       <Skills />
       <Projects />
