@@ -1,13 +1,13 @@
 @import "../../../variables.scss";
 
-.largeResProjectCard {
+.large-project-card {
   margin: 80px 0;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 0.4fr;
   grid-template-rows: 1fr auto;
   padding-top: 50px;
-  .imgWrapper {
+  .img-wrapper {
     grid-row: 1/2;
     grid-column: 1/2;
     position: relative;
@@ -31,7 +31,7 @@
       }
     }
   }
-  .techStack {
+  .tech-stack {
     margin-top: 5px;
     grid-row: 2/3;
     grid-column: 1/2;
@@ -54,7 +54,7 @@
     top: 15px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
-  .floatingBox {
+  .floating-box {
     position: absolute;
     z-index: 2;
     width: 300px;
@@ -99,14 +99,14 @@
 }
 
 @media screen and (min-width: 972px) {
-  .largeResProjectCard {
+  .large-project-card {
     margin: 110px 0;
 
     h2 {
       right: -8px;
       text-shadow: 1px 1px 2px rgb(0, 0, 0);
     }
-    .floatingBox {
+    .floating-box {
       width: 380px;
       right: -10px;
       p {

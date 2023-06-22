@@ -42,8 +42,8 @@ const LargeResProjectCard = ({
   }, []);
 
   return (
-    <article className="largeResProjectCard">
-      <div className="imgWrapper" ref={imgRef}>
+    <article className="large-project-card">
+      <div className="img-wrapper" ref={imgRef}>
         {/* issues with videos autoplaying on small res devices, so gif is rendered instead */}
         {windowWidth > 1000 ? (
           <video src={mp4} autoPlay muted loop>
@@ -54,7 +54,7 @@ const LargeResProjectCard = ({
         )}
         {windowWidth > 1100 && <div className="color-overlay" />}
       </div>
-      <div className="techStack">
+      <div className="tech-stack">
         <span>Tech Used: </span>
         {techStack}
       </div>
@@ -63,7 +63,7 @@ const LargeResProjectCard = ({
         <em>{name}</em>
       </h2>
       {/* floating description and links */}
-      <div className="floatingBox">
+      <div className="floating-box">
         <p>{description}</p>
         <div className="links">
           <a href={repo} aria-label="github repo link">

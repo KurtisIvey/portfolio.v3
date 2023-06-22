@@ -20,7 +20,7 @@
     transform: rotate(-1deg);
   }
 }
-.largeResProjectCard {
+.large-project-card {
   margin: 80px 0;
   position: relative;
   display: grid;
@@ -28,18 +28,18 @@
   grid-template-rows: 1fr auto;
   padding-top: 50px;
 }
-.largeResProjectCard .imgWrapper {
+.large-project-card .img-wrapper {
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
 }
-.largeResProjectCard .imgWrapper video,
-.largeResProjectCard .imgWrapper img {
+.large-project-card .img-wrapper video,
+.large-project-card .img-wrapper img {
   border-radius: 5px;
   height: auto;
   width: 100%;
 }
-.largeResProjectCard .imgWrapper .color-overlay {
+.large-project-card .img-wrapper .color-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -48,10 +48,10 @@
   background-color: rgba(159, 159, 159, 0.189);
   transition: all 0.2s;
 }
-.largeResProjectCard .imgWrapper .color-overlay:hover {
+.large-project-card .img-wrapper .color-overlay:hover {
   background-color: transparent;
 }
-.largeResProjectCard .techStack {
+.large-project-card .tech-stack {
   margin-top: 5px;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -60,10 +60,10 @@
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   font-weight: 500;
 }
-.largeResProjectCard .techStack span {
+.large-project-card .tech-stack span {
   color: rgb(126, 234, 130);
 }
-.largeResProjectCard h2 {
+.large-project-card h2 {
   font-family: "Permanent Marker", cursive;
   position: absolute;
   z-index: 3;
@@ -74,7 +74,7 @@
   top: 15px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-.largeResProjectCard .floatingBox {
+.large-project-card .floating-box {
   position: absolute;
   z-index: 2;
   width: 300px;
@@ -84,7 +84,7 @@
   display: flex;
   flex-direction: column;
 }
-.largeResProjectCard .floatingBox p {
+.large-project-card .floating-box p {
   background-color: rgba(128, 128, 128, 0.293);
   padding: 15px;
   line-height: 20px;
@@ -94,7 +94,7 @@
   font-size: 0.8rem;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-.largeResProjectCard .floatingBox div.links {
+.large-project-card .floating-box div.links {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
@@ -102,7 +102,7 @@
   margin-right: 5px;
   font-weight: 500;
 }
-.largeResProjectCard .floatingBox div.links a {
+.large-project-card .floating-box div.links a {
   display: flex;
   font-size: 0.9rem;
   justify-content: center;
@@ -111,31 +111,31 @@
   letter-spacing: 1.5px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-.largeResProjectCard .floatingBox div.links a:hover {
+.large-project-card .floating-box div.links a:hover {
   text-decoration: underline;
   color: rgb(126, 234, 130);
 }
 
 @media screen and (min-width: 972px) {
-  .largeResProjectCard {
+  .large-project-card {
     margin: 110px 0;
   }
-  .largeResProjectCard h2 {
+  .large-project-card h2 {
     right: -8px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
-  .largeResProjectCard .floatingBox {
+  .large-project-card .floating-box {
     width: 380px;
     right: -10px;
   }
-  .largeResProjectCard .floatingBox p {
+  .large-project-card .floating-box p {
     line-height: 22px;
     font-size: 0.9rem;
   }
-  .largeResProjectCard .floatingBox div.links {
+  .large-project-card .floating-box div.links {
     gap: 20px;
   }
-  .largeResProjectCard .floatingBox div.links a {
+  .large-project-card .floating-box div.links a {
     font-size: 1.1rem;
     letter-spacing: 2px;
   }

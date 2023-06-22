@@ -11,7 +11,7 @@ const SmallResProjectCard = ({
   website,
 }: ProjectInterface) => {
   return (
-    <article className="mobileProjectCard">
+    <article className="mobile-project-card">
       <div className="top">
         <h2>{name}</h2>
         <div className="links">
@@ -34,7 +34,7 @@ const SmallResProjectCard = ({
         </div>
       </div>
       <img src={img} alt={name} />
-      <p className="techStack">
+      <p className="tech-stack">
         <span>Tech Used:</span> {techStack}
       </p>
       <p className="description">{description}</p>

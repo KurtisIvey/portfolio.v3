@@ -1,6 +1,6 @@
 @import "../../../variables.scss";
 
-.mobileProjectCard {
+.mobile-project-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@
       color: $accentColor;
     }
   }
-  p.techStack {
+  p.tech-stack {
     font-size: 0.7rem;
     line-height: 15px;
   }
