@@ -111,8 +111,8 @@ const Navbar = () => {
           </nav>
         </>
       ) : (
-        <nav className="navLargerResNavLinks">
-          <ul id="largerResNavLinks" role="menu">
+        <nav className="nav-larger-res-nav-links">
+          <ul className="larger-nav-links-container" role="menu">
             <li role="none">
               <button
                 onClick={() => handleScrollToSection("about")}

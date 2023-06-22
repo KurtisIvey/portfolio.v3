@@ -111,11 +111,11 @@ header .blur-filter {
 }
 
 @media screen and (min-width: 770px) {
-  header .navLargerResNavLinks {
+  header .nav-larger-res-nav-links {
     display: flex;
     align-items: center;
   }
-  header ul#largerResNavLinks {
+  header ul.larger-nav-links-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -126,10 +126,10 @@ header .blur-filter {
     font-size: clamp(20px, 2vw, 1.3rem);
     margin-right: 12px;
   }
-  header ul#largerResNavLinks li {
+  header ul.larger-nav-links-container li {
     margin: 0 13px;
   }
-  header ul#largerResNavLinks li:hover {
+  header ul.larger-nav-links-container li:hover {
     color: rgb(126, 234, 130);
     animation: wiggle 0.3s infinite;
   }

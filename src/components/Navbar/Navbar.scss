@@ -100,11 +100,11 @@ header {
 
 @media screen and (min-width: 770px) {
   header {
-    .navLargerResNavLinks {
+    .nav-larger-res-nav-links {
       display: flex;
       align-items: center;
     }
-    ul#largerResNavLinks {
+    ul.larger-nav-links-container {
       display: flex;
       flex-direction: row;
       align-items: center;
