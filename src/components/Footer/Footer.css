@@ -1,7 +1,41 @@
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes miniWiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
 footer {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
   width: 100%;
-  background-color: rgba(197, 197, 197, 0.22);
-  padding: 20px;
+  background-color: rgba(197, 197, 197, 0.162);
+  padding: 15px;
+  color: white;
+}
+footer a {
+  text-decoration: underline;
+}
+footer a:hover {
+  animation: wiggle 0.3s infinite;
+  color: rgb(126, 234, 130);
 }
 footer div {
   width: 100%;
@@ -9,10 +43,18 @@ footer div {
   justify-content: space-between;
   align-items: center;
 }
-footer div span {
-  letter-spacing: 2.3px;
-}
 footer div ul {
   display: flex;
   gap: 20px;
+}
+
+@media screen and (min-width: 770px) {
+  footer {
+    font-size: 0.95rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  footer {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=Footer.css.map */

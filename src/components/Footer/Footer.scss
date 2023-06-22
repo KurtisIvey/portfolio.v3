@@ -1,18 +1,43 @@
+@import "../../variables.scss";
+
 footer {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
   width: 100%;
-  background-color: rgba(197, 197, 197, 0.22);
-  padding: 20px;
+  background-color: rgba(197, 197, 197, 0.162);
+  padding: 15px;
+  color: white;
+
+  a {
+    text-decoration: underline;
+    &:hover {
+      animation: wiggle 0.3s infinite;
+
+      color: $accentColor;
+    }
+  }
   div {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    span {
-      letter-spacing: 2.3px;
-    }
+
     ul {
       display: flex;
       gap: 20px;
     }
+  }
+}
+
+@media screen and (min-width: 770px) {
+  footer {
+    font-size: 0.95rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  footer {
+    font-size: 1.1rem;
   }
 }
