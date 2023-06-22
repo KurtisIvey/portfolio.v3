@@ -60,7 +60,7 @@ section.about-section {
       transition: 0.1s ease-in-out 0.1s;
     }
   }
-  .aboutTextContainer {
+  .about-text-container {
     color: rgb(203, 203, 203);
     grid-row: 3/4;
     line-height: 25px;
@@ -120,7 +120,7 @@ section.about-section {
         transition: 0.1s ease-in-out 0.1s;
       }
     }
-    .aboutTextContainer {
+    .about-text-container {
       color: rgb(203, 203, 203);
       grid-column: 2/3;
       grid-row: 2/3;
@@ -152,7 +152,7 @@ section.about-section {
         width: 300px;
       }
     }
-    .aboutTextContainer {
+    .about-text-container {
       color: rgb(203, 203, 203);
       grid-column: 2/3;
       grid-row: 2/3;

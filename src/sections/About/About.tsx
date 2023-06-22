@@ -66,7 +66,7 @@ const About: React.FC = () => {
           className={`behind-box ${hoveringOnHeadshot ? "hovered" : ""}`}
         ></div>
       </div>
-      <article className="aboutTextContainer">
+      <article className="about-text-container">
         <p>
           Hey there! My name is Kurtis & I'm an{" "}
           <span>experienced software developer </span>
