@@ -48,10 +48,10 @@ const Navbar = () => {
       </h1>
       {windowWidth < 770 ? (
         <>
-          {sideBarOpen && <div className="blurFilter" />}{" "}
+          {sideBarOpen && <div className="blur-filter" />}{" "}
           <nav>
             <button
-              className={`hamburgerContainer ${sideBarOpen ? "open" : ""}`}
+              className={`hamburger-container ${sideBarOpen ? "open" : ""}`}
               onClick={toggleSideBar}
               aria-label={sideBarOpen ? "Close Menu" : "Open Menu"}
               aria-expanded={sideBarOpen}
