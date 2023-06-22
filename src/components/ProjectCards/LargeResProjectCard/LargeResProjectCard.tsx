@@ -52,7 +52,7 @@ const LargeResProjectCard = ({
         ) : (
           <img src={img} alt={name} />
         )}
-        <div className="color-overlay"></div>
+        {windowWidth > 1100 && <div className="color-overlay" />}
       </div>
       <div className="techStack">
         <span>Tech Used: </span>
