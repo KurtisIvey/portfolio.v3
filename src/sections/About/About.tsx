@@ -3,9 +3,11 @@ import "./About.css";
 import headshot from "../../assets/headshot.jpeg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 const About: React.FC = () => {
   const controls = useAnimation();
+  const windowWidth = useWindowWidth();
   const [ref, inView] = useInView({
     triggerOnce: true, // Trigger the animation only once when the div enters the viewport
   });
@@ -58,7 +60,7 @@ const About: React.FC = () => {
       <div ref={aboutImgContainerRef} className="aboutImgContainer">
         <div className="imgWrapper">
           <img src={headshot} alt="Kurtis Ivey's profile photo" />
-          <div className="color-overlay"></div>
+          {windowWidth > 1100 && <div className="color-overlay" />}
         </div>
         <div
           className={`behindBox ${hoveringOnHeadshot ? "hovered" : ""}`}
