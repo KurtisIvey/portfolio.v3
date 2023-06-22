@@ -5,11 +5,8 @@ import { motion } from "framer-motion";
 
 import "./Navbar.css";
 import useWindowWidth from "../../hooks/useWindowWidth";
-import useStickyNavbar from "../../hooks/useStickyNavbar";
 
 const Navbar = () => {
-  const isSticky: boolean = useStickyNavbar();
-
   const [sideBarOpen, setSideBarOpen] = useState(false);
   // prevents unnecessary rendering of both sidebars at once by detecting window width
   // windowWidth becomes the measurement for the ternary operator
@@ -45,7 +42,6 @@ const Navbar = () => {
       transition={{ delay: 3, duration: 2 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      className={isSticky ? "sticky-navbar" : ""}
     >
       <h1>
         Kurtis <span>Ivey</span>
