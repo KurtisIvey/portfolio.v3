@@ -9,7 +9,7 @@ const Solutions: React.FC = () => {
       <h1 className="">Services I Offer</h1>
       <div className="shieldsContainer">
         <div className="shieldBox">
-          <div className="hexagon-shield">
+          <div className="hexagon-shield" aria-hidden="true">
             <BsGearWideConnected size={70} className="rotate" />
           </div>
           <h2>Custom Web Solutions</h2>
@@ -21,7 +21,7 @@ const Solutions: React.FC = () => {
           </p>
         </div>
         <div className="shieldBox">
-          <div className="hexagon-shield">
+          <div className="hexagon-shield" aria-hidden="true">
             <FaPaintBrush size={44} className="paint" />
           </div>
           <h2>Responsive UX Design</h2>
@@ -34,7 +34,7 @@ const Solutions: React.FC = () => {
           </p>
         </div>
         <div className="shieldBox">
-          <div className="hexagon-shield">
+          <div className="hexagon-shield" aria-hidden="true">
             <FaHammer size={60} className="hammer" />
           </div>
           <h2>Web Maintenance & Support</h2>
