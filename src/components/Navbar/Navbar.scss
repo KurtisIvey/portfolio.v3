@@ -48,7 +48,7 @@ header {
     }
   }
 
-  #sideBar {
+  #side-bar {
     position: absolute;
     right: -1300px;
     display: grid;
@@ -85,7 +85,7 @@ header {
       }
     }
   }
-  #sideBar.sideBarOpen {
+  #side-bar.sideBarOpen {
     right: 0;
     //backdrop-filter: blur(8px);
   }
@@ -103,7 +103,7 @@ header {
     .hamburgerContainer {
       display: none;
     }
-    #sideBar {
+    #side-bar {
       display: none;
     }
     .navLargerResNavLinks {

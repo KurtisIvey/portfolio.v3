@@ -62,7 +62,7 @@ header .hamburger-container .hamburger {
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out;
 }
-header #sideBar {
+header #side-bar {
   position: absolute;
   right: -1300px;
   display: grid;
@@ -73,7 +73,7 @@ header #sideBar {
   z-index: 2;
   top: 0;
 }
-header #sideBar ul {
+header #side-bar ul {
   background-color: rgba(120, 118, 118, 0.447);
   grid-column: 2/3;
   width: 198px;
@@ -81,11 +81,11 @@ header #sideBar ul {
   flex-direction: column;
   padding-top: 50px;
 }
-header #sideBar ul hr {
+header #side-bar ul hr {
   border-bottom: 1px solid gray;
   margin: 0 0 10px 15px;
 }
-header #sideBar ul li {
+header #side-bar ul li {
   list-style: none;
   width: 100%;
   padding: 15px;
@@ -94,11 +94,11 @@ header #sideBar ul li {
   text-align: left;
   z-index: 3;
 }
-header #sideBar ul li:hover {
+header #side-bar ul li:hover {
   background-color: rgba(173, 173, 173, 0.898);
   color: rgb(126, 234, 130);
 }
-header #sideBar.sideBarOpen {
+header #side-bar.sideBarOpen {
   right: 0;
 }
 header .blur-filter {
@@ -114,7 +114,7 @@ header .blur-filter {
   header .hamburgerContainer {
     display: none;
   }
-  header #sideBar {
+  header #side-bar {
     display: none;
   }
   header .navLargerResNavLinks {

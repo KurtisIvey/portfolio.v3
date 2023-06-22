@@ -63,7 +63,7 @@ const Navbar = () => {
               )}
             </button>
             <div
-              id="sideBar"
+              id="side-bar"
               className={sideBarOpen ? "sideBarOpen" : ""}
               role="menu"
               aria-label="Main Menu"
