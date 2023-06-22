@@ -75,6 +75,7 @@
 }
 
 .solutionsContainer {
+  font-family: "Work Sans", sans-serif;
   height: auto;
   width: 100%;
   background-color: rgba(128, 128, 128, 0.293);
@@ -84,7 +85,10 @@
 }
 .solutionsContainer h1 {
   text-align: center;
-  margin-bottom: 50px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-bottom: 40px;
 }
 .solutionsContainer .shieldsContainer {
   display: flex;
@@ -124,6 +128,18 @@
   line-height: 20px;
 }
 
+@media screen and (min-width: 770px) {
+  .solutionsContainer h1 {
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .solutionsContainer h1 {
+    font-size: 2.2rem;
+    margin-bottom: 80px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .solutionsContainer {
     height: auto;
@@ -134,8 +150,7 @@
     padding: 15px;
   }
   .solutionsContainer h1 {
-    text-align: center;
-    margin-bottom: 50px;
+    margin-right: 50px;
   }
   .solutionsContainer .shieldsContainer {
     display: flex;
@@ -146,7 +161,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
     padding-bottom: 40px;
     border-bottom: none;
     margin-bottom: 40px;
@@ -164,15 +179,15 @@
     margin-bottom: 15px;
   }
   .solutionsContainer .shieldBox h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .solutionsContainer .shieldBox p {
     font-weight: 400;
     letter-spacing: 1px;
-    max-width: 300px;
+    max-width: 330px;
     text-align: center;
-    font-size: 0.9rem;
-    line-height: 20px;
+    font-size: 1.1rem;
+    line-height: 23px;
   }
 }/*# sourceMappingURL=Solutions.css.map */
