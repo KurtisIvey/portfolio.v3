@@ -10,6 +10,7 @@ import Skills from "./sections/Skills/Skills";
 import Contact from "./sections/Contact/Contact";
 import useWindowWidth from "./hooks/useWindowWidth";
 import Solutions from "./sections/Solutions/Solutions";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const windowWidth = useWindowWidth();
@@ -32,6 +33,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </main>
   );
 }

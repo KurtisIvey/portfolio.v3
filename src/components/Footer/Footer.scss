@@ -1,0 +1,18 @@
+footer {
+  width: 100%;
+  background-color: rgba(197, 197, 197, 0.22);
+  padding: 20px;
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      letter-spacing: 2.3px;
+    }
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
