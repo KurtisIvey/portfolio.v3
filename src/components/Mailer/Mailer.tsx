@@ -53,14 +53,14 @@ const Mailer = () => {
     });
   }
   return (
-    <div className="mailerContainer">
+    <div className="mailer-container">
       <p className="">
         Got a technical issue you need solved? Looking for a new employee to add
         to the team? Or if you just want to say hello. Feel free to reach out &
         I'll try my best to get back to you as soon as possible.
       </p>
       <form action="#" className="" onSubmit={(e) => sendEmail(e)}>
-        <div className="inputRow">
+        <div className="input-row">
           <label htmlFor="email">Your email</label>
           <input
             type="email"
@@ -73,7 +73,7 @@ const Mailer = () => {
             aria-label="Your email address"
           />
         </div>
-        <div className="inputRow">
+        <div className="input-row">
           <label htmlFor="name">Your name</label>
           <input
             type="text"
@@ -86,7 +86,7 @@ const Mailer = () => {
             aria-label="Your name"
           />
         </div>
-        <div className="inputRow">
+        <div className="input-row">
           <label htmlFor="message">Your message</label>
           <textarea
             id="message"
@@ -99,7 +99,7 @@ const Mailer = () => {
             aria-label="Your message"
           />
         </div>
-        <div className="buttonRow">
+        <div className="button-row">
           <button type="submit" title="Send message">
             Send message
           </button>
