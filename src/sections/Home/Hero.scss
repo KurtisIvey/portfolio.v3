@@ -1,19 +1,20 @@
 @import "../../variables";
 
 section.heroSection {
-  padding: 10vh 20px 20px 20px;
-
+  padding: 0 20px;
   font-family: "Work Sans", sans-serif;
   height: 100vh;
-  //width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  //padding: 10vh 20px 20px 20px;
-  gap: 3vh;
-  justify-items: center;
+  justify-content: center; /* Updated */
+  align-items: center; /* Added */
   letter-spacing: 1.2px;
 
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   h1.hiMyNameIs {
     color: $accentColor;
     font-size: 1.1rem;
@@ -46,8 +47,6 @@ section.heroSection {
 
 @media screen and (min-width: 770px) {
   section.heroSection {
-    padding: 20vh 0 15vh 0;
-
     h1.hiMyNameIs {
       font-size: 1.5rem;
       margin-left: 3.5px;

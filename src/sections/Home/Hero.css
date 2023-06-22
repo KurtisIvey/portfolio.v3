@@ -21,15 +21,19 @@
   }
 }
 section.heroSection {
-  padding: 10vh 20px 20px 20px;
+  padding: 0 20px;
   font-family: "Work Sans", sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 3vh;
-  justify-items: center;
+  justify-content: center; /* Updated */
+  align-items: center; /* Added */
   letter-spacing: 1.2px;
+}
+section.heroSection .heroContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 section.heroSection h1.hiMyNameIs {
   color: rgb(126, 234, 130);
@@ -60,9 +64,6 @@ section.heroSection p {
 }
 
 @media screen and (min-width: 770px) {
-  section.heroSection {
-    padding: 20vh 0 15vh 0;
-  }
   section.heroSection h1.hiMyNameIs {
     font-size: 1.5rem;
     margin-left: 3.5px;
