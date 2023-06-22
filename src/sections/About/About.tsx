@@ -63,7 +63,7 @@ const About: React.FC = () => {
           {windowWidth > 1100 && <div className="color-overlay" />}
         </div>
         <div
-          className={`behindBox ${hoveringOnHeadshot ? "hovered" : ""}`}
+          className={`behind-box ${hoveringOnHeadshot ? "hovered" : ""}`}
         ></div>
       </div>
       <article className="aboutTextContainer">

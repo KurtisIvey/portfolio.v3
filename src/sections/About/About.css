@@ -62,7 +62,7 @@ section.about-section .about-img-container .img-wrapper .color-overlay {
 section.about-section .about-img-container .img-wrapper .color-overlay:hover {
   background-color: transparent;
 }
-section.about-section .about-img-container .behindBox {
+section.about-section .about-img-container .behind-box {
   position: absolute;
   top: 14px;
   left: 14px;
@@ -127,7 +127,7 @@ section.about-section .aboutTextContainer span {
     height: 250px;
     width: auto;
   }
-  section.about-section .about-img-container .behindBox {
+  section.about-section .about-img-container .behind-box {
     height: 250px;
     width: 250px;
     transition: 0.1s ease-in-out;
@@ -162,7 +162,7 @@ section.about-section .aboutTextContainer span {
     height: 300px;
     width: auto;
   }
-  section.about-section .about-img-container .behindBox {
+  section.about-section .about-img-container .behind-box {
     height: 300px;
     width: 300px;
   }
