@@ -100,12 +100,6 @@ header {
 
 @media screen and (min-width: 770px) {
   header {
-    .hamburgerContainer {
-      display: none;
-    }
-    #side-bar {
-      display: none;
-    }
     .navLargerResNavLinks {
       display: flex;
       align-items: center;

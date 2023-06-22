@@ -111,12 +111,6 @@ header .blur-filter {
 }
 
 @media screen and (min-width: 770px) {
-  header .hamburgerContainer {
-    display: none;
-  }
-  header #side-bar {
-    display: none;
-  }
   header .navLargerResNavLinks {
     display: flex;
     align-items: center;
