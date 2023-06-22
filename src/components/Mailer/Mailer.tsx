@@ -54,11 +54,11 @@ const Mailer = () => {
   }
   return (
     <div className="mailerContainer">
-      <div className="">
+      <p className="">
         Got a technical issue you need solved? Looking for a new employee to add
         to the team? Or if you just want to say hello. Feel free to reach out &
         I'll try my best to get back to you as soon as possible.
-      </div>
+      </p>
       <form action="#" className="" onSubmit={(e) => sendEmail(e)}>
         <div className="inputRow">
           <label htmlFor="email">Your email</label>
