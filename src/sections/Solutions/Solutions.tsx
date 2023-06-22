@@ -37,7 +37,7 @@ const Solutions: React.FC = () => {
           <div className="hexagon-shield">
             <FaHammer size={60} className="hammer" />
           </div>
-          <h2>Website Maintenance & Support</h2>
+          <h2>Web Maintenance & Support</h2>
           <p>
             I specialize in providing website maintenance & support services. I
             am committed to delivering ongoing updates, support, & maintenance

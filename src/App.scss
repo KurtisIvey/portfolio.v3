@@ -220,3 +220,10 @@ h1.sectionH1 {
     }
   }
 }
+
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  background-color: red;
+  width: 100%;
+}

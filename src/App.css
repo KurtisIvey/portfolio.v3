@@ -233,4 +233,10 @@ h1.sectionH1 span {
   h1.sectionH1 span {
     color: rgb(126, 234, 130);
   }
+}
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  background-color: red;
+  width: 100%;
 }/*# sourceMappingURL=App.css.map */
