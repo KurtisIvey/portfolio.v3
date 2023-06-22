@@ -20,7 +20,7 @@
     transform: rotate(-1deg);
   }
 }
-section.aboutSection {
+section.about-section {
   font-family: "Work Sans", sans-serif;
   color: white;
   display: grid;
@@ -28,7 +28,7 @@ section.aboutSection {
   grid-template-rows: auto auto auto;
   gap: 50px;
 }
-section.aboutSection .aboutImgContainer {
+section.about-section .aboutImgContainer {
   display: flex;
   position: relative;
   grid-row: 2/3;
@@ -39,18 +39,18 @@ section.aboutSection .aboutImgContainer {
   height: -moz-fit-content;
   height: fit-content;
 }
-section.aboutSection .aboutImgContainer .imgWrapper {
+section.about-section .aboutImgContainer .imgWrapper {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   z-index: 3;
 }
-section.aboutSection .aboutImgContainer .imgWrapper img {
+section.about-section .aboutImgContainer .imgWrapper img {
   border-radius: 5px;
   height: 230px;
   width: auto;
 }
-section.aboutSection .aboutImgContainer .imgWrapper .color-overlay {
+section.about-section .aboutImgContainer .imgWrapper .color-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -59,10 +59,10 @@ section.aboutSection .aboutImgContainer .imgWrapper .color-overlay {
   background-color: rgba(159, 159, 159, 0.258);
   transition: all 0.2s;
 }
-section.aboutSection .aboutImgContainer .imgWrapper .color-overlay:hover {
+section.about-section .aboutImgContainer .imgWrapper .color-overlay:hover {
   background-color: transparent;
 }
-section.aboutSection .aboutImgContainer .behindBox {
+section.about-section .aboutImgContainer .behindBox {
   position: absolute;
   top: 14px;
   left: 14px;
@@ -75,12 +75,12 @@ section.aboutSection .aboutImgContainer .behindBox {
   transition: 0.1s ease-in-out;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
 }
-section.aboutSection .aboutImgContainer .hovered {
+section.about-section .aboutImgContainer .hovered {
   top: 12px;
   left: 12px;
   transition: 0.1s ease-in-out 0.1s;
 }
-section.aboutSection .aboutTextContainer {
+section.about-section .aboutTextContainer {
   color: rgb(203, 203, 203);
   grid-row: 3/4;
   line-height: 25px;
@@ -90,22 +90,22 @@ section.aboutSection .aboutTextContainer {
   font-weight: 500;
   font-size: 0.9rem;
 }
-section.aboutSection .aboutTextContainer a {
+section.about-section .aboutTextContainer a {
   color: rgb(126, 234, 130);
   text-decoration: underline;
   cursor: pointer;
 }
-section.aboutSection .aboutTextContainer span {
+section.about-section .aboutTextContainer span {
   color: rgb(126, 234, 130);
 }
 
 @media screen and (min-width: 770px) {
-  section.aboutSection {
+  section.about-section {
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: auto 1fr;
     gap: 0;
   }
-  section.aboutSection .aboutImgContainer {
+  section.about-section .aboutImgContainer {
     display: flex;
     position: relative;
     grid-row: 2/3;
@@ -116,29 +116,29 @@ section.aboutSection .aboutTextContainer span {
     margin-right: 0;
     margin-top: 10px;
   }
-  section.aboutSection .aboutImgContainer .imgWrapper {
+  section.about-section .aboutImgContainer .imgWrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
   }
-  section.aboutSection .aboutImgContainer .imgWrapper img {
+  section.about-section .aboutImgContainer .imgWrapper img {
     border-radius: 5px;
     height: 250px;
     width: auto;
   }
-  section.aboutSection .aboutImgContainer .behindBox {
+  section.about-section .aboutImgContainer .behindBox {
     height: 250px;
     width: 250px;
     transition: 0.1s ease-in-out;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
   }
-  section.aboutSection .aboutImgContainer .hovered {
+  section.about-section .aboutImgContainer .hovered {
     top: 12px;
     left: 12px;
     transition: 0.1s ease-in-out 0.1s;
   }
-  section.aboutSection .aboutTextContainer {
+  section.about-section .aboutTextContainer {
     color: rgb(203, 203, 203);
     grid-column: 2/3;
     grid-row: 2/3;
@@ -146,27 +146,27 @@ section.aboutSection .aboutTextContainer span {
     letter-spacing: 1px;
     font-size: 1rem;
   }
-  section.aboutSection .aboutTextContainer span {
+  section.about-section .aboutTextContainer span {
     color: rgb(126, 234, 130);
   }
 }
 @media screen and (min-width: 950px) {
-  section.aboutSection .aboutImgContainer {
+  section.about-section .aboutImgContainer {
     width: -moz-fit-content;
     width: fit-content;
     margin-left: 0;
     margin-right: 0;
   }
-  section.aboutSection .aboutImgContainer .imgWrapper img {
+  section.about-section .aboutImgContainer .imgWrapper img {
     border-radius: 5px;
     height: 300px;
     width: auto;
   }
-  section.aboutSection .aboutImgContainer .behindBox {
+  section.about-section .aboutImgContainer .behindBox {
     height: 300px;
     width: 300px;
   }
-  section.aboutSection .aboutTextContainer {
+  section.about-section .aboutTextContainer {
     color: rgb(203, 203, 203);
     grid-column: 2/3;
     grid-row: 2/3;
@@ -174,7 +174,7 @@ section.aboutSection .aboutTextContainer span {
     letter-spacing: 1.2px;
     font-size: 1.3rem;
   }
-  section.aboutSection .aboutTextContainer span {
+  section.about-section .aboutTextContainer span {
     color: rgb(126, 234, 130);
   }
 }/*# sourceMappingURL=About.css.map */

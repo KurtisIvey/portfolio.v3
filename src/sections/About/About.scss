@@ -1,6 +1,6 @@
 @import "../../variables.scss";
 
-section.aboutSection {
+section.about-section {
   font-family: "Work Sans", sans-serif;
   color: white;
   display: grid;
@@ -83,7 +83,7 @@ section.aboutSection {
 }
 
 @media screen and (min-width: 770px) {
-  section.aboutSection {
+  section.about-section {
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: auto 1fr;
     gap: 0;
@@ -134,7 +134,7 @@ section.aboutSection {
   }
 }
 @media screen and (min-width: 950px) {
-  section.aboutSection {
+  section.about-section {
     .aboutImgContainer {
       width: fit-content;
       margin-left: 0;
