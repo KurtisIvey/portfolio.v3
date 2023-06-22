@@ -57,8 +57,8 @@ const About: React.FC = () => {
       <h1 className="sectionH1">
         <span>01.</span> About Me
       </h1>
-      <div ref={aboutImgContainerRef} className="aboutImgContainer">
-        <div className="imgWrapper">
+      <div ref={aboutImgContainerRef} className="about-img-container">
+        <div className="img-wrapper">
           <img src={headshot} alt="Kurtis Ivey's profile photo" />
           {windowWidth > 1100 && <div className="color-overlay" />}
         </div>

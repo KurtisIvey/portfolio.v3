@@ -28,7 +28,7 @@ section.about-section {
   grid-template-rows: auto auto auto;
   gap: 50px;
 }
-section.about-section .aboutImgContainer {
+section.about-section .about-img-container {
   display: flex;
   position: relative;
   grid-row: 2/3;
@@ -39,18 +39,18 @@ section.about-section .aboutImgContainer {
   height: -moz-fit-content;
   height: fit-content;
 }
-section.about-section .aboutImgContainer .imgWrapper {
+section.about-section .about-img-container .img-wrapper {
   position: relative;
   margin-left: auto;
   margin-right: auto;
   z-index: 3;
 }
-section.about-section .aboutImgContainer .imgWrapper img {
+section.about-section .about-img-container .img-wrapper img {
   border-radius: 5px;
   height: 230px;
   width: auto;
 }
-section.about-section .aboutImgContainer .imgWrapper .color-overlay {
+section.about-section .about-img-container .img-wrapper .color-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -59,10 +59,10 @@ section.about-section .aboutImgContainer .imgWrapper .color-overlay {
   background-color: rgba(159, 159, 159, 0.258);
   transition: all 0.2s;
 }
-section.about-section .aboutImgContainer .imgWrapper .color-overlay:hover {
+section.about-section .about-img-container .img-wrapper .color-overlay:hover {
   background-color: transparent;
 }
-section.about-section .aboutImgContainer .behindBox {
+section.about-section .about-img-container .behindBox {
   position: absolute;
   top: 14px;
   left: 14px;
@@ -75,7 +75,7 @@ section.about-section .aboutImgContainer .behindBox {
   transition: 0.1s ease-in-out;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
 }
-section.about-section .aboutImgContainer .hovered {
+section.about-section .about-img-container .hovered {
   top: 12px;
   left: 12px;
   transition: 0.1s ease-in-out 0.1s;
@@ -105,7 +105,7 @@ section.about-section .aboutTextContainer span {
     grid-template-rows: auto 1fr;
     gap: 0;
   }
-  section.about-section .aboutImgContainer {
+  section.about-section .about-img-container {
     display: flex;
     position: relative;
     grid-row: 2/3;
@@ -116,24 +116,24 @@ section.about-section .aboutTextContainer span {
     margin-right: 0;
     margin-top: 10px;
   }
-  section.about-section .aboutImgContainer .imgWrapper {
+  section.about-section .about-img-container .img-wrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     z-index: 3;
   }
-  section.about-section .aboutImgContainer .imgWrapper img {
+  section.about-section .about-img-container .img-wrapper img {
     border-radius: 5px;
     height: 250px;
     width: auto;
   }
-  section.about-section .aboutImgContainer .behindBox {
+  section.about-section .about-img-container .behindBox {
     height: 250px;
     width: 250px;
     transition: 0.1s ease-in-out;
     box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
   }
-  section.about-section .aboutImgContainer .hovered {
+  section.about-section .about-img-container .hovered {
     top: 12px;
     left: 12px;
     transition: 0.1s ease-in-out 0.1s;
@@ -151,18 +151,18 @@ section.about-section .aboutTextContainer span {
   }
 }
 @media screen and (min-width: 950px) {
-  section.about-section .aboutImgContainer {
+  section.about-section .about-img-container {
     width: -moz-fit-content;
     width: fit-content;
     margin-left: 0;
     margin-right: 0;
   }
-  section.about-section .aboutImgContainer .imgWrapper img {
+  section.about-section .about-img-container .img-wrapper img {
     border-radius: 5px;
     height: 300px;
     width: auto;
   }
-  section.about-section .aboutImgContainer .behindBox {
+  section.about-section .about-img-container .behindBox {
     height: 300px;
     width: 300px;
   }
