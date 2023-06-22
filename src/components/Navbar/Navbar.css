@@ -62,9 +62,6 @@ header .hamburger-container .hamburger {
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out;
 }
-header #largerResNavLinks {
-  display: none;
-}
 header #sideBar {
   position: absolute;
   right: -1300px;
