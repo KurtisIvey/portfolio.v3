@@ -64,7 +64,7 @@ const Navbar = () => {
             </button>
             <div
               id="side-bar"
-              className={sideBarOpen ? "sideBarOpen" : ""}
+              className={sideBarOpen ? "side-bar-open" : ""}
               role="menu"
               aria-label="Main Menu"
             >

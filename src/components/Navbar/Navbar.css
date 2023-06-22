@@ -98,7 +98,7 @@ header #side-bar ul li:hover {
   background-color: rgba(173, 173, 173, 0.898);
   color: rgb(126, 234, 130);
 }
-header #side-bar.sideBarOpen {
+header #side-bar.side-bar-open {
   right: 0;
 }
 header .blur-filter {
@@ -132,8 +132,5 @@ header .blur-filter {
   header ul.larger-nav-links-container li:hover {
     color: rgb(126, 234, 130);
     animation: wiggle 0.3s infinite;
-  }
-  header .blurFilter {
-    display: none;
   }
 }/*# sourceMappingURL=Navbar.css.map */

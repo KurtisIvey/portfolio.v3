@@ -85,9 +85,8 @@ header {
       }
     }
   }
-  #side-bar.sideBarOpen {
+  #side-bar.side-bar-open {
     right: 0;
-    //backdrop-filter: blur(8px);
   }
   .blur-filter {
     position: absolute;
@@ -121,9 +120,6 @@ header {
         color: $accentColor;
         animation: wiggle 0.3s infinite;
       }
-    }
-    .blurFilter {
-      display: none;
     }
   }
 }
