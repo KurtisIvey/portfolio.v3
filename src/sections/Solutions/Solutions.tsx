@@ -3,7 +3,7 @@ import "./Solutions.css";
 import { BsGearWideConnected } from "react-icons/bs";
 import { FaPaintBrush, FaHammer } from "react-icons/fa";
 
-const Solutions = () => {
+const Solutions: React.FC = () => {
   return (
     <div className="solutionsContainer">
       <h1 className="sectionH1">Services I Offer</h1>
