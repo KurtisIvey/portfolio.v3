@@ -20,7 +20,7 @@
     transform: rotate(-1deg);
   }
 }
-section.heroSection {
+section.hero-section {
   padding: 0 20px;
   font-family: "Work Sans", sans-serif;
   height: 100vh;
@@ -30,30 +30,30 @@ section.heroSection {
   align-items: center; /* Added */
   letter-spacing: 1.2px;
 }
-section.heroSection .heroContainer {
+section.hero-section .heroContainer {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-section.heroSection h1.hiMyNameIs {
+section.hero-section h1.hiMyNameIs {
   color: rgb(126, 234, 130);
   font-size: 1.1rem;
   text-align: left;
   margin-left: 2.3px;
   font-weight: 600;
 }
-section.heroSection h1.kurtisIvey {
+section.hero-section h1.kurtisIvey {
   color: whitesmoke;
   font-size: 2.6rem;
   font-weight: 600;
   letter-spacing: 3px;
 }
-section.heroSection h1.typeWriterText {
+section.hero-section h1.typeWriterText {
   font-size: 1.8rem;
   font-weight: 600;
   color: rgb(199, 199, 199);
 }
-section.heroSection p {
+section.hero-section p {
   color: rgb(255, 255, 255);
   margin-top: 3vh;
   text-align: left;
@@ -64,18 +64,18 @@ section.heroSection p {
 }
 
 @media screen and (min-width: 770px) {
-  section.heroSection h1.hiMyNameIs {
+  section.hero-section h1.hiMyNameIs {
     font-size: 1.5rem;
     margin-left: 3.5px;
   }
-  section.heroSection h1.kurtisIvey {
+  section.hero-section h1.kurtisIvey {
     font-size: 4.2rem;
   }
-  section.heroSection h1.typeWriterText {
+  section.hero-section h1.typeWriterText {
     font-size: 2.3rem;
     margin-left: 1.9px;
   }
-  section.heroSection p {
+  section.hero-section p {
     font-size: 1.5rem;
     letter-spacing: 1.4px;
     line-height: 40px;

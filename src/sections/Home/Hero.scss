@@ -1,6 +1,6 @@
 @import "../../variables";
 
-section.heroSection {
+section.hero-section {
   padding: 0 20px;
   font-family: "Work Sans", sans-serif;
   height: 100vh;
@@ -46,7 +46,7 @@ section.heroSection {
 }
 
 @media screen and (min-width: 770px) {
-  section.heroSection {
+  section.hero-section {
     h1.hiMyNameIs {
       font-size: 1.5rem;
       margin-left: 3.5px;
@@ -64,9 +64,5 @@ section.heroSection {
       line-height: 40px;
       margin-left: 3px;
     }
-  }
-}
-@media screen and (min-width: 950px) {
-  section.heroSection {
   }
 }

@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <motion.section
-      className="heroSection"
+      className="hero-section"
       initial={{ opacity: 0 }}
       // manually set delay to appear after logo that shows on initial page load
       transition={{ delay: 4, duration: 0 }}
