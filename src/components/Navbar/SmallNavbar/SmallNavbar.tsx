@@ -3,6 +3,7 @@ import "./SmallNavbar.css";
 import { useCallback } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+
 type Props = {
   handleScrollToSection: (sectionId: string) => void;
   sideBarOpen: boolean;

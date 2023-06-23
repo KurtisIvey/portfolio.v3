@@ -93,6 +93,9 @@
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out;
 }
+.hamburger-container .hamburger:hover {
+  color: rgb(126, 234, 130);
+}
 
 #side-bar {
   position: absolute;

@@ -74,18 +74,25 @@
   animation: hammer 1s ease-in-out infinite;
 }
 
-header {
-  width: 100%;
+.nav-larger-res-nav-links {
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  font-family: "Permanent Marker", cursive;
+  align-items: center;
 }
-header span {
-  color: rgb(126, 234, 130);
-}
-header h1 {
-  font-size: clamp(35px, 4vw, 55px);
+.nav-larger-res-nav-links ul.larger-nav-links-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: -moz-fit-content;
+  width: fit-content;
   color: white;
-  margin: 5px 0 0 10px;
-}/*# sourceMappingURL=Navbar.css.map */
+  font-size: clamp(20px, 2vw, 1.3rem);
+  margin-right: 12px;
+}
+.nav-larger-res-nav-links ul.larger-nav-links-container li {
+  margin: 0 13px;
+}
+.nav-larger-res-nav-links ul.larger-nav-links-container li:hover {
+  color: rgb(126, 234, 130);
+  animation: wiggle 0.3s infinite;
+}/*# sourceMappingURL=LargeNavbar.css.map */

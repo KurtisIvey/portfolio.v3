@@ -1,0 +1,25 @@
+@import "../../../variables.scss";
+
+.nav-larger-res-nav-links {
+  display: flex;
+  align-items: center;
+
+  ul.larger-nav-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content;
+    color: white;
+    font-size: clamp(20px, 2vw, 1.3rem);
+    margin-right: 12px;
+
+    li {
+      margin: 0 13px;
+    }
+    li:hover {
+      color: $accentColor;
+      animation: wiggle 0.3s infinite;
+    }
+  }
+}

@@ -1,11 +1,10 @@
 import { useState, useEffect, useCallback } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import "./Navbar.css";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import SmallNavbar from "./SmallNavbar/SmallNavbar";
+import LargeNavbar from "./LargeNavbar/LargeNavbar";
 
 const Navbar = () => {
   // prevents unnecessary rendering of both sidebars at once by detecting window width
@@ -43,46 +42,7 @@ const Navbar = () => {
           handleScrollToSection={handleScrollToSection}
         />
       ) : (
-        <nav className="nav-larger-res-nav-links">
-          <ul className="larger-nav-links-container" role="menu">
-            <li role="none">
-              <button
-                onClick={() => handleScrollToSection("about")}
-                aria-label="About Section"
-                role="menuitem"
-              >
-                <span>01.</span> About
-              </button>
-            </li>
-            <li role="none">
-              <button
-                onClick={() => handleScrollToSection("skills")}
-                aria-label="Skills Section"
-                role="menuitem"
-              >
-                <span>02.</span> Skills
-              </button>
-            </li>
-            <li role="none">
-              <button
-                onClick={() => handleScrollToSection("projects")}
-                aria-label="Projects Section"
-                role="menuitem"
-              >
-                <span>03.</span> Projects
-              </button>
-            </li>
-            <li role="none">
-              <button
-                onClick={() => handleScrollToSection("contact")}
-                aria-label="Contact Section"
-                role="menuitem"
-              >
-                <span>04.</span> Contact
-              </button>
-            </li>
-          </ul>
-        </nav>
+        <LargeNavbar handleScrollToSection={handleScrollToSection} />
       )}
     </motion.header>
   );
