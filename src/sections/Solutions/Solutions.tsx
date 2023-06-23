@@ -8,7 +8,7 @@ const Solutions: React.FC = () => {
     <div className="solutions-container">
       <h1 className="">Services I Offer</h1>
       <div className="shields-container">
-        <div className="shieldBox">
+        <div className="shield-box">
           <div className="hexagon-shield">
             <BsGearWideConnected size={70} className="rotate" />
           </div>
@@ -20,7 +20,7 @@ const Solutions: React.FC = () => {
             specific needs.
           </p>
         </div>
-        <div className="shieldBox">
+        <div className="shield-box">
           <div className="hexagon-shield">
             <FaPaintBrush size={44} className="paint" />
           </div>
@@ -33,7 +33,7 @@ const Solutions: React.FC = () => {
             appeal.
           </p>
         </div>
-        <div className="shieldBox">
+        <div className="shield-box">
           <div className="hexagon-shield">
             <FaHammer size={60} className="hammer" />
           </div>

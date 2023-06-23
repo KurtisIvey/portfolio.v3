@@ -94,7 +94,7 @@
   display: flex;
   flex-direction: column;
 }
-.solutions-container .shieldBox {
+.solutions-container .shield-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +103,7 @@
   border-bottom: 1px solid white;
   margin-bottom: 40px;
 }
-.solutions-container .shieldBox .hexagon-shield {
+.solutions-container .shield-box .hexagon-shield {
   width: 130px;
   height: 150px; /* Adjust height based on the width to maintain proportions */
   background-color: rgb(126, 234, 130);
@@ -115,11 +115,11 @@
   align-items: center;
   margin-bottom: 15px;
 }
-.solutions-container .shieldBox h2 {
+.solutions-container .shield-box h2 {
   font-size: 1.3rem;
   font-weight: 600;
 }
-.solutions-container .shieldBox p {
+.solutions-container .shield-box p {
   font-weight: 400;
   letter-spacing: 1px;
   max-width: 300px;
@@ -157,7 +157,7 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .solutions-container .shieldBox {
+  .solutions-container .shield-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,7 +168,7 @@
     margin-bottom: 40px;
     background-color: rgba(241, 241, 241, 0.11);
   }
-  .solutions-container .shieldBox .hexagon-shield {
+  .solutions-container .shield-box .hexagon-shield {
     width: 130px;
     height: 150px; /* Adjust height based on the width to maintain proportions */
     background-color: rgb(126, 234, 130);
@@ -180,12 +180,12 @@
     align-items: center;
     margin-bottom: 15px;
   }
-  .solutions-container .shieldBox h2 {
+  .solutions-container .shield-box h2 {
     font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
-  .solutions-container .shieldBox p {
+  .solutions-container .shield-box p {
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-weight: 400;
     letter-spacing: 1px;
