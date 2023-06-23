@@ -90,7 +90,7 @@
   letter-spacing: 1.2px;
   margin-bottom: 40px;
 }
-.solutions-container .shieldsContainer {
+.solutions-container .shields-container {
   display: flex;
   flex-direction: column;
 }
@@ -100,6 +100,7 @@
   align-items: center;
   gap: 10px;
   padding-bottom: 40px;
+  border-bottom: 1px solid white;
   margin-bottom: 40px;
 }
 .solutions-container .shieldBox .hexagon-shield {
@@ -128,19 +129,19 @@
 }
 
 @media screen and (min-width: 770px) {
-  .solutionsContainer h1 {
+  .solutions-container h1 {
     font-size: 2rem;
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 950px) {
-  .solutionsContainer h1 {
+  .solutions-container h1 {
     font-size: 2.2rem;
     margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 1220px) {
-  .solutionsContainer {
+  .solutions-container {
     height: auto;
     width: 100%;
     background-color: rgba(128, 128, 128, 0.176);
@@ -148,22 +149,26 @@
     margin-bottom: 10vh;
     padding: 40px 15px 15px 15px;
   }
-  .solutionsContainer .shieldsContainer {
+  .solutions-container h1 {
+    font-size: 2.4rem;
+  }
+  .solutions-container .shields-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .solutionsContainer .shieldBox {
+  .solutions-container .shieldBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 13px;
     padding: 25px 15px;
     border-radius: 10px;
+    border-bottom: none;
     margin-bottom: 40px;
     background-color: rgba(241, 241, 241, 0.11);
   }
-  .solutionsContainer .shieldBox .hexagon-shield {
+  .solutions-container .shieldBox .hexagon-shield {
     width: 130px;
     height: 150px; /* Adjust height based on the width to maintain proportions */
     background-color: rgb(126, 234, 130);
@@ -175,12 +180,12 @@
     align-items: center;
     margin-bottom: 15px;
   }
-  .solutionsContainer .shieldBox h2 {
+  .solutions-container .shieldBox h2 {
     font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
   }
-  .solutionsContainer .shieldBox p {
+  .solutions-container .shieldBox p {
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-weight: 400;
     letter-spacing: 1px;
