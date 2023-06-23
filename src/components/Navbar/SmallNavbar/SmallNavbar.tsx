@@ -1,6 +1,6 @@
 import React from "react";
 import "./SmallNavbar.css";
-import { useState, useEffect, useCallback } from "react";
+import { useCallback } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 type Props = {
