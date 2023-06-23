@@ -53,6 +53,12 @@
     right: 15px;
     top: 15px;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+    a {
+      &:hover {
+        color: $accentColor;
+      }
+    }
   }
   .floating-box {
     position: absolute;
