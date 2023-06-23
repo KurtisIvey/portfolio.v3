@@ -5,7 +5,7 @@ import { FaPaintBrush, FaHammer } from "react-icons/fa";
 
 const Solutions: React.FC = () => {
   return (
-    <div className="solutionsContainer">
+    <div className="solutions-container">
       <h1 className="">Services I Offer</h1>
       <div className="shieldsContainer">
         <div className="shieldBox">

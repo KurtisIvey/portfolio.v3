@@ -1,11 +1,11 @@
 @import "../../variables.scss";
 
-.skillsSection {
+.skills-section {
   color: white;
   padding: none;
   font-family: "Work Sans", sans-serif;
 
-  .logosContainer {
+  .logos-container {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -15,8 +15,8 @@
   }
 }
 @media screen and (min-width: 770px) {
-  .skillsSection {
-    .logosContainer {
+  .skills-section {
+    .logos-container {
       display: grid;
       width: 100%;
       grid-template-columns: repeat(3, 1fr);
@@ -28,8 +28,8 @@
 }
 
 @media screen and (min-width: 950px) {
-  .skillsSection {
-    .logosContainer {
+  .skills-section {
+    .logos-container {
       display: grid;
       width: 100%;
       grid-template-columns: repeat(3, 1fr);

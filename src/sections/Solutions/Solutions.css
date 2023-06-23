@@ -74,7 +74,7 @@
   animation: hammer 1s ease-in-out infinite;
 }
 
-.solutionsContainer {
+.solutions-container {
   font-family: "Work Sans", sans-serif;
   height: auto;
   width: 100%;
@@ -83,18 +83,18 @@
   margin-bottom: 10vh;
   padding: 15px;
 }
-.solutionsContainer h1 {
+.solutions-container h1 {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 1.2px;
   margin-bottom: 40px;
 }
-.solutionsContainer .shieldsContainer {
+.solutions-container .shieldsContainer {
   display: flex;
   flex-direction: column;
 }
-.solutionsContainer .shieldBox {
+.solutions-container .shieldBox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +102,7 @@
   padding-bottom: 40px;
   margin-bottom: 40px;
 }
-.solutionsContainer .shieldBox .hexagon-shield {
+.solutions-container .shieldBox .hexagon-shield {
   width: 130px;
   height: 150px; /* Adjust height based on the width to maintain proportions */
   background-color: rgb(126, 234, 130);
@@ -114,11 +114,11 @@
   align-items: center;
   margin-bottom: 15px;
 }
-.solutionsContainer .shieldBox h2 {
+.solutions-container .shieldBox h2 {
   font-size: 1.3rem;
   font-weight: 600;
 }
-.solutionsContainer .shieldBox p {
+.solutions-container .shieldBox p {
   font-weight: 400;
   letter-spacing: 1px;
   max-width: 300px;

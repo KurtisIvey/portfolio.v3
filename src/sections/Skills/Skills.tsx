@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
   return (
     <motion.section
       ref={ref}
-      className="skillsSection sub-section"
+      className="skills-section sub-section"
       id="skills"
       initial={{ opacity: 0 }}
       animate={controls}
@@ -30,7 +30,7 @@ const Skills: React.FC = () => {
       <h1 className="section-h1">
         <span>02. </span>Skills
       </h1>
-      <div className="logosContainer">
+      <div className="logos-container">
         {skills.map((skill) => (
           <div key={uuidv4()} className="logo">
             <SkillLogo {...skill} />
