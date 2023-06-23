@@ -1,0 +1,71 @@
+@import "../../../variables.scss";
+
+.hamburger-container {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  z-index: 4;
+  transition: transform 0.255s ease-in-out;
+  cursor: pointer;
+
+  &.open {
+    transform: rotate(720deg);
+  }
+
+  .hamburger {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+#side-bar {
+  position: absolute;
+  right: -1300px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100vw;
+  height: 100vh;
+  transition: 0.3s;
+  z-index: 2;
+  top: 0;
+  ul {
+    background-color: rgba(120, 118, 118, 0.447);
+    grid-column: 2/3;
+    width: 198px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    hr {
+      border-bottom: 1px solid gray;
+      margin: 0 0 10px 15px;
+    }
+    li {
+      list-style: none;
+      width: 100%;
+
+      padding: 15px;
+      color: white;
+      font-size: clamp(20px, 2vw, 1.4rem);
+      text-align: left;
+      z-index: 3;
+    }
+    li:hover {
+      background-color: rgba(173, 173, 173, 0.898);
+      color: $accentColor;
+    }
+  }
+}
+#side-bar.side-bar-open {
+  right: 0;
+}
+.blur-filter {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  backdrop-filter: blur(8px);
+}

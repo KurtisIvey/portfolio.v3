@@ -20,6 +20,60 @@
     transform: rotate(-1deg);
   }
 }
+@keyframes paintbrush {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(4px, 4px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(-4px, -4px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.paint {
+  animation: paintbrush 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes hammer {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.hammer {
+  animation: hammer 1s ease-in-out infinite;
+}
+
 .skills-section {
   color: white;
   padding: none;

@@ -1,0 +1,145 @@
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes miniWiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes paintbrush {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(4px, 4px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(-4px, -4px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.paint {
+  animation: paintbrush 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes hammer {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.hammer {
+  animation: hammer 1s ease-in-out infinite;
+}
+
+.hamburger-container {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  z-index: 4;
+  transition: transform 0.255s ease-in-out;
+  cursor: pointer;
+}
+.hamburger-container.open {
+  transform: rotate(720deg);
+}
+.hamburger-container .hamburger {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+#side-bar {
+  position: absolute;
+  right: -1300px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100vw;
+  height: 100vh;
+  transition: 0.3s;
+  z-index: 2;
+  top: 0;
+}
+#side-bar ul {
+  background-color: rgba(120, 118, 118, 0.447);
+  grid-column: 2/3;
+  width: 198px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+#side-bar ul hr {
+  border-bottom: 1px solid gray;
+  margin: 0 0 10px 15px;
+}
+#side-bar ul li {
+  list-style: none;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-size: clamp(20px, 2vw, 1.4rem);
+  text-align: left;
+  z-index: 3;
+}
+#side-bar ul li:hover {
+  background-color: rgba(173, 173, 173, 0.898);
+  color: rgb(126, 234, 130);
+}
+
+#side-bar.side-bar-open {
+  right: 0;
+}
+
+.blur-filter {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}/*# sourceMappingURL=SmallNavbar.css.map */
