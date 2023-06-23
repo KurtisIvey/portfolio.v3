@@ -27,7 +27,8 @@ const Projects: React.FC = () => {
   return (
     <motion.section
       ref={ref}
-      className="projectsSection sub-section"
+      className="projects-section sub-section"
+      // id present to allow header click navigation
       id="projects"
       initial={{ opacity: 0 }}
       animate={controls}

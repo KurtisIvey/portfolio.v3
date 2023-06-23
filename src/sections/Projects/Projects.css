@@ -20,29 +20,29 @@
     transform: rotate(-1deg);
   }
 }
-section.projectsSection {
+section.projects-section {
   color: white;
   padding: none;
   font-family: "Work Sans", sans-serif;
 }
-section.projectsSection h1 {
+section.projects-section h1 {
   margin-bottom: 50px;
 }
-section.projectsSection a:hover {
+section.projects-section a:hover {
   animation: miniWiggle 0.3s infinite;
 }
-section.projectsSection .card {
+section.projects-section .card {
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 770px) {
-  section.projectsSection {
+  section.projects-section {
     color: white;
     padding: none;
   }
 }
 @media screen and (min-width: 950px) {
-  section.projectsSection {
+  section.projects-section {
     font-family: "Work Sans", sans-serif;
     color: white;
     padding: none;

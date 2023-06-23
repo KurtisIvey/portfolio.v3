@@ -1,6 +1,6 @@
 @import "../../variables.scss";
 
-section.projectsSection {
+section.projects-section {
   color: white;
   padding: none;
   font-family: "Work Sans", sans-serif;
@@ -16,14 +16,14 @@ section.projectsSection {
 }
 
 @media screen and (min-width: 770px) {
-  section.projectsSection {
+  section.projects-section {
     color: white;
     padding: none;
   }
 }
 
 @media screen and (min-width: 950px) {
-  section.projectsSection {
+  section.projects-section {
     font-family: "Work Sans", sans-serif;
     color: white;
     padding: none;
