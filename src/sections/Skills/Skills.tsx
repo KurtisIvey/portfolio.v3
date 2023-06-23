@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
   return (
     <motion.section
       ref={ref}
-      className="skillsSection subSection"
+      className="skillsSection sub-section"
       id="skills"
       initial={{ opacity: 0 }}
       animate={controls}

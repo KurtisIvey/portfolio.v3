@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
 
   return (
     <motion.section
-      className="contactSection subSection"
+      className="contactSection sub-section"
       id="contact"
       ref={ref}
       initial={{ opacity: 0 }}

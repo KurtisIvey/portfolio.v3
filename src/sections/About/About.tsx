@@ -48,7 +48,7 @@ const About: React.FC = () => {
 
   return (
     <motion.section
-      className="about-section subSection"
+      className="about-section sub-section"
       id="about"
       ref={ref}
       initial={{ opacity: 0 }}
