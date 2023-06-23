@@ -10,25 +10,25 @@ section.hero-section {
   align-items: center; /* Added */
   letter-spacing: 1.2px;
 
-  .heroContainer {
+  .hero-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  h1.hiMyNameIs {
+  h1.main-heading {
     color: $accentColor;
     font-size: 1.1rem;
     text-align: left;
     margin-left: 2.3px;
     font-weight: 600;
   }
-  h1.kurtisIvey {
+  h2.sub-heading {
     color: whitesmoke;
     font-size: 2.6rem;
     font-weight: 600;
     letter-spacing: 3px;
   }
-  h1.typeWriterText {
+  h3.type-writer-text {
     font-size: 1.8rem;
     font-weight: 600;
     color: rgb(199, 199, 199);
@@ -47,14 +47,14 @@ section.hero-section {
 
 @media screen and (min-width: 770px) {
   section.hero-section {
-    h1.hiMyNameIs {
+    h1.main-heading {
       font-size: 1.5rem;
       margin-left: 3.5px;
     }
-    h1.kurtisIvey {
+    h2.sub-heading {
       font-size: 4.2rem;
     }
-    h1.typeWriterText {
+    h3.type-writer-text {
       font-size: 2.3rem;
       margin-left: 1.9px;
     }

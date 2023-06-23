@@ -12,8 +12,6 @@ const Hero = () => {
     delaySpeed: 2000,
   });
 
-  //const editorRef = useRef(null);
-
   return (
     <motion.section
       className="hero-section"
@@ -24,13 +22,13 @@ const Hero = () => {
       viewport={{ once: true }}
     >
       {" "}
-      <div className="heroContainer">
-        <h1 className="hiMyNameIs">Hi, my name is</h1>
-        <h1 className="kurtisIvey">Kurtis Ivey.</h1>
-        <h1 className="typeWriterText">
+      <div className="hero-container">
+        <h1 className="main-heading">Hi, my name is</h1>
+        <h2 className="sub-heading">Kurtis Ivey.</h2>
+        <h3 className="type-writer-text">
           <span>{text}</span>
           <Cursor cursorColor="#ffffff" />
-        </h1>
+        </h3>
         <div className="bg">
           <p>
             I'm a developer specializing in building highly interactive, robust,

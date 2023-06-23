@@ -30,25 +30,25 @@ section.hero-section {
   align-items: center; /* Added */
   letter-spacing: 1.2px;
 }
-section.hero-section .heroContainer {
+section.hero-section .hero-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-section.hero-section h1.hiMyNameIs {
+section.hero-section h1.main-heading {
   color: rgb(126, 234, 130);
   font-size: 1.1rem;
   text-align: left;
   margin-left: 2.3px;
   font-weight: 600;
 }
-section.hero-section h1.kurtisIvey {
+section.hero-section h2.sub-heading {
   color: whitesmoke;
   font-size: 2.6rem;
   font-weight: 600;
   letter-spacing: 3px;
 }
-section.hero-section h1.typeWriterText {
+section.hero-section h3.type-writer-text {
   font-size: 1.8rem;
   font-weight: 600;
   color: rgb(199, 199, 199);
@@ -64,14 +64,14 @@ section.hero-section p {
 }
 
 @media screen and (min-width: 770px) {
-  section.hero-section h1.hiMyNameIs {
+  section.hero-section h1.main-heading {
     font-size: 1.5rem;
     margin-left: 3.5px;
   }
-  section.hero-section h1.kurtisIvey {
+  section.hero-section h2.sub-heading {
     font-size: 4.2rem;
   }
-  section.hero-section h1.typeWriterText {
+  section.hero-section h3.type-writer-text {
     font-size: 2.3rem;
     margin-left: 1.9px;
   }
