@@ -95,6 +95,9 @@
   letter-spacing: 2.5px;
   margin-left: 5px;
 }
+.mobile-project-card div.top h2 a:hover {
+  color: rgb(126, 234, 130);
+}
 .mobile-project-card div.top div.links {
   display: flex;
   gap: 10px;
@@ -104,7 +107,7 @@
   flex: 1; /* Added this to make the links span the available space */
 }
 .mobile-project-card div.top div.links a:hover {
-  color: rgb(179, 0, 255);
+  color: rgb(126, 234, 130);
 }
 .mobile-project-card video {
   border-radius: 5px;

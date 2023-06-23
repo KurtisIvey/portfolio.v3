@@ -20,6 +20,11 @@
       font-weight: 500;
       letter-spacing: 2.5px;
       margin-left: 5px;
+      a {
+        &:hover {
+          color: $accentColor;
+        }
+      }
     }
 
     div.links {
@@ -32,7 +37,7 @@
       }
 
       a:hover {
-        color: $hoverColor;
+        color: $accentColor;
       }
     }
   }
