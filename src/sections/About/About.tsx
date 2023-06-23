@@ -54,7 +54,7 @@ const About: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={controls}
     >
-      <h1 className="sectionH1">
+      <h1 className="section-h1">
         <span>01.</span> About Me
       </h1>
       <div ref={aboutImgContainerRef} className="about-img-container">

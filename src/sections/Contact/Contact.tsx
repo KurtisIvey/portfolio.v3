@@ -19,13 +19,13 @@ const Contact: React.FC = () => {
 
   return (
     <motion.section
-      className="contactSection sub-section"
+      className="contact-section sub-section"
       id="contact"
       ref={ref}
       initial={{ opacity: 0 }}
       animate={controls}
     >
-      <h1 className="sectionH1">
+      <h1 className="section-h1">
         <span>04. </span>Contact
       </h1>
       <Mailer />

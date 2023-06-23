@@ -27,7 +27,7 @@ const Skills: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={controls}
     >
-      <h1 className="sectionH1">
+      <h1 className="section-h1">
         <span>02. </span>Skills
       </h1>
       <div className="logosContainer">

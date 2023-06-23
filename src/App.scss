@@ -173,7 +173,7 @@ section {
   padding: 0 20px;
 }
 
-h1.sectionH1 {
+h1.section-h1 {
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 1.2px;
@@ -194,7 +194,7 @@ h1.sectionH1 {
   .sub-section {
     margin-bottom: 10vh;
   }
-  h1.sectionH1 {
+  h1.section-h1 {
     font-size: 2rem;
     font-weight: 600;
     grid-row: 1/2;
@@ -212,7 +212,7 @@ h1.sectionH1 {
   section {
     max-width: 920px;
   }
-  h1.sectionH1 {
+  h1.section-h1 {
     font-size: 2.2rem;
     margin-bottom: 80px;
     span {
