@@ -1,0 +1,227 @@
+@import "../../variables.scss";
+
+section.projects-section {
+  color: white;
+  padding: none;
+  font-family: "Work Sans", sans-serif;
+  h1 {
+    margin-bottom: 50px;
+  }
+  a:hover {
+    animation: miniWiggle 0.3s infinite;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .mobile-project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 60px 0px;
+
+    div.top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      h2 {
+        font-family: "Permanent Marker", cursive;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+        margin-left: 5px;
+        a {
+          &:hover {
+            color: $accentColor;
+          }
+        }
+      }
+
+      div.links {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        a {
+          flex: 1; /* Added this to make the links span the available space */
+        }
+        a:hover {
+          color: $accentColor;
+        }
+      }
+    }
+
+    video {
+      border-radius: 5px;
+      width: 100%;
+      height: auto;
+    }
+    p {
+      text-align: center;
+      margin-top: 10px;
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+      span {
+        color: $accentColor;
+      }
+    }
+    p.tech-stack {
+      font-size: 0.7rem;
+      line-height: 15px;
+    }
+    p.description {
+      line-height: 23px;
+      font-size: 1rem;
+    }
+  }
+  .large-project-card {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  section.projects-section {
+    color: white;
+    padding: none;
+    .mobile-project-card {
+      display: none;
+    }
+    .large-project-card {
+      margin: 80px 0;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 0.4fr;
+      grid-template-rows: 1fr auto;
+      padding-top: 50px;
+      .img-wrapper {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        position: relative;
+
+        video,
+        img {
+          border-radius: 5px;
+          height: auto;
+          width: 100%;
+        }
+        .color-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(159, 159, 159, 0.189);
+          transition: all 0.2s;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+      .tech-stack {
+        margin-top: 5px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        font-weight: 500;
+        span {
+          color: $accentColor;
+        }
+      }
+      h2 {
+        font-family: "Permanent Marker", cursive;
+        position: absolute;
+        z-index: 3;
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+        right: 15px;
+        top: 15px;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+        a {
+          &:hover {
+            color: $accentColor;
+          }
+        }
+      }
+      .floating-box {
+        position: absolute;
+        z-index: 2;
+        width: 300px;
+        height: 280px;
+        right: 10px;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        p {
+          background-color: rgba(128, 128, 128, 0.293);
+          padding: 15px;
+          line-height: 20px;
+          letter-spacing: 1.2px;
+          text-align: center;
+          height: auto;
+          font-size: 0.8rem;
+          text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        }
+        div.links {
+          display: flex;
+          justify-content: flex-end;
+          gap: 15px;
+          margin-top: 10px;
+          margin-right: 5px;
+          font-weight: 500;
+          a {
+            display: flex;
+            font-size: 0.9rem;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            letter-spacing: 1.5px;
+            text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+            &:hover {
+              text-decoration: underline;
+              color: $accentColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 972px) {
+  section.projects-section {
+    font-family: "Work Sans", sans-serif;
+    color: white;
+    padding: none;
+
+    .large-project-card {
+      margin: 110px 0;
+
+      h2 {
+        right: -8px;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+      }
+      .floating-box {
+        width: 380px;
+        right: -10px;
+        p {
+          line-height: 22px;
+          font-size: 0.9rem;
+        }
+        div.links {
+          gap: 20px;
+          a {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+  }
+}
