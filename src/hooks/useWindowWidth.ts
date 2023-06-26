@@ -9,6 +9,7 @@ const useWindowWidth = (): number => {
     };
 
     window.addEventListener("resize", handleResize);
+    // runs handleResize on initial render to set appropriate width
     setWindowWidth(window.innerWidth);
 
     return () => {

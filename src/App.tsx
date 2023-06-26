@@ -6,8 +6,6 @@ import Hero from "./sections/Home/Hero";
 import MouseCircle from "./components/MouseCircle/MouseCircle";
 import About from "./sections/About/About";
 import Projects from "./sections/Projects/Projects";
-// for presentation
-import Projects2 from "./sections/Projects2/Projects2";
 import Skills from "./sections/Skills/Skills";
 import Contact from "./sections/Contact/Contact";
 import useWindowWidth from "./hooks/useWindowWidth";
@@ -34,7 +32,6 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      {/* <Projects2 /> */}
       <Contact />
       <Footer />
     </main>
