@@ -8,12 +8,12 @@ import About from "./sections/About/About";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
 import Contact from "./sections/Contact/Contact";
-import useWindowWidth from "./hooks/useWindowWidth";
 import Solutions from "./sections/Solutions/Solutions";
 import Footer from "./components/Footer/Footer";
+import useMobileDetect from "./hooks/useMobileDetect";
 
 function App() {
-  const windowWidth = useWindowWidth();
+  const isMobile = useMobileDetect();
   const [loaded, setLoaded] = useState<boolean>(false);
   useEffect(() => {
     setTimeout(() => {
@@ -22,7 +22,7 @@ function App() {
   }, []);
   return (
     <main>
-      {windowWidth > 1000 && <MouseCircle />}
+      {!isMobile && <MouseCircle />}
       <Navbar />
       <div className={loaded ? "hide-load-container" : "load-container"}>
         <LogoSvg />
