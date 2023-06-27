@@ -22,6 +22,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // upon resizing, automatically closes sidebar, so it isn't open if I resize down
     if (windowWidth >= 770) setSideBarOpen(false);
   }, [windowWidth]);
 
