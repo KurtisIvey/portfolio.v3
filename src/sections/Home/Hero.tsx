@@ -6,7 +6,7 @@ const Hero = () => {
   const [text] = useTypewriter({
     words: [
       "<Really Loves to Code/> ",
-      "<But Also Loves Brazillian Jiu Jitsu/>",
+      "<But Also Loves Brazilian Jiu Jitsu/>",
     ],
     loop: true,
     delaySpeed: 2000,
