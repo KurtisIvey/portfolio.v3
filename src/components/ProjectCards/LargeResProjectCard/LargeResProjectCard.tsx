@@ -66,11 +66,11 @@ const LargeResProjectCard = ({
       <div className="floating-box">
         <p>{description}</p>
         <div className="links">
-          <a href={repo} aria-label="github repo link">
+          <a href={repo} aria-label="github repo link" target="_blank">
             <div>Github Repository</div>
             <BsGithub size={20} />
           </a>
-          <a href={website} aria-label="website link">
+          <a href={website} aria-label="website link" target="_blank">
             Website <BsGlobe size={20} />
           </a>
         </div>
