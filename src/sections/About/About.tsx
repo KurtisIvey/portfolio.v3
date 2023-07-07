@@ -79,7 +79,9 @@ const About: React.FC = () => {
         </p>
         <p>
           Currently, I'm working with{" "}
-          <a href="https://www.onecommunityglobal.org/">One Community Global</a>{" "}
+          <a href="https://www.onecommunityglobal.org/" target="_blank">
+            One Community Global
+          </a>{" "}
           as a Developer using JavaScript, React, Node.js, Express, & MongoDB.
         </p>
         <p>
