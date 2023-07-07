@@ -18,6 +18,7 @@ const SmallResProjectCard = ({
         </h2>
         <div className="links">
           <a
+            target="_blank"
             href={repo}
             aria-label={`${name} GitHub Repository`}
             title="GitHub Repository"
@@ -26,6 +27,7 @@ const SmallResProjectCard = ({
             <BsGithub size={25} />
           </a>
           <a
+            target="_blank"
             href={website}
             aria-label={`${name} Website`}
             title="Website"
