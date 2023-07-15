@@ -31,10 +31,10 @@ const Hero = () => {
         </h3>
         <div className="bg">
           <p>
-            I'm a developer specializing in building highly interactive, robust,
-            scalable, and maintainable web applications on both the front and
-            back end using JavaScript frameworks. I'm currently looking for work
-            and freelancing opportunities.
+            I'm a Software Developer specializing in building highly
+            interactive, robust, scalable, and maintainable web applications on
+            both the front and back end using JavaScript frameworks. I'm
+            currently looking for work and freelancing opportunities.
           </p>
         </div>
       </div>
