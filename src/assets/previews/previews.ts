@@ -1,10 +1,12 @@
 import jiuJitsuConnectGif from "./jiuJitsuConnect.gif";
 import bobaDepotGif from "./bobaDepot.gif";
 import spaceTourismGif from "./spaceTourism.gif";
+import aynServicesGif from "./aynServices.gif";
 
 import jiuJitsuConnectMp4 from "./jiuJitsuConnect.mp4";
 import bobaDepotMp4 from "./bobaDepot.mp4";
 import spaceTourismMp4 from "./spaceTourism.mp4";
+import aynServicesMp4 from "./aynServices.mp4";
 
 export const projects = [
   {
@@ -27,6 +29,16 @@ export const projects = [
     techStack: "TypeScript, Next.js, React, CSS, Sass",
     description:
       "Space Tourism is an interactive website that allows one to explore different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, & the technologies that will be used in their space journey.",
+  },
+  {
+    name: "AYN Services",
+    img: aynServicesGif,
+    mp4: aynServicesMp4,
+    repo: "https://github.com/KurtisIvey/ayn-services",
+    website: "https://www.aynservices.com",
+    techStack: "React, TypeScript, Tailwind CSS",
+    description:
+      "React-driven landing page, infused with TypeScript and Tailwind CSS, reshaped their online presence. Helped increase user engagement and business through SEO principles and responsive design. Propelled their business to heightened online visbility while minimizing bandwidth usage to allow for 90,000+ visitors a month.",
   },
   {
     name: "Boba Depot",
