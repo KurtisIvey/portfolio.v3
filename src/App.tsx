@@ -11,6 +11,7 @@ import Contact from "./sections/Contact/Contact";
 import Solutions from "./sections/Solutions/Solutions";
 import Footer from "./components/Footer/Footer";
 import useMobileDetect from "./hooks/useMobileDetect";
+import BackToTop from "./components/BackToTop/BackToTop";
 
 function App() {
   const isMobile = useMobileDetect();
@@ -20,6 +21,7 @@ function App() {
       setLoaded(true);
     }, 4000);
   }, []);
+
   return (
     <main>
       {!isMobile && <MouseCircle />}
@@ -33,6 +35,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <BackToTop />
       <Footer />
     </main>
   );
