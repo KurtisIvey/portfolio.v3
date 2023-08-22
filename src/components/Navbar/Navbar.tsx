@@ -32,6 +32,7 @@ const Navbar = () => {
       transition={{ delay: 3, duration: 2 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
+      id="top"
     >
       <h1>
         Kurtis <span>Ivey</span>
