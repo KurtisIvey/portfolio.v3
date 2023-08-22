@@ -21,6 +21,7 @@ function App() {
       setLoaded(true);
     }, 4000);
   }, []);
+
   return (
     <main>
       {!isMobile && <MouseCircle />}
