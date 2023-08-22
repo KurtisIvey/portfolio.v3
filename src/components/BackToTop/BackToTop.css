@@ -1,20 +1,95 @@
+@keyframes wiggle {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes miniWiggle {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes paintbrush {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(4px, 4px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(-4px, -4px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.paint {
+  animation: paintbrush 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes hammer {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.hammer {
+  animation: hammer 1s ease-in-out infinite;
+}
+
 .back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .back-to-top-button {
-  background-color: #007bff;
-  color: #fff;
+  color: rgb(126, 234, 130);
   border: none;
   border-radius: 4px;
-  padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .back-to-top-button:hover {
-  background-color: #0056b3;
+  color: rgb(98, 189, 101);
+}
+.back-to-top-button:active {
+  color: rgb(82, 161, 85);
 }/*# sourceMappingURL=BackToTop.css.map */
