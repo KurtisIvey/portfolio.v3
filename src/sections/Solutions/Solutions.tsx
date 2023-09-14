@@ -37,12 +37,12 @@ const Solutions: React.FC = () => {
           <div className="hexagon-shield">
             <FaHammer size={60} className="hammer" />
           </div>
-          <h2>Web Maintenance & Support</h2>
+          <h2>Web Maintenance & IT Support</h2>
           <p>
-            I specialize in providing website maintenance & support services. I
-            am committed to delivering ongoing updates, support, & maintenance
-            to ensure your website operates smoothly & meets your evolving
-            needs.
+            I specialize in providing website maintenance & IT support services.
+            I am committed to delivering ongoing updates, IT support, &
+            maintenance to ensure your website operates smoothly & meets your
+            evolving needs.
           </p>
         </div>
       </div>
