@@ -14,7 +14,9 @@ const SmallResProjectCard = ({
     <article className="mobile-project-card">
       <div className="top">
         <h2>
-          <a href={website}>{name}</a>
+          <a href={website} target="_blank">
+            {name}
+          </a>
         </h2>
         <div className="links">
           <a

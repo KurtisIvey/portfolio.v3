@@ -60,7 +60,9 @@ const LargeResProjectCard = ({
       </div>
       {/* positioned absolutely */}
       <h2>
-        <a href={website}>{name}</a>
+        <a href={website} target="_blank">
+          {name}
+        </a>
       </h2>
       {/* floating description and links */}
       <div className="floating-box">
