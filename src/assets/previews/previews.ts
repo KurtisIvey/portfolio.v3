@@ -25,8 +25,8 @@ export const projects = [
     img: spaceTourismGif,
     mp4: spaceTourismMp4,
     repo: "https://github.com/KurtisIvey/space-tourism-nextjs",
-    website: "https://space-tourism-nextjs-uu85.vercel.app/",
-    techStack: "TypeScript, Next.js, React, CSS, Sass",
+    website: "https://main.d6clknpi1gsdl.amplifyapp.com/",
+    techStack: "TypeScript, Next.js, React, CSS, Sass, AWS",
     description:
       "Space Tourism is an interactive website that allows one to explore different possible destinations should they decide to embark on an out of this world vacation. User's are able to explore the different destinations, the crew members, & the technologies that will be used in their space journey.",
   },
